@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- This is where you set the little icon that goes on the tab next to the title. 
+    Replace "tabicon.jpg" with your actual image name. -->
+    <link rel="shortcut icon" href="tabicon.jpg" type="image/x-icon" />	
+    
+    <!-- Title that will appear on the page tab -->
+    <title> E3 Ligases </title> 
+        
+        
+    <!-- Description of your page goes in the content parentheses. 
+    This is for the benefit of search engines  -->
+    <meta name="description" content=""> 
+    
+    <meta name="keywords" content=""> <!-- Keywords associated with your page go in the content parentheses,
+    again, for the benefit of search engines. -->
+    
+    
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    
+  <!-- The style element allows you to determine what your page looks like. The background-color
+  listed under "body" will change the color that fills the whole window. The colors for each element
+  determine what the page will look like in the middle. All elements except the header and footer, 
+  in this case, have been made white (#FFFFFF) for simplicity. The background is grey. To change, 
+  search for an HTML5 color picker, which will have numbers for every color your heart desires.  -->  
+  
+  <!-- Width of the elements is hard coded in this case, but can be changed. The table will function
+  better if its width is hard coded. The table width is determined in the "wrap" and "wrap table" 
+  classes.  -->
+  
+<style> 
+    -->
+		html { text-align: center; font-family: Arial; }
+		body { width: 100%; margin: 50 auto 50 auto; text-align: left; 
+		float: center; background-color:#FFFFFF;}
+		nav { background-color:#FFFFFF; width: 1100px; float: center; display: table; 
+		text-align: right; margin: 0 auto; padding: 10px;}
+    	article { background-color:#FFFFFF; width: 1100px; float: center; display: table; 
+    	margin: 0 auto; padding:10px; }
+    	footer { width:1100px; float: center; display: table; margin: 0 auto; text-align: center; 
+    	background-color:#008987; color:#FFFFFF; padding: 10px;}
+		table, tr, td { padding: 5px; margin: auto; text-align: left; 
+		word-wrap: break-word; font-size:10.0pt; }
+		tr:nth-child(odd) { background-color:#D6F5F2; }
+		img { vertical-align: text-top; }
+		.wrap {width: 1090px; }
+		.wrap table {width: 1090px; table-layout: fixed; } 
+		table.head th td {background-color:#009933; padding: 5px; } 
+		.inner_table {height: 450px; overflow-y: auto; } 
+a:link
+	{color:#696969;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+a:visited
+	{color:#66C2C2;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+</style>  
+<style type="text/css">
+#topbg 
+    {
+        position: absolute; top: 0; left: 0; z-index: -1;
+        width: 100%; height: 153px; 
+        background: #5CAFAF;
+    }
+h1{
+	font-size:150%;
+	color: red;
+	text-align: center;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div id="topbg"></div>
+<h1 style="margin-top: 15px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="LinearSignature_RGB.png" alt="National Heart, Lung, and Blood Institute" style="border-style: none"></a></h1>
+<h1><a href="http://hpcwebapps.cit.nih.gov/ESBL/" target="_blank"><img src="ESBL1.png" alt="Epithelial Systems Biology Laboratory (ESBL)" style="border-style: none"></a></h1>
+<article>
+<h1> Human E3 Ubiquitin Ligases</h1>
+</article>
+
+
+<!-- The style attribute here allows you to change the text size in the body of your informational section.-->
+<article style="font-size:12.0pt;">
+
+
+	
+	<p> These ligases can be sorted alphabetically by Gene Symbol, Protein Name, or Class by clicking on the respective header. This information was culled primarily from several existing resources (click to open): <a href="http://www.cellsignal.com/common/content/content.jsp?id=science-tables-ubiquitin" target="_blank"> Cell Signaling , Inc.</a>, <a href="http://bioinfo.bjmu.edu.cn/hubi/" target="_blank"> hUbiqutome database </a>, <a href="http://www.sabiosciences.com/rt_pcr_product/HTML/PAHS-3079Z.html" target="_blank"> Qiagen Ubiquitin Ligases PCR Array </a>, <a href="http://ubiprot.org.ru/" target="_blank"> UbiProt Database </a>, <a href="http://www.dude-db.org" target="_blank"> DUDE v. 1.0</a>, and Supplemental Table 1 of <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001487" target="_blank"> Li et al </a>. This database was created by Barbara Medvar, Trairak Pisitkun, Abhijit Sarkar, and Mark A. Knepper (<a href="https://www.ncbi.nlm.nih.gov/pubmed/27199454">Medvar et al.</a>).	Please contact <a href="mailto:knep@helix.nih.gov"> Mark Knepper</a> with any comments or questions.</p>
+	
+	<p> &nbsp;</p>
+	
+	<p> Note: No non-catalytic E3 ligase complex components are included in this table. To see the accessory proteins related to E3 ubiquitin ligases <a href="RelatedProteins.html" target="_blank"> click here. </a></p>
+	
+	<p> &nbsp; </p>
+	<p> <a href="Definite Ligase List.xlsx" target="_blank"> Download data as an Excel file </a></p>
+	
+	
+	
+	
+	
+	
+	
+	<!-- Here you can describe the content of your database and include links, such as this 
+	link to an <a href="http://www.w3schools.com/tags/ref_colorpicker.asp" target=_blank>
+	HTML5 color picker</a>. -->
+
+	
+	
+</article>
+
+
+ 
+<!-- This section has the scrolling table. To fill in your data, convert your Excel sheet into 
+an unformatted HTML table using the following link: http://pressbin.com/tools/excel_to_html_table/. 
+You will paste the bulk of the table where the div is of the class "inner_table." Exclude the 
+table headers, as these will go in the table of class "head." -->
+<article>
+
+<div class="wrap">
+
+<!-- This is where your table headers go. You can have as many or few as desired, provided
+the table with which they correspond has the same number of columns. 
+
+Each header is a link. Where the page numbers are, you need to fill in the name of other HTML 
+pages you've created where the data is sorted by the corresponding header. For example, Page2.html
+should have almost all things the same as this page, except that the data in the body of the table
+is sorted according to Header 2. This allows users to easily sort data by each category. 
+-->
+<table class="head">
+ <tr style="background-color:#009999; color:#FFFFFF;">
+    <th><h3>&nbsp; <a href="index.html" style="color:#FFFFFF"> <b> Gene Symbol </b></a> </h3></th>
+    <th><h3>&nbsp; <a href="ProteinName.html" style="color:#FFFFFF"> <b> Protein Name </b> </a></h3> </th>
+    <th><h3>&nbsp; <a href="Domain.html" style="color:#FFFFFF"> <b> Class </b> </a></h3> </th>
+	<th><h3>&nbsp; <a href="RefSeq.html" style="color:#FFFFFF"> <b> RefSeq </b> </a></h3> </th>
+	<th><h3>&nbsp; <a href="SwissProt.html" style="color:#FFFFFF"> <b> UniProt No. </b> </a></h3> </th>
+</tr> 
+</table>
+
+<!-- Here's where the bulk of your data goes, after having been processed by the HTML table 
+maker. If you need items in your page linked, we can discuss that in person. :) -->
+<div class = "inner_table">
+<table>
+   <tr>
+      <td>RAPSN</td>
+      <td>43 kDa receptor-associated protein of the synapse isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/38045928" target="_blank"> 38045928</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13702" target="_blank">  Q13702 </a></td>
+   </tr>
+   <tr>
+      <td>AFF4</td>
+      <td>AF4/FMR2 family member 4</td>
+      <td>UBOX</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/7656879" target="_blank"> 7656879</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UHB7" target="_blank">  Q9UHB7 </a></td>
+   </tr>
+   <tr>
+      <td>ANAPC11</td>
+      <td>anaphase-promoting complex subunit 11 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/574957206" target="_blank"> 574957206</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NYG5" target="_blank">  Q9NYG5 </a></td>
+   </tr>
+   <tr>
+      <td>ANKIB1</td>
+      <td>ankyrin repeat and IBR domain-containing protein 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/148596953" target="_blank" target="_blank"> 148596953</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9P2G1" target="_blank">  Q9P2G1 </a></td>
+   </tr>
+   <tr>
+      <td>AREL1</td>
+      <td>apoptosis resistant E3 ubiquitin protein ligase 1</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/87116668" target="_blank" target="_blank"> 87116668</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O15033" target="_blank">  O15033 </a></td>
+   </tr>
+   <tr>
+      <td>ARIH1</td>
+      <td>ariadne RBR E3 ubiquitin protein ligase 1</td>
+      <td>IBR</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/187761373" target="_blank" target="_blank"> 187761373</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y4X5" target="_blank">  Q9Y4X5 </a></td>
+   </tr>
+   <tr>
+      <td>ARIH2</td>
+      <td>ariadne RBR E3 ubiquitin protein ligase 2</td>
+      <td>IBR</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/955471911" target="_blank"> 955471911</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O95376" target="_blank">  O95376 </a></td>
+   </tr>
+   <tr>
+      <td>AMFR</td>
+      <td>autocrine motility factor receptor, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/21071001" target="_blank"> 21071001</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UKV5" target="_blank">  Q9UKV5 </a></td>
+   </tr>
+   <tr>
+      <td>BIRC2</td>
+      <td>baculoviral IAP repeat containing 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/390608639" target="_blank"> 390608639</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13490" target="_blank">  Q13490 </a></td>
+   </tr>
+   <tr>
+      <td>BIRC3</td>
+      <td>baculoviral IAP repeat containing 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/33946285" target="_blank"> 33946285</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13489" target="_blank">  Q13489 </a></td>
+   </tr>
+   <tr>
+      <td>BIRC7</td>
+      <td>baculoviral IAP repeat containing 7</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/21536421" target="_blank"> 21536421</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96CA5" target="_blank">  Q96CA5 </a></td>
+   </tr>
+   <tr>
+      <td>BIRC8</td>
+      <td>baculoviral IAP repeat-containing protein 8</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/44680139" target="_blank"> 44680139</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96P09" target="_blank">  Q96P09 </a></td>
+   </tr>
+   <tr>
+      <td>BFAR</td>
+      <td>bifunctional apoptosis regulator</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/7706091" target="_blank"> 7706091</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NZS9" target="_blank">  Q9NZS9 </a></td>
+   </tr>
+   <tr>
+      <td>BMI1*</td>
+      <td>BMI1 polycomb ring finger proto-oncogene</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/27883842" target="_blank"> 27883842</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P35226" target="_blank">  P35226 </a></td>
+   </tr>
+   <tr>
+      <td>BRAP</td>
+      <td>BRCA1 associated protein</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/188497705" target="_blank"> 188497705</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7Z569" target="_blank">  Q7Z569 </a></td>
+   </tr>
+   <tr>
+      <td>BARD1</td>
+      <td>BRCA1 associated RING domain 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/543583789" target="_blank"> 543583789</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q99728" target="_blank">  Q99728 </a></td>
+   </tr>
+   <tr>
+      <td>BRCA1*</td>
+      <td>breast cancer 1, early onset</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/237681125" target="_blank"> 237681125</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P38398" target="_blank">  P38398 </a></td>
+   </tr>
+   <tr>
+      <td>CBLB</td>
+      <td>Cbl proto-oncogene B, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/54112420" target="_blank"> 54112420</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13191" target="_blank">  Q13191 </a></td>
+   </tr>
+   <tr>
+      <td>CBLC</td>
+      <td>Cbl proto-oncogene C, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/195927030" target="_blank"> 195927030</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9ULV8" target="_blank">  Q9ULV8 </a></td>
+   </tr>
+   <tr>
+      <td>CBL</td>
+      <td>Cbl proto-oncogene, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/52426745" target="_blank"> 52426745</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P22681" target="_blank">  P22681 </a></td>
+   </tr>
+   <tr>
+      <td>CBLL1</td>
+      <td>Cbl proto-oncogene-like 1, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/546230945" target="_blank"> 546230945</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q75N03" target="_blank">  Q75N03 </a></td>
+   </tr>
+   <tr>
+      <td>CNOT4</td>
+      <td>CCR4-NOT transcription complex, subunit 4</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/300069017" target="_blank"> 300069017</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O95628" target="_blank">  O95628 </a></td>
+   </tr>
+   <tr>
+      <td>MNAT1</td>
+      <td>CDK-activating kinase assembly factor MAT1 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/295789085" target="_blank"> 295789085</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P51948" target="_blank">  P51948 </a></td>
+   </tr>
+   <tr>
+      <td>CGRRF1</td>
+      <td>cell growth regulator with RING finger domain protein 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/5729765" target="_blank"> 5729765</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q99675" target="_blank">  Q99675 </a></td>
+   </tr>
+   <tr>
+      <td>CHFR</td>
+      <td>checkpoint with forkhead and ring finger domains, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/239048909" target="_blank"> 239048909</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96EP1" target="_blank">  Q96EP1 </a></td>
+   </tr>
+   <tr>
+      <td>CCDC36</td>
+      <td>coiled-coil domain-containing protein 36</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/206597549" target="_blank" target="_blank"> 206597549</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IYA8" target="_blank"> Q8IYA8</a></td>
+   </tr>
+   <tr>
+      <td>CUL9</td>
+      <td>cullin-9</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/24307991" target="_blank"> 24307991</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IWT3" target="_blank">  Q8IWT3 </a></td>
+   </tr>
+   <tr>
+      <td>CCNB1IP1</td>
+      <td>cyclin B1 interacting protein 1, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/116812640" target="_blank"> 116812640</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NPC3" target="_blank">  Q9NPC3 </a></td>
+   </tr>
+   <tr>
+      <td>CYHR1</td>
+      <td>cysteine and histidine-rich protein 1 isoform 2 precursor</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/193788637" target="_blank"> 193788637</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZMK1" target="_blank">  Q6ZMK1</a></td>
+   </tr>
+   <tr>
+      <td>DZIP3</td>
+      <td>DAZ interacting zinc finger protein 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/7662244" target="_blank"> 7662244</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86Y13" target="_blank">  Q86Y13 </a></td>
+   </tr>
+   <tr>
+      <td>DCST1</td>
+      <td>DC-STAMP domain-containing protein 1 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/219521926" target="_blank"> 219521926</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5T197" target="_blank">  Q5T197 </a></td>
+   </tr>
+   <tr>
+      <td>DTX1</td>
+      <td>deltex 1, E3 ubiquitin ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/41352718" target="_blank"> 41352718</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86Y01" target="_blank">  Q86Y01 </a></td>
+   </tr>
+   <tr>
+      <td>DTX2</td>
+      <td>deltex 2, E3 ubiquitin ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/156564386" target="_blank"> 156564386</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86UW9" target="_blank">  Q86UW9 </a></td>
+   </tr>
+   <tr>
+      <td>DTX3L</td>
+      <td>deltex 3 like, E3 ubiquitin ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/19923717" target="_blank"> 19923717</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8TDB6" target="_blank">  Q8TDB6 </a></td>
+   </tr>
+   <tr>
+      <td>DTX3</td>
+      <td>deltex 3, E3 ubiquitin ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/555943736" target="_blank"> 555943736</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N9I9" target="_blank">  Q8N9I9 </a></td>
+   </tr>
+   <tr>
+      <td>DTX4</td>
+      <td>deltex 4, E3 ubiquitin ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/663071089" target="_blank"> 663071089</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y2E6" target="_blank">  Q9Y2E6 </a></td>
+   </tr>
+   <tr>
+      <td>TMEM129</td>
+      <td>E3 ubiquitin-protein ligase TM129 isoform a</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/187936961" target="_blank"> 187936961</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A0AVI4" target="_blank">  A0AVI4 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM4</td>
+      <td>E3 ubiquitin-protein ligase TRIM4 isoform alpha</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/301601615" target="_blank"> 301601615</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9C037" target="_blank">  Q9C037 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM58</td>
+      <td>E3 ubiquitin-protein ligase TRIM58</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/112421127" target="_blank"> 112421127</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NG06" target="_blank">  Q8NG06 </a></td>
+   </tr>
+   <tr>
+      <td>E4F1</td>
+      <td>E4F transcription factor 1</td>
+      <td>zf-C2H2</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/571026678" target="_blank"> 571026678</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q66K89" target="_blank">  Q66K89 </a></td>
+   </tr>
+   <tr>
+      <td>FANCL</td>
+      <td>Fanconi anemia, complementation group L</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/167860138" target="_blank"> 167860138</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NW38" target="_blank">  Q9NW38 </a></td>
+   </tr>
+   <tr>
+      <td>G2E3</td>
+      <td>G2/M-phase specific E3 ubiquitin protein ligase</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/809279653" target="_blank"> 809279653</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7L622" target="_blank">  Q7L622 </a></td>
+   </tr>
+   <tr>
+      <td>HERC2*</td>
+      <td>HECT and RLD domain containing E3 ubiquitin protein ligase 2</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/126032348" target="_blank"> 126032348</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O95714" target="_blank">  O95714 </a></td>
+   </tr>
+   <tr>
+      <td>HERC3</td>
+      <td>HECT and RLD domain containing E3 ubiquitin protein ligase 3</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/972781601" target="_blank"> 972781601</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q15034" target="_blank">  Q15034 </a></td>
+   </tr>
+   <tr>
+      <td>HERC4</td>
+      <td>HECT and RLD domain containing E3 ubiquitin protein ligase 4</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/499137513" target="_blank"> 499137513</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5GLZ8" target="_blank">  Q5GLZ8 </a></td>
+   </tr>
+   <tr>
+      <td>HERC5</td>
+      <td>HECT and RLD domain containing E3 ubiquitin protein ligase 5</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/110825982" target="_blank"> 110825982</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UII4" target="_blank">  Q9UII4 </a></td>
+   </tr>
+   <tr>
+      <td>HERC1</td>
+      <td>HECT and RLD domain containing E3 ubiquitin protein ligase family member 1</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/126131099" target="_blank"> 126131099</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q15751" target="_blank">  Q15751 </a></td>
+   </tr>
+   <tr>
+      <td>HERC6</td>
+      <td>HECT and RLD domain containing E3 ubiquitin protein ligase family member 6</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/259089405" target="_blank"> 259089405</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IVU3" target="_blank">  Q8IVU3 </a></td>
+   </tr>
+   <tr>
+      <td>HACE1</td>
+      <td>HECT domain and ankyrin repeat containing E3 ubiquitin protein ligase 1</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/1007360504" target="_blank">1007360504</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IYU2" target="_blank">  Q8IYU2 </a></td>
+   </tr>
+   <tr>
+      <td>HECTD1</td>
+      <td>HECT domain containing E3 ubiquitin protein ligase 1</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/612339310" target="_blank"> 612339310</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9ULT8" target="_blank">  Q9ULT8 </a></td>
+   </tr>
+   <tr>
+      <td>HECTD2</td>
+      <td>HECT domain containing E3 ubiquitin protein ligase 2</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/546231434" target="_blank"> 546231434</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5U5R9" target="_blank">  Q5U5R9 </a></td>
+   </tr>
+   <tr>
+      <td>HECTD3</td>
+      <td>HECT domain containing E3 ubiquitin protein ligase 3</td>
+      <td>HECT</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/157738609" target="_blank"> 157738609</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5T447" target="_blank">  Q5T447 </a></td>
+   </tr>
+   <tr>
+      <td>HECTD4</td>
+      <td>HECT domain containing E3 ubiquitin protein ligase 4</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/359718912" target="_blank"> 359718912</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y4D8" target="_blank">  Q9Y4D8 </a></td>
+   </tr>
+   <tr>
+      <td>HECW1</td>
+      <td>HECT, C2 and WW domain containing E3 ubiquitin protein ligase 1</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/559098413" target="_blank"> 559098413</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q76N89" target="_blank">  Q76N89 </a></td>
+   </tr>
+   <tr>
+      <td>HECW2</td>
+      <td>HECT, C2 and WW domain containing E3 ubiquitin protein ligase 2</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/756140743" target="_blank"> 756140743</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9P2P5" target="_blank">  Q9P2P5 </a></td>
+   </tr>
+   <tr>
+      <td>HUWE1</td>
+      <td>HECT, UBA and WWE domain containing 1, E3 ubiquitin protein ligase</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/61676188" target="_blank"> 61676188</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7Z6Z7" target="_blank">  Q7Z6Z7 </a></td>
+   </tr>
+   <tr>
+      <td>HLTF</td>
+      <td>helicase-like transcription factor</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/21071054" target="_blank"> 21071054</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q14527" target="_blank">  Q14527 </a></td>
+   </tr>
+   <tr>
+      <td>KMT2C</td>
+      <td>histone-lysine N-methyltransferase 2C</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/91718902" target="_blank"> 91718902</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NEZ4" target="_blank">  Q8NEZ4 </a></td>
+   </tr>
+   <tr>
+      <td>KMT2D</td>
+      <td>histone-lysine N-methyltransferase 2D</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/148762969" target="_blank"> 148762969</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O14686" target="_blank">  O14686 </a></td>
+   </tr>
+   <tr>
+      <td>IRF2BP1</td>
+      <td>interferon regulatory factor 2 binding protein 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/24308115" target="_blank"> 24308115</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IU81" target="_blank">  Q8IU81 </a></td>
+   </tr>
+   <tr>
+      <td>IRF2BP2</td>
+      <td>interferon regulatory factor 2-binding protein 2 isoform B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/116734706" target="_blank"> 116734706</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7Z5L9" target="_blank">  Q7Z5L9 </a></td>
+   </tr>
+   <tr>
+      <td>IRF2BPL</td>
+      <td>interferon regulatory factor 2-binding protein-like</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/33457336" target="_blank"> 33457336</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H1B7" target="_blank">  Q9H1B7 </a></td>
+   </tr>
+   <tr>
+      <td>Itch</td>
+      <td>itchy E3 ubiquitin protein ligase</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/380420338" target="_blank"> 380420338</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96J02" target="_blank">  Q96J02 </a></td>
+   </tr>
+   <tr>
+      <td>LRSAM1</td>
+      <td>leucine rich repeat and sterile alpha motif containing 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/299758423" target="_blank"> 299758423</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6UWE0" target="_blank">  Q6UWE0 </a></td>
+   </tr>
+   <tr>
+      <td>LNX1</td>
+      <td>ligand of numb-protein X 1, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/187607085" target="_blank"> 187607085</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8TBB1" target="_blank">  Q8TBB1 </a></td>
+   </tr>
+   <tr>
+      <td>LNX2</td>
+      <td>ligand of numb-protein X 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/24025688" target="_blank"> 24025688</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N448" target="_blank">  Q8N448 </a></td>
+   </tr>
+   <tr>
+      <td>LTN1</td>
+      <td>listerin E3 ubiquitin protein ligase 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/1003088782" target="_blank"> 1003088782</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O94822" target="_blank">  O94822 </a></td>
+   </tr>
+   <tr>
+      <td>LONRF1</td>
+      <td>LON peptidase N-terminal domain and RING finger protein 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/87080813" target="_blank"> 87080813</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q17RB8" target="_blank">  Q17RB8 </a></td>
+   </tr>
+   <tr>
+      <td>LONRF2</td>
+      <td>LON peptidase N-terminal domain and RING finger protein 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/148528975" target="_blank"> 148528975</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q1L5Z9" target="_blank">  Q1L5Z9 </a></td>
+   </tr>
+   <tr>
+      <td>LONRF3</td>
+      <td>LON peptidase N-terminal domain and RING finger protein 3 isoform 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/574280908" target="_blank"> 574280908</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q496Y0" target="_blank">  Q496Y0 </a></td>
+   </tr>
+   <tr>
+      <td>MAEA</td>
+      <td>macrophage erythroblast attacher isoform 4</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/661860329" target="_blank"> 661860329</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7L5Y9" target="_blank">  Q7L5Y9 </a></td>
+   </tr>
+   <tr>
+      <td>MGRN1</td>
+      <td>mahogunin ring finger 1, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/334883182" target="_blank"> 334883182</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O60291" target="_blank">  O60291 </a></td>
+   </tr>
+   <tr>
+      <td>MKRN1</td>
+      <td>makorin ring finger protein 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/619329024" target="_blank"> 619329024</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UHC7" target="_blank">  Q9UHC7 </a></td>
+   </tr>
+   <tr>
+      <td>MKRN2</td>
+      <td>makorin ring finger protein 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/411147393" target="_blank"> 411147393</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H000" target="_blank">  Q9H000 </a></td>
+   </tr>
+   <tr>
+      <td>MKRN3</td>
+      <td>makorin ring finger protein 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/5032243" target="_blank"> 5032243</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13064" target="_blank">  Q13064 </a></td>
+   </tr>
+   <tr>
+      <td>MSL2</td>
+      <td>male-specific lethal 2 homolog (Drosophila)</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/224028284" target="_blank"> 224028284</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9HC17" target="_blank">  Q9HC17 </a></td>
+   </tr>
+   <tr>
+      <td>Mdm2</td>
+      <td>MDM2 oncogene, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/510937018" target="_blank"> 510937018</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q00987" target="_blank">  Q00987 </a></td>
+   </tr>
+   <tr>
+      <td>MECOM</td>
+      <td>MDS1 and EVI1 complex locus protein EVI1 isoform b</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/327180722" target="_blank"> 327180722</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q03112" target="_blank"> Q03112</a></td>
+   </tr>
+   <tr>
+      <td>MARCH1</td>
+      <td>membrane-associated ring finger (C3HC4) 1, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/261823980" target="_blank"> 261823980</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8TCQ1" target="_blank">  Q8TCQ1 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH10</td>
+      <td>membrane-associated ring finger (C3HC4) 10, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/571026626" target="_blank"> 571026626</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NA82" target="_blank">  Q8NA82 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH11</td>
+      <td>membrane-associated ring finger (C3HC4) 11</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/156523244" target="_blank"> 156523244</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A6NNE9" target="_blank">  A6NNE9 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH2</td>
+      <td>membrane-associated ring finger (C3HC4) 2, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/53729334" target="_blank"> 53729334</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9P0N8" target="_blank">  Q9P0N8 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH3</td>
+      <td>membrane-associated ring finger (C3HC4) 3, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/30425370" target="_blank"> 30425370</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86UD3" target="_blank">  Q86UD3 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH4</td>
+      <td>membrane-associated ring finger (C3HC4) 4, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/57977325" target="_blank"> 57977325</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9P2E8" target="_blank">  Q9P2E8 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH5</td>
+      <td>membrane-associated ring finger (C3HC4) 5</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/8923415" target="_blank"> 8923415</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NX47" target="_blank">  Q9NX47 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH6</td>
+      <td>membrane-associated ring finger (C3HC4) 6, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/397787554" target="_blank"> 397787554</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O60337" target="_blank">  O60337 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH7</td>
+      <td>membrane-associated ring finger (C3HC4) 7, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/544346245" target="_blank"> 544346245</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H992" target="_blank">  Q9H992 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH8</td>
+      <td>membrane-associated ring finger (C3HC4) 8, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/544583444" target="_blank"> 544583444</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5T0T0" target="_blank">  Q5T0T0 </a></td>
+   </tr>
+   <tr>
+      <td>MARCH9</td>
+      <td>membrane-associated ring finger (C3HC4) 9</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/40255016" target="_blank"> 40255016</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86YJ5" target="_blank">  Q86YJ5 </a></td>
+   </tr>
+   <tr>
+      <td>MEX3C</td>
+      <td>mex-3 RNA binding family member C</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/148229134" target="_blank"> 148229134</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5U5Q3" target="_blank">  Q5U5Q3 </a></td>
+   </tr>
+   <tr>
+      <td>MID1</td>
+      <td>midline 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/300797215" target="_blank"> 300797215</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O15344" target="_blank">  O15344 </a></td>
+   </tr>
+   <tr>
+      <td>MID2</td>
+      <td>midline 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/223890259" target="_blank"> 223890259</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UJV3" target="_blank">  Q9UJV3 </a></td>
+   </tr>
+   <tr>
+      <td>MIB1</td>
+      <td>mindbomb E3 ubiquitin protein ligase 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/30348954" target="_blank"> 30348954</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86YT6" target="_blank">  Q86YT6 </a></td>
+   </tr>
+   <tr>
+      <td>MIB2</td>
+      <td>mindbomb E3 ubiquitin protein ligase 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/282394038" target="_blank"> 282394038</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96AX9" target="_blank">  Q96AX9 </a></td>
+   </tr>
+   <tr>
+      <td>MUL1*</td>
+      <td>mitochondrial E3 ubiquitin protein ligase 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/171542821" target="_blank"> 171542821</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q969V5" target="_blank">  Q969V5 </a></td>
+   </tr>
+   <tr>
+      <td>MAP3K1</td>
+      <td>mitogen-activated protein kinase kinase kinase 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/153945765" target="_blank"> 153945765</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13233" target="_blank">  Q13233 </a></td>
+   </tr>
+   <tr>
+      <td>MYCBP2</td>
+      <td>MYC binding protein 2, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/291190787" target="_blank"> 291190787</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O75592" target="_blank">  O75592 </a></td>
+   </tr>
+   <tr>
+      <td>MYLIP</td>
+      <td>myosin regulatory light chain interacting protein</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/38788243" target="_blank"> 38788243</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8WY64" target="_blank">  Q8WY64 </a></td>
+   </tr>
+   <tr>
+      <td>NEDD4</td>
+      <td>neural precursor cell expressed, developmentally down-regulated 4, E3 ubiquitin protein ligase</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/547235493" target="_blank"> 547235493</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P46934" target="_blank">  P46934 </a></td>
+   </tr>
+   <tr>
+      <td>NEDD4L</td>
+      <td>neural precursor cell expressed, developmentally down-regulated 4-like, E3 ubiquitin protein ligase</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/345478677" target="_blank"> 345478677</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96PU5" target="_blank">  Q96PU5 </a></td>
+   </tr>
+   <tr>
+      <td>NEURL1</td>
+      <td>neuralized E3 ubiquitin protein ligase 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/223278368" target="_blank"> 223278368</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O76050" target="_blank">  O76050 </a></td>
+   </tr>
+   <tr>
+      <td>NEURL1B</td>
+      <td>neuralized E3 ubiquitin protein ligase 1B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/815890887" target="_blank"> 815890887</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A8MQ27" target="_blank">  A8MQ27 </a></td>
+   </tr>
+   <tr>
+      <td>NEURL3</td>
+      <td>neuralized E3 ubiquitin protein ligase 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/550822415" target="_blank"> 550822415</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96EH8" target="_blank">  Q96EH8 </a></td>
+   </tr>
+   <tr>
+      <td>NFXL1</td>
+      <td>NF-X1-type zinc finger protein NFXL1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/520261838" target="_blank"> 520261838</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZNB6" target="_blank">  Q6ZNB6 </a></td>
+   </tr>
+   <tr>
+      <td>NHLRC1</td>
+      <td>NHL repeat containing E3 ubiquitin protein ligase 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/40255283" target="_blank"> 40255283</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6VVB1" target="_blank">  Q6VVB1 </a></td>
+   </tr>
+   <tr>
+      <td>NOSIP</td>
+      <td>nitric oxide synthase-interacting protein</td>
+      <td>UBOX</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/401709927" target="_blank"> 401709927</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y314" target="_blank">  Q9Y314 </a></td>
+   </tr>
+   <tr>
+      <td>NSMCE1*</td>
+      <td>non-SMC element 1 homolog (S. cerevisiae)</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/94721324" target="_blank"> 94721324</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8WV22" target="_blank">  Q8WV22 </a></td>
+   </tr>
+   <tr>
+      <td>PARK2</td>
+      <td>parkin RBR E3 ubiquitin protein ligase</td>
+      <td>IBR</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/169790973" target="_blank"> 169790973</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O60260" target="_blank">  O60260 </a></td>
+   </tr>
+   <tr>
+      <td>PDZRN3</td>
+      <td>PDZ domain containing ring finger 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/735367623" target="_blank"> 735367623</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UPQ7" target="_blank">  Q9UPQ7 </a></td>
+   </tr>
+   <tr>
+      <td>PDZRN4</td>
+      <td>PDZ domain containing ring finger 4</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/257196172" target="_blank"> 257196172</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZMN7" target="_blank">  Q6ZMN7 </a></td>
+   </tr>
+   <tr>
+      <td>PELI1</td>
+      <td>pellino E3 ubiquitin protein ligase 1</td>
+      <td>RING-like</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/11037063" target="_blank"> 11037063</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96FA3" target="_blank">  Q96FA3 </a></td>
+   </tr>
+   <tr>
+      <td>PELI2</td>
+      <td>pellino E3 ubiquitin protein ligase family member 2</td>
+      <td>RING-like</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/10864063" target="_blank"> 10864063</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9HAT8" target="_blank">  Q9HAT8 </a></td>
+   </tr>
+   <tr>
+      <td>PELI3</td>
+      <td>pellino E3 ubiquitin protein ligase family member 3</td>
+      <td>RING-like</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/341823689" target="_blank"> 341823689</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N2H9" target="_blank">  Q8N2H9 </a></td>
+   </tr>
+   <tr>
+      <td>PPIL2</td>
+      <td>peptidylprolyl isomerase (cyclophilin)-like 2</td>
+      <td>UBOX</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/22547215" target="_blank"> 22547215</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13356" target="_blank">  Q13356 </a></td>
+   </tr>
+   <tr>
+      <td>PEX12</td>
+      <td>peroxisome assembly protein 12</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/4505721" target="_blank"> 4505721</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O00623" target="_blank">  O00623 </a></td>
+   </tr>
+   <tr>
+      <td>PEX10</td>
+      <td>peroxisome biogenesis factor 10 isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/24797089" target="_blank"> 24797089</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O60683" target="_blank">  O60683 </a></td>
+   </tr>
+   <tr>
+      <td>PEX2</td>
+      <td>peroxisome biogenesis factor 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/289063469" target="_blank"> 289063469</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P28328" target="_blank">  P28328 </a></td>
+   </tr>
+   <tr>
+      <td>PHRF1</td>
+      <td>PHD and RING finger domain-containing protein 1 isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/557440888" target="_blank"> 557440888</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9P1Y6" target="_blank">  Q9P1Y6 </a></td>
+   </tr>
+   <tr>
+      <td>PHF7</td>
+      <td>PHD finger protein 7 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/506325002" target="_blank"> 506325002</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BWX1" target="_blank">  Q9BWX1 </a></td>
+   </tr>
+   <tr>
+      <td>PCGF1</td>
+      <td>polycomb group ring finger 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/109240538" target="_blank"> 109240538</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BSM1" target="_blank">  Q9BSM1 </a></td>
+   </tr>
+   <tr>
+      <td>PCGF2*</td>
+      <td>polycomb group ring finger 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/6005964" target="_blank"> 6005964</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P35227" target="_blank">  P35227 </a></td>
+   </tr>
+   <tr>
+      <td>PCGF3</td>
+      <td>polycomb group RING finger protein 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/961441521" target="_blank"> 961441521</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q3KNV8" target="_blank">  Q3KNV8 </a></td>
+   </tr>
+   <tr>
+      <td>PCGF5</td>
+      <td>polycomb group RING finger protein 5</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/380036033" target="_blank"> 380036033</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86SE9" target="_blank">  Q86SE9 </a></td>
+   </tr>
+   <tr>
+      <td>PCGF6</td>
+      <td>polycomb group RING finger protein 6 isoform a</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/58761530" target="_blank"> 58761530</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BYE7" target="_blank">  Q9BYE7 </a></td>
+   </tr>
+   <tr>
+      <td>KCMF1</td>
+      <td>potassium channel modulatory factor 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/46852178" target="_blank"> 46852178</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9P0J7" target="_blank">  Q9P0J7 </a></td>
+   </tr>
+   <tr>
+      <td>PJA1</td>
+      <td>praja ring finger 1, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/530421802" target="_blank"> 530421802</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NG27" target="_blank">  Q8NG27 </a></td>
+   </tr>
+   <tr>
+      <td>PJA2</td>
+      <td>praja ring finger 2, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/157412255" target="_blank"> 157412255</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O43164" target="_blank">  O43164 </a></td>
+   </tr>
+   <tr>
+      <td>RNF222</td>
+      <td>PREDICTED: RING finger protein 222 isoform X1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/767992469" target="_blank"> 767992469</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A6NCQ9" target="_blank">  A6NCQ9 </a></td>
+   </tr>
+   <tr>
+      <td>RNF224</td>
+      <td>PREDICTED: RING finger protein 224 isoform X1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/767958041" target="_blank"> 767958041</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P0DH78" target="_blank">  P0DH78 </a></td>
+   </tr>
+   <tr>
+      <td>RNF225</td>
+      <td>PREDICTED: RING finger protein 225 isoform X1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/578834770" target="_blank"> 578834770</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/M0QZC1" target="_blank">  M0QZC1 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM49C</td>
+      <td>PREDICTED: tripartite motif-containing protein 49C isoform X1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/767970497" target="_blank"> 767970497</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P0CI26" target="_blank">  P0CI26 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM49D1</td>
+      <td>PREDICTED: tripartite motif-containing protein 49D1 isoform X1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/767970137" target="_blank"> 767970137</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/C9J1S8" target="_blank">  C9J1S8 </a></td>
+   </tr>
+   <tr>
+      <td>PRPF19</td>
+      <td>pre-mRNA processing factor 19</td>
+      <td>UBOX</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/7657381" target="_blank"> 7657381</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UMS4" target="_blank">  Q9UMS4 </a></td>
+   </tr>
+   <tr>
+      <td>RNF212*</td>
+      <td>probable E3 SUMO-protein ligase RNF212 isoform c</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/300863140" target="_blank"> 300863140</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q495C1" target="_blank">  Q495C1 </a></td>
+   </tr>
+   <tr>
+      <td>PML*</td>
+      <td>promyelocytic leukemia</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/109637788" target="_blank"> 109637788</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P29590" target="_blank">  P29590 </a></td>
+   </tr>
+   <tr>
+      <td>MDM4</td>
+      <td>protein Mdm4 isoform 7</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/512125239" target="_blank"> 512125239</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O15151" target="_blank">  O15151 </a></td>
+   </tr>
+   <tr>
+      <td>RMND5A</td>
+      <td>protein RMD5 homolog A</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/12232469" target="_blank"> 12232469</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H871" target="_blank">  Q9H871 </a></td>
+   </tr>
+   <tr>
+      <td>RMND5B</td>
+      <td>protein RMD5 homolog B isoform a</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/571031354" target="_blank"> 571031354</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96G75" target="_blank">  Q96G75 </a></td>
+   </tr>
+   <tr>
+      <td>SCAF11</td>
+      <td>protein SCAF11</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/117676384" target="_blank"> 117676384</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q99590" target="_blank">  Q99590 </a></td>
+   </tr>
+   <tr>
+      <td>MKRN4P</td>
+      <td>Putative E3 ubiquitin-protein ligase makorin-4</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/17368441" target="_blank"> 17368441</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13434" target="_blank">  Q13434 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM61</td>
+      <td>putative tripartite motif-containing protein 61</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/60099474" target="_blank"> 60099474</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5EBN2" target="_blank">  Q5EBN2 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM64B</td>
+      <td>putative tripartite motif-containing protein 64B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/256542275" target="_blank"> 256542275</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A6NI03" target="_blank">  A6NI03 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM64C</td>
+      <td>putative tripartite motif-containing protein 64C</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/331028829" target="_blank"> 331028829</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A6NLI5" target="_blank">  A6NLI5 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM75P</td>
+      <td>Putative tripartite motif-containing protein 75</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/187663991" target="_blank"> 187663991</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A6NK02" target="_blank">  A6NK02 </a></td>
+   </tr>
+   <tr>
+      <td>RAD18</td>
+      <td>RAD18 homolog (S. cerevisiae)</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/256818821" target="_blank"> 256818821</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NS91" target="_blank">  Q9NS91 </a></td>
+   </tr>
+   <tr>
+      <td>RBCK1</td>
+      <td>RanBP-type and C3HC4-type zinc finger containing 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/144953898" target="_blank"> 144953898</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BYM8" target="_blank">  Q9BYM8 </a></td>
+   </tr>
+   <tr>
+      <td>RAG1</td>
+      <td>recombination activating gene 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/4557841" target="_blank"> 4557841</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P15918" target="_blank">  P15918 </a></td>
+   </tr>
+   <tr>
+      <td>RFPL1</td>
+      <td>ret finger protein-like 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/149408130" target="_blank"> 149408130</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O75677" target="_blank">  O75677 </a></td>
+   </tr>
+   <tr>
+      <td>RFPL2</td>
+      <td>ret finger protein-like 2 isoform 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/227116308" target="_blank"> 227116308</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O75678" target="_blank">  O75678 </a></td>
+   </tr>
+   <tr>
+      <td>RFPL3</td>
+      <td>ret finger protein-like 3 isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/149408135" target="_blank"> 149408135</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O75679" target="_blank">  O75679 </a></td>
+   </tr>
+   <tr>
+      <td>RFPL4A</td>
+      <td>ret finger protein-like 4A</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/222446629" target="_blank"> 222446629</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A6NLU0" target="_blank">  A6NLU0 </a></td>
+   </tr>
+   <tr>
+      <td>RFPL4AL1</td>
+      <td>ret finger protein-like 4A-like protein 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/475807831" target="_blank"> 475807831</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/F8VTS6" target="_blank">  F8VTS6 </a></td>
+   </tr>
+   <tr>
+      <td>RFPL4B</td>
+      <td>ret finger protein-like 4B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/153791360" target="_blank"> 153791360</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZWI9" target="_blank">  Q6ZWI9 </a></td>
+   </tr>
+   <tr>
+      <td>RBBP6</td>
+      <td>retinoblastoma binding protein 6</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/33620769" target="_blank"> 33620769</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7Z6E9" target="_blank">  Q7Z6E9 </a></td>
+   </tr>
+   <tr>
+      <td>RC3H1</td>
+      <td>ring finger and CCCH-type domains 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/664806085" target="_blank"> 664806085</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5TC82" target="_blank">  Q5TC82 </a></td>
+   </tr>
+   <tr>
+      <td>RC3H2</td>
+      <td>ring finger and CCCH-type domains 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/156105699" target="_blank"> 156105699</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9HBD1" target="_blank">  Q9HBD1 </a></td>
+   </tr>
+   <tr>
+      <td>RCHY1</td>
+      <td>ring finger and CHY zinc finger domain containing 1, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/512749780" target="_blank"> 512749780</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96PM5" target="_blank">  Q96PM5 </a></td>
+   </tr>
+   <tr>
+      <td>RFFL</td>
+      <td>ring finger and FYVE-like domain containing E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/62865649" target="_blank"> 62865649</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8WZ73" target="_blank">  Q8WZ73 </a></td>
+   </tr>
+   <tr>
+      <td>RSPRY1</td>
+      <td>RING finger and SPRY domain-containing protein 1 isoform 1 precursor</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/762205506" target="_blank"> 762205506</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96DX4" target="_blank">  Q96DX4 </a></td>
+   </tr>
+   <tr>
+      <td>RNFT1</td>
+      <td>RING finger and transmembrane domain-containing protein 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/109134327" target="_blank"> 109134327</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5M7Z0" target="_blank">  Q5M7Z0 </a></td>
+   </tr>
+   <tr>
+      <td>RNFT2</td>
+      <td>RING finger and transmembrane domain-containing protein 2 isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/158186614" target="_blank"> 158186614</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96EX2" target="_blank">  Q96EX2 </a></td>
+   </tr>
+   <tr>
+      <td>RFWD2</td>
+      <td>ring finger and WD repeat domain 2, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/557786192" target="_blank"> 557786192</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NHY2" target="_blank">  Q8NHY2 </a></td>
+   </tr>
+   <tr>
+      <td>RFWD3</td>
+      <td>ring finger and WD repeat domain 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/71143112" target="_blank"> 71143112</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6PCD5" target="_blank">  Q6PCD5 </a></td>
+   </tr>
+   <tr>
+      <td>RNF6</td>
+      <td>ring finger protein (C3H2C3 type) 6</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/34305295" target="_blank"> 34305295</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y252" target="_blank">  Q9Y252 </a></td>
+   </tr>
+   <tr>
+      <td>RING1*</td>
+      <td>ring finger protein 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/51479192" target="_blank"> 51479192</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q06587" target="_blank">  Q06587 </a></td>
+   </tr>
+   <tr>
+      <td>RNF10</td>
+      <td>ring finger protein 10</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/34452681" target="_blank"> 34452681</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N5U6" target="_blank">  Q8N5U6 </a></td>
+   </tr>
+   <tr>
+      <td>RNF103</td>
+      <td>ring finger protein 103</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/312147329" target="_blank"> 312147329</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O00237" target="_blank">  O00237 </a></td>
+   </tr>
+   <tr>
+      <td>RNF11</td>
+      <td>ring finger protein 11</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/7657520" target="_blank"> 7657520</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y3C5" target="_blank">  Q9Y3C5 </a></td>
+   </tr>
+   <tr>
+      <td>RNF111*</td>
+      <td>ring finger protein 111</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/395455085" target="_blank"> 395455085</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZNA4" target="_blank">  Q6ZNA4 </a></td>
+   </tr>
+   <tr>
+      <td>RNF112</td>
+      <td>RING finger protein 112</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/264681488" target="_blank"> 264681488</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9ULX5" target="_blank">  Q9ULX5 </a></td>
+   </tr>
+   <tr>
+      <td>RNF113A</td>
+      <td>RING finger protein 113A</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/5902158" target="_blank"> 5902158</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O15541" target="_blank">  O15541 </a></td>
+   </tr>
+   <tr>
+      <td>RNF113B</td>
+      <td>RING finger protein 113B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/30578416" target="_blank"> 30578416</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IZP6" target="_blank">  Q8IZP6 </a></td>
+   </tr>
+   <tr>
+      <td>RNF114</td>
+      <td>ring finger protein 114</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/8923898" target="_blank"> 8923898</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y508" target="_blank">  Q9Y508 </a></td>
+   </tr>
+   <tr>
+      <td>RNF115</td>
+      <td>ring finger protein 115</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/530363886" target="_blank"> 530363886</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y4L5" target="_blank">  Q9Y4L5 </a></td>
+   </tr>
+   <tr>
+      <td>RNF121</td>
+      <td>RING finger protein 121 isoform b</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/665506028" target="_blank"> 665506028</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H920" target="_blank">  Q9H920 </a></td>
+   </tr>
+   <tr>
+      <td>RNF122</td>
+      <td>RING finger protein 122</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/38045931" target="_blank"> 38045931</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H9V4" target="_blank">  Q9H9V4 </a></td>
+   </tr>
+   <tr>
+      <td>RNF123</td>
+      <td>ring finger protein 123</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/37588869" target="_blank"> 37588869</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5XPI4" target="_blank">  Q5XPI4 </a></td>
+   </tr>
+   <tr>
+      <td>RNF125</td>
+      <td>ring finger protein 125, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/37595555" target="_blank"> 37595555</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96EQ8" target="_blank">  Q96EQ8 </a></td>
+   </tr>
+   <tr>
+      <td>RNF126</td>
+      <td>ring finger protein 126</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/37622894" target="_blank"> 37622894</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BV68" target="_blank">  Q9BV68 </a></td>
+   </tr>
+   <tr>
+      <td>RNF128</td>
+      <td>ring finger protein 128, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/37588873" target="_blank"> 37588873</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8TEB7" target="_blank">  Q8TEB7 </a></td>
+   </tr>
+   <tr>
+      <td>RNF13</td>
+      <td>ring finger protein 13</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/34577087" target="_blank"> 34577087</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O34567" target="_blank">  O34567 </a></td>
+   </tr>
+   <tr>
+      <td>RNF130</td>
+      <td>ring finger protein 130</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/526253083" target="_blank"> 526253083</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86XS8" target="_blank">  Q86XS8 </a></td>
+   </tr>
+   <tr>
+      <td>RNF133</td>
+      <td>ring finger protein 133</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/21040269" target="_blank"> 21040269</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8WVZ7" target="_blank">  Q8WVZ7 </a></td>
+   </tr>
+   <tr>
+      <td>RNF135</td>
+      <td>ring finger protein 135</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/297139721" target="_blank"> 297139721</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IUD6" target="_blank">  Q8IUD6 </a></td>
+   </tr>
+   <tr>
+      <td>RNF138</td>
+      <td>ring finger protein 138, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/395455059" target="_blank"> 395455059</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8WVD3" target="_blank">  Q8WVD3 </a></td>
+   </tr>
+   <tr>
+      <td>RNF139</td>
+      <td>ring finger protein 139</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/21314654" target="_blank"> 21314654</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8WU17" target="_blank">  Q8WU17 </a></td>
+   </tr>
+   <tr>
+      <td>RNF14</td>
+      <td>ring finger protein 14</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/318067966" target="_blank"> 318067966</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UBS8" target="_blank">  Q9UBS8 </a></td>
+   </tr>
+   <tr>
+      <td>RNF141</td>
+      <td>ring finger protein 141</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/21361493" target="_blank"> 21361493</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8WVD5" target="_blank">  Q8WVD5 </a></td>
+   </tr>
+   <tr>
+      <td>RNF144A</td>
+      <td>ring finger protein 144A</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/38045938" target="_blank"> 38045938</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P50876" target="_blank">  P50876 </a></td>
+   </tr>
+   <tr>
+      <td>RNF144B</td>
+      <td>ring finger protein 144B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/50284696" target="_blank"> 50284696</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7Z419" target="_blank">  Q7Z419 </a></td>
+   </tr>
+   <tr>
+      <td>RNF145</td>
+      <td>RING finger protein 145 isoform 5</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/313661397" target="_blank"> 313661397</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96MT1" target="_blank">  Q96MT1 </a></td>
+   </tr>
+   <tr>
+      <td>RNF146</td>
+      <td>ring finger protein 146</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/338827727" target="_blank"> 338827727</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NTX7" target="_blank">  Q9NTX7 </a></td>
+   </tr>
+   <tr>
+      <td>RNF148</td>
+      <td>RING finger protein 148 precursor</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/37675277" target="_blank"> 37675277</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N7C7" target="_blank">  Q8N7C7 </a></td>
+   </tr>
+   <tr>
+      <td>RNF149</td>
+      <td>ring finger protein 149</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/284447287" target="_blank"> 284447287</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NC42" target="_blank">  Q8NC42 </a></td>
+   </tr>
+   <tr>
+      <td>RNF150</td>
+      <td>RING finger protein 150 precursor</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/58331204" target="_blank"> 58331204</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9ULK6" target="_blank">  Q9ULK6 </a></td>
+   </tr>
+   <tr>
+      <td>RNF151</td>
+      <td>ring finger protein 151</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/87241872" target="_blank"> 87241872</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q2KHN1" target="_blank">  Q2KHN1 </a></td>
+   </tr>
+   <tr>
+      <td>RNF152</td>
+      <td>ring finger protein 152</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/27734873" target="_blank"> 27734873</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N8N0" target="_blank">  Q8N8N0 </a></td>
+   </tr>
+   <tr>
+      <td>RNF157</td>
+      <td>RING finger protein 157</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/58743365" target="_blank"> 58743365</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96PX1" target="_blank">  Q96PX1 </a></td>
+   </tr>
+   <tr>
+      <td>RNF165</td>
+      <td>RING finger protein 165 isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/57165361" target="_blank"> 57165361</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZSG1" target="_blank">  Q6ZSG1 </a></td>
+   </tr>
+   <tr>
+      <td>RNF166</td>
+      <td>RING finger protein 166 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/284795357" target="_blank"> 284795357</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96A37" target="_blank">  Q96A37 </a></td>
+   </tr>
+   <tr>
+      <td>RNF167</td>
+      <td>ring finger protein 167</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/14149702" target="_blank"> 14149702</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H6Y7" target="_blank">  Q9H6Y7 </a></td>
+   </tr>
+   <tr>
+      <td>RNF168*</td>
+      <td>ring finger protein 168, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/31377566" target="_blank"> 31377566</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IYW5" target="_blank">  Q8IYW5 </a></td>
+   </tr>
+   <tr>
+      <td>RNF169</td>
+      <td>ring finger protein 169</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/148839382" target="_blank"> 148839382</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NCN4" target="_blank">  Q8NCN4 </a></td>
+   </tr>
+   <tr>
+      <td>RNF17</td>
+      <td>RING finger protein 17 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/297139728" target="_blank"> 297139728</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BXT8" target="_blank">  Q9BXT8 </a></td>
+   </tr>
+   <tr>
+      <td>RNF170</td>
+      <td>ring finger protein 170</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/237858658" target="_blank"> 237858658</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96K19" target="_blank">  Q96K19 </a></td>
+   </tr>
+   <tr>
+      <td>RNF175</td>
+      <td>RING finger protein 175</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/27734859" target="_blank"> 27734859</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N4F7" target="_blank">  Q8N4F7 </a></td>
+   </tr>
+   <tr>
+      <td>RNF180</td>
+      <td>ring finger protein 180</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/165932346" target="_blank"> 165932346</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86T96" target="_blank">  Q86T96 </a></td>
+   </tr>
+   <tr>
+      <td>RNF181</td>
+      <td>ring finger protein 181</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/7706039" target="_blank"> 7706039</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9P0P0" target="_blank">  Q9P0P0 </a></td>
+   </tr>
+   <tr>
+      <td>RNF182</td>
+      <td>ring finger protein 182</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/259013545" target="_blank"> 259013545</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N6D2" target="_blank">  Q8N6D2 </a></td>
+   </tr>
+   <tr>
+      <td>RNF183</td>
+      <td>RING finger protein 183</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/153252110" target="_blank"> 153252110</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96D59" target="_blank">  Q96D59 </a></td>
+   </tr>
+   <tr>
+      <td>RNF185</td>
+      <td>ring finger protein 185</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/209529683" target="_blank"> 209529683</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96GF1" target="_blank">  Q96GF1 </a></td>
+   </tr>
+   <tr>
+      <td>RNF186</td>
+      <td>RING finger protein 186</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/9506663" target="_blank"> 9506663</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NXI6" target="_blank">  Q9NXI6 </a></td>
+   </tr>
+   <tr>
+      <td>RNF187</td>
+      <td>ring finger protein 187</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/256225838" target="_blank"> 256225838</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5TA31" target="_blank">  Q5TA31 </a></td>
+   </tr>
+   <tr>
+      <td>RNF19A</td>
+      <td>ring finger protein 19A, RBR E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/525459427" target="_blank"> 525459427</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NV58" target="_blank">  Q9NV58 </a></td>
+   </tr>
+   <tr>
+      <td>RNF19B</td>
+      <td>ring finger protein 19B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/664806060" target="_blank"> 664806060</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZMZ0" target="_blank">  Q6ZMZ0 </a></td>
+   </tr>
+   <tr>
+      <td>RNF2*</td>
+      <td>ring finger protein 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/6005747" target="_blank"> 6005747</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q99496" target="_blank">  Q99496 </a></td>
+   </tr>
+   <tr>
+      <td>RNF20</td>
+      <td>ring finger protein 20, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/34878777" target="_blank"> 34878777</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5VTR2" target="_blank">  Q5VTR2 </a></td>
+   </tr>
+   <tr>
+      <td>RNF207</td>
+      <td>RING finger protein 207</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/124487387" target="_blank"> 124487387</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZRF8" target="_blank">  Q6ZRF8 </a></td>
+   </tr>
+   <tr>
+      <td>RNF208</td>
+      <td>ring finger protein 208</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/119220603" target="_blank"> 119220603</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H0X6" target="_blank">  Q9H0X6 </a></td>
+   </tr>
+   <tr>
+      <td>RNF212B</td>
+      <td>RING finger protein 212B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/536291168" target="_blank"> 536291168</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A8MTL3" target="_blank">  A8MTL3 </a></td>
+   </tr>
+   <tr>
+      <td>RNF213</td>
+      <td>ring finger protein 213</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/597709777" target="_blank"> 597709777</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q63HN8" target="_blank">  Q63HN8 </a></td>
+   </tr>
+   <tr>
+      <td>RNF214</td>
+      <td>RING finger protein 214 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/503775288" target="_blank"> 503775288</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8ND24" target="_blank">  Q8ND24 </a></td>
+   </tr>
+   <tr>
+      <td>RNF215</td>
+      <td>RING finger protein 215 precursor</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/63025220" target="_blank"> 63025220</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y6U7" target="_blank">  Q9Y6U7 </a></td>
+   </tr>
+   <tr>
+      <td>RNF216</td>
+      <td>ring finger protein 216</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/46370057" target="_blank"> 46370057</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NWF9" target="_blank">  Q9NWF9 </a></td>
+   </tr>
+   <tr>
+      <td>RNF217</td>
+      <td>ring finger protein 217</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/556562062" target="_blank"> 556562062</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8TC41" target="_blank">  Q8TC41 </a></td>
+   </tr>
+   <tr>
+      <td>RNF219</td>
+      <td>RING finger protein 219</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/88759348" target="_blank"> 88759348</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5W0B1" target="_blank">  Q5W0B1 </a></td>
+   </tr>
+   <tr>
+      <td>RNF220</td>
+      <td>ring finger protein 220</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/46397375" target="_blank"> 46397375</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5VTB9" target="_blank">  Q5VTB9 </a></td>
+   </tr>
+   <tr>
+      <td>RNF223</td>
+      <td>RING finger protein 223</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/327412333" target="_blank"> 327412333</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/E7ERA6" target="_blank">  E7ERA6 </a></td>
+   </tr>
+   <tr>
+      <td>RNF24</td>
+      <td>RING finger protein 24 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/197245452" target="_blank"> 197245452</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y225" target="_blank">  Q9Y225 </a></td>
+   </tr>
+   <tr>
+      <td>RNF25</td>
+      <td>ring finger protein 25</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/34878787" target="_blank"> 34878787</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96BH1" target="_blank">  Q96BH1 </a></td>
+   </tr>
+   <tr>
+      <td>RNF26</td>
+      <td>RING finger protein 26</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/14042925" target="_blank"> 14042925</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BY78" target="_blank">  Q9BY78 </a></td>
+   </tr>
+   <tr>
+      <td>RNF31</td>
+      <td>ring finger protein 31</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/109150431" target="_blank"> 109150431</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96EP0" target="_blank">  Q96EP0 </a></td>
+   </tr>
+   <tr>
+      <td>RNF32</td>
+      <td>RING finger protein 32 isoform c</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/815729259" target="_blank"> 815729259</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H0A6" target="_blank">  Q9H0A6 </a></td>
+   </tr>
+   <tr>
+      <td>RNF34</td>
+      <td>ring finger protein 34, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/378925642" target="_blank"> 378925642</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q969K3" target="_blank">  Q969K3 </a></td>
+   </tr>
+   <tr>
+      <td>RNF38</td>
+      <td>ring finger protein 38</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/37577185" target="_blank"> 37577185</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H0F5" target="_blank">  Q9H0F5 </a></td>
+   </tr>
+   <tr>
+      <td>RNF39</td>
+      <td>RING finger protein 39 isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/297206763" target="_blank"> 297206763</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H2S5" target="_blank">  Q9H2S5 </a></td>
+   </tr>
+   <tr>
+      <td>RNF4*</td>
+      <td>ring finger protein 4</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/297139779" target="_blank"> 297139779</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P78317" target="_blank">  P78317 </a></td>
+   </tr>
+   <tr>
+      <td>RNF40</td>
+      <td>ring finger protein 40, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/557440901" target="_blank"> 557440901</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O75150" target="_blank">  O75150 </a></td>
+   </tr>
+   <tr>
+      <td>RNF41</td>
+      <td>ring finger protein 41, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/338827618" target="_blank"> 338827618</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H4P4" target="_blank">  Q9H4P4 </a></td>
+   </tr>
+   <tr>
+      <td>RNF43</td>
+      <td>ring finger protein 43</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/770075668" target="_blank"> 770075668</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q68DV7" target="_blank">  Q68DV7 </a></td>
+   </tr>
+   <tr>
+      <td>RNF44</td>
+      <td>RING finger protein 44</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/7662486" target="_blank"> 7662486</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7L0R7" target="_blank">  Q7L0R7 </a></td>
+   </tr>
+   <tr>
+      <td>RNF5</td>
+      <td>ring finger protein 5, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/5902054" target="_blank"> 5902054</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q99942" target="_blank">  Q99942 </a></td>
+   </tr>
+   <tr>
+      <td>RNF7**</td>
+      <td>ring finger protein 7</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/319004144" target="_blank"> 319004144</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UBF6" target="_blank">  Q9UBF6 </a></td>
+   </tr>
+   <tr>
+      <td>RNF8</td>
+      <td>ring finger protein 8, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/34304336" target="_blank"> 34304336</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O76064" target="_blank">  O76064 </a></td>
+   </tr>
+   <tr>
+      <td>UNK</td>
+      <td>RING finger protein unkempt homolog</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/331028525" target="_blank"> 331028525</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9C0B0" target="_blank">  Q9C0B0 </a></td>
+   </tr>
+   <tr>
+      <td>RLIM</td>
+      <td>ring finger protein, LIM domain interacting</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/34452686" target="_blank"> 34452686</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NVW2" target="_blank">  Q9NVW2 </a></td>
+   </tr>
+   <tr>
+      <td>RBX1**</td>
+      <td>ring-box 1, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/7657508" target="_blank"> 7657508</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P62877" target="_blank">  P62877 </a></td>
+   </tr>
+   <tr>
+      <td>MEX3A</td>
+      <td>RNA-binding protein MEX3A</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/147902746" target="_blank"> 147902746</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A1L020" target="_blank">  A1L020 </a></td>
+   </tr>
+   <tr>
+      <td>MEX3B</td>
+      <td>RNA-binding protein MEX3B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/47716512" target="_blank"> 47716512</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZN04" target="_blank">  Q6ZN04 </a></td>
+   </tr>
+   <tr>
+      <td>MEX3D</td>
+      <td>RNA-binding protein MEX3D isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/291621664" target="_blank"> 291621664</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86XN8" target="_blank">  Q86XN8 </a></td>
+   </tr>
+   <tr>
+      <td>SH3RF1</td>
+      <td>SH3 domain containing ring finger 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/51988887" target="_blank"> 51988887</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7Z6J0" target="_blank">  Q7Z6J0 </a></td>
+   </tr>
+   <tr>
+      <td>SH3RF2</td>
+      <td>SH3 domain containing ring finger 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/222446607" target="_blank"> 222446607</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8TEC5" target="_blank">  Q8TEC5 </a></td>
+   </tr>
+   <tr>
+      <td>SH3RF3</td>
+      <td>SH3 domain-containing RING finger protein 3 precursor</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/150010572" target="_blank"> 150010572</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8TEJ3" target="_blank">  Q8TEJ3 </a></td>
+   </tr>
+   <tr>
+      <td>SIAH1</td>
+      <td>siah E3 ubiquitin protein ligase 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/63148618" target="_blank"> 63148618</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IUQ4" target="_blank">  Q8IUQ4 </a></td>
+   </tr>
+   <tr>
+      <td>SIAH2</td>
+      <td>siah E3 ubiquitin protein ligase 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/31982899" target="_blank"> 31982899</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O43255" target="_blank">  O43255 </a></td>
+   </tr>
+   <tr>
+      <td>SIAH3</td>
+      <td>siah E3 ubiquitin protein ligase family member 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/110578665" target="_blank"> 110578665</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IW03" target="_blank">  Q8IW03 </a></td>
+   </tr>
+   <tr>
+      <td>SMURF1</td>
+      <td>SMAD specific E3 ubiquitin protein ligase 1</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/63148618" target="_blank"> 63148618</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9HCE7" target="_blank">  Q9HCE7 </a></td>
+   </tr>
+   <tr>
+      <td>SMURF2</td>
+      <td>SMAD specific E3 ubiquitin protein ligase 2</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/12232397" target="_blank"> 12232397</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9HAU4" target="_blank">  Q9HAU4 </a></td>
+   </tr>
+   <tr>
+      <td>SHPRH</td>
+      <td>SNF2 histone linker PHD RING helicase, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/289547541" target="_blank"> 289547541</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q149N8" target="_blank">  Q149N8 </a></td>
+   </tr>
+   <tr>
+      <td>STUB1</td>
+      <td>STIP1 homology and U-box containing protein 1, E3 ubiquitin protein ligase</td>
+      <td>UBOX</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/645912990" target="_blank"> 645912990</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UNE7" target="_blank">  Q9UNE7 </a></td>
+   </tr>
+   <tr>
+      <td>SYVN1</td>
+      <td>synovial apoptosis inhibitor 1, synoviolin</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/27436927" target="_blank"> 27436927</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86TM6" target="_blank">  Q86TM6 </a></td>
+   </tr>
+   <tr>
+      <td>TTC3</td>
+      <td>tetratricopeptide repeat domain 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/49640011" target="_blank"> 49640011</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P53804" target="_blank">  P53804 </a></td>
+   </tr>
+   <tr>
+      <td>TRIP12</td>
+      <td>thyroid hormone receptor interactor 12</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/545746335" target="_blank"> 545746335</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q14669" target="_blank">  Q14669 </a></td>
+   </tr>
+   <tr>
+      <td>TRAF2</td>
+      <td>TNF receptor-associated factor 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/22027612" target="_blank"> 22027612</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q12933" target="_blank">  Q12933 </a></td>
+   </tr>
+   <tr>
+      <td>TRAF3</td>
+      <td>TNF receptor-associated factor 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/313661483" target="_blank"> 313661483</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13114" target="_blank">  Q13114 </a></td>
+   </tr>
+   <tr>
+      <td>TRAF4</td>
+      <td>TNF receptor-associated factor 4</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/22027622" target="_blank"> 22027622</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BUZ4" target="_blank">  Q9BUZ4 </a></td>
+   </tr>
+   <tr>
+      <td>TRAF5</td>
+      <td>TNF receptor-associated factor 5</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/77404348" target="_blank"> 77404348</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O00463" target="_blank">  O00463 </a></td>
+   </tr>
+   <tr>
+      <td>TRAF6</td>
+      <td>TNF receptor-associated factor 6, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/22027630" target="_blank"> 22027630</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y4K3" target="_blank">  Q9Y4K3 </a></td>
+   </tr>
+   <tr>
+      <td>TRAF7*</td>
+      <td>TNF receptor-associated factor 7, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/45594312" target="_blank"> 45594312</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6Q0C0" target="_blank">  Q6Q0C0 </a></td>
+   </tr>
+   <tr>
+      <td>Topors*</td>
+      <td>topoisomerase I binding, arginine/serine-rich, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/307344673" target="_blank"> 307344673</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NS56" target="_blank">  Q9NS56 </a></td>
+   </tr>
+   <tr>
+      <td>TRAIP</td>
+      <td>TRAF interacting protein</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/40807469" target="_blank"> 40807469</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BWF2" target="_blank">  Q9BWF2 </a></td>
+   </tr>
+   <tr>
+      <td>NFX1</td>
+      <td>transcriptional repressor NF-X1 isoform 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/22212927" target="_blank"> 22212927</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q12986" target="_blank">  Q12986 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM11</td>
+      <td>tripartite motif containing 11</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/21630277" target="_blank"> 21630277</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96F44" target="_blank">  Q96F44 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM13</td>
+      <td>tripartite motif containing 13</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/55953112" target="_blank"> 55953112</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O60858" target="_blank">  O60858 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM17</td>
+      <td>tripartite motif containing 17</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/198442878" target="_blank"> 198442878</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y577" target="_blank">  Q9Y577 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM2</td>
+      <td>tripartite motif containing 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/705044345" target="_blank"> 705044345</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9C040" target="_blank">  Q9C040 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM21</td>
+      <td>tripartite motif containing 21</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/15208660" target="_blank"> 15208660</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P19474" target="_blank">  P19474 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM22</td>
+      <td>tripartite motif containing 22</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/313760629" target="_blank"> 313760629</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IYM9" target="_blank">  Q8IYM9 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM23</td>
+      <td>tripartite motif containing 23</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/15208643" target="_blank"> 15208643</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P36406" target="_blank">  P36406 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM24</td>
+      <td>tripartite motif containing 24</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/47419911" target="_blank"> 47419911</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O15164" target="_blank">  O15164 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM25</td>
+      <td>tripartite motif containing 25</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/68160937" target="_blank"> 68160937</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q14258" target="_blank">  Q14258 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM27</td>
+      <td>tripartite motif containing 27</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/5730009" target="_blank"> 5730009</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P14373" target="_blank">  P14373 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM28*</td>
+      <td>tripartite motif containing 28</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/5032179" target="_blank"> 5032179</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q123263" target="_blank">  Q123263 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM31</td>
+      <td>tripartite motif containing 31</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/62865604" target="_blank"> 62865604</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BZY9" target="_blank">  Q9BZY9 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM32</td>
+      <td>tripartite motif containing 32</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/153792582" target="_blank"> 153792582</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13049" target="_blank">  Q13049 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM33</td>
+      <td>tripartite motif containing 33</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/74027251" target="_blank"> 74027251</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UPN9" target="_blank">  Q9UPN9 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM36</td>
+      <td>tripartite motif containing 36</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/663429604" target="_blank"> 663429604</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9NQ86" target="_blank">  Q9NQ86 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM37</td>
+      <td>tripartite motif containing 37</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/52487176" target="_blank"> 52487176</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O94972" target="_blank">  O94972 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM38</td>
+      <td>tripartite motif containing 38</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/5454014" target="_blank"> 5454014</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O00635" target="_blank">  O00635 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM39</td>
+      <td>tripartite motif containing 39</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/25777698" target="_blank"> 25777698</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9HCM9" target="_blank">  Q9HCM9 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM41</td>
+      <td>tripartite motif containing 41</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/42516574" target="_blank"> 42516574</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8WV44" target="_blank">  Q8WV44 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM5</td>
+      <td>tripartite motif containing 5</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/283046698" target="_blank"> 283046698</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9C035" target="_blank">  Q9C035 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM50</td>
+      <td>tripartite motif containing 50</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/527122124" target="_blank"> 527122124</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86XT4" target="_blank">  Q86XT4 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM56</td>
+      <td>tripartite motif containing 56</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/30794216" target="_blank"> 30794216</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BRZ2" target="_blank">  Q9BRZ2 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM59</td>
+      <td>tripartite motif containing 59</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/27436877" target="_blank"> 27436877</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IWR1" target="_blank">  Q8IWR1 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM62</td>
+      <td>tripartite motif containing 62</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/217035095" target="_blank"> 217035095</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BVG3" target="_blank">  Q9BVG3 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM63</td>
+      <td>tripartite motif containing 63, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/19924163" target="_blank"> 19924163</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q969Q1" target="_blank">  Q969Q1 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM67</td>
+      <td>tripartite motif containing 67</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/134288906" target="_blank"> 134288906</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZTA4" target="_blank">  Q6ZTA4 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM68</td>
+      <td>tripartite motif containing 68</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/751557653" target="_blank"> 751557653</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6AZZ1" target="_blank">  Q6AZZ1 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM69</td>
+      <td>tripartite motif containing 69</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/667478204" target="_blank"> 667478204</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86WT6" target="_blank">  Q86WT6 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM71</td>
+      <td>tripartite motif containing 71, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/84993742" target="_blank"> 84993742</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q2Q1W2" target="_blank">  Q2Q1W2 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM8</td>
+      <td>tripartite motif containing 8</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/148596968" target="_blank"> 148596968</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BZR9" target="_blank">  Q9BZR9 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM9</td>
+      <td>tripartite motif containing 9</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/190341104" target="_blank"> 190341104</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9C026" target="_blank">  Q9C026 </a></td>
+   </tr>
+   <tr>
+      <td>TRIML1</td>
+      <td>tripartite motif family-like 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/31542779" target="_blank"> 31542779</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N9V2" target="_blank">  Q8N9V2 </a></td>
+   </tr>
+   <tr>
+      <td>TRIML2</td>
+      <td>tripartite motif family-like 2</td>
+      <td>SPRY</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/742068547" target="_blank"> 742068547</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N7C3" target="_blank">  Q8N7C3 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM49B</td>
+      <td>tripartite motif-containing protein</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/331028811" target="_blank"> 331028811</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A6NDI0" target="_blank">  A6NDI0 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM10</td>
+      <td>tripartite motif-containing protein 10 isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/157426898" target="_blank"> 157426898</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UDY6" target="_blank">  Q9UDY6 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM15</td>
+      <td>tripartite motif-containing protein 15</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/149193331" target="_blank"> 149193331</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9C019" target="_blank">  Q9C019 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM26</td>
+      <td>tripartite motif-containing protein 26</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/338753391" target="_blank"> 338753391</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q12899" target="_blank">  Q12899 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM3</td>
+      <td>tripartite motif-containing protein 3 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/351721595" target="_blank"> 351721595</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O75382" target="_blank">  O75382 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM34</td>
+      <td>tripartite motif-containing protein 34 isoform 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/145275183" target="_blank"> 145275183</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BYJ4" target="_blank">  Q9BYJ4 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM35</td>
+      <td>tripartite motif-containing protein 35 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/751368110" target="_blank"> 751368110</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UPQ4" target="_blank">  Q9UPQ4 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM40**</td>
+      <td>tripartite motif-containing protein 40 isoform a</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/557636691" target="_blank"> 557636691</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6P9F5" target="_blank">  Q6P9F5 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM42</td>
+      <td>tripartite motif-containing protein 42</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/301500637" target="_blank"> 301500637</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IWZ5" target="_blank">  Q8IWZ5 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM43</td>
+      <td>tripartite motif-containing protein 43</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/20270353" target="_blank"> 20270353</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96BQ3" target="_blank">  Q96BQ3 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM43B</td>
+      <td>tripartite motif-containing protein 43B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/256600212" target="_blank"> 256600212</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A6NCK2" target="_blank">  A6NCK2 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM45</td>
+      <td>tripartite motif-containing protein 45 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/224548923" target="_blank"> 224548923</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H8W5" target="_blank">  Q9H8W5 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM46</td>
+      <td>tripartite motif-containing protein 46 isoform 6</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/538260579" target="_blank"> 538260579</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7Z4K8" target="_blank">  Q7Z4K8 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM47</td>
+      <td>tripartite motif-containing protein 47</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/54792146" target="_blank"> 54792146</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96LD4" target="_blank">  Q96LD4 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM48</td>
+      <td>tripartite motif-containing protein 48</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/201862060" target="_blank"> 201862060</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IWZ4" target="_blank">  Q8IWZ4 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM49</td>
+      <td>tripartite motif-containing protein 49</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/9966829" target="_blank"> 9966829</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P0CI25" target="_blank">  P0CI25 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM51</td>
+      <td>tripartite motif-containing protein 51</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/209862805" target="_blank"> 209862805</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BSJ1" target="_blank">  Q9BSJ1 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM52</td>
+      <td>tripartite motif-containing protein 52</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/14249412" target="_blank"> 14249412</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96A61" target="_blank">  Q96A61 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM54</td>
+      <td>tripartite motif-containing protein 54 isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/78482627" target="_blank"> 78482627</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BYV2" target="_blank">  Q9BYV2 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM55</td>
+      <td>tripartite motif-containing protein 55 isoform 4</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/34878852" target="_blank"> 34878852</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BYV6" target="_blank">  Q9BYV6 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM6</td>
+      <td>tripartite motif-containing protein 6 isoform 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/310772223" target="_blank"> 310772223</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9C030" target="_blank">  Q9C030 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM60</td>
+      <td>tripartite motif-containing protein 60</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/384475510" target="_blank"> 384475510</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q495X7" target="_blank">  Q495X7 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM64</td>
+      <td>tripartite motif-containing protein 64</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/210147600" target="_blank"> 210147600</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/A6NGJ6" target="_blank">  A6NGJ6 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM65</td>
+      <td>tripartite motif-containing protein 65 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/371122551" target="_blank"> 371122551</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6PJ69" target="_blank">  Q6PJ69 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM7</td>
+      <td>tripartite motif-containing protein 7 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/44680130" target="_blank"> 44680130</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9C029" target="_blank">  Q9C029 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM72</td>
+      <td>tripartite motif-containing protein 72</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/270265876" target="_blank"> 270265876</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZMU5" target="_blank">  Q6ZMU5 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM73</td>
+      <td>tripartite motif-containing protein 73</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/65285121" target="_blank"> 65285121</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86UV7" target="_blank">  Q86UV7 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM74</td>
+      <td>tripartite motif-containing protein 74</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/38524612" target="_blank"> 38524612</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86UV6" target="_blank">  Q86UV6 </a></td>
+   </tr>
+   <tr>
+      <td>TRIM77</td>
+      <td>tripartite motif-containing protein 77 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/429836863" target="_blank"> 429836863</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/I1YAP6" target="_blank">  I1YAP6 </a></td>
+   </tr>
+   <tr>
+      <td>UBR1</td>
+      <td>ubiquitin protein ligase E3 component n-recognin 1</td>
+      <td>UBR</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/28372497" target="_blank"> 28372497</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IWV7" target="_blank">  Q8IWV7 </a></td>
+   </tr>
+   <tr>
+      <td>UBR2</td>
+      <td>ubiquitin protein ligase E3 component n-recognin 2</td>
+      <td>UBR</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/296317280" target="_blank"> 296317280</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8IWV8" target="_blank">  Q8IWV8 </a></td>
+   </tr>
+   <tr>
+      <td>UBR3</td>
+      <td>ubiquitin protein ligase E3 component n-recognin 3 (putative)</td>
+      <td>UBR</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/160948610" target="_blank"> 160948610</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6ZT12" target="_blank">  Q6ZT12 </a></td>
+   </tr>
+   <tr>
+      <td>UBR4</td>
+      <td>ubiquitin protein ligase E3 component n-recognin 4</td>
+      <td>UBR</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/82659109" target="_blank"> 82659109</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q5T4S7" target="_blank">  Q5T4S7 </a></td>
+   </tr>
+   <tr>
+      <td>UBR5</td>
+      <td>ubiquitin protein ligase E3 component n-recognin 5</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/544583486" target="_blank"> 544583486</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O95071" target="_blank">  O95071 </a></td>
+   </tr>
+   <tr>
+      <td>UBR7</td>
+      <td>ubiquitin protein ligase E3 component n-recognin 7 (putative)</td>
+      <td>UBR</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/154426322" target="_blank"> 154426322</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N806" target="_blank">  Q8N806 </a></td>
+   </tr>
+   <tr>
+      <td>UBE3A</td>
+      <td>ubiquitin protein ligase E3A</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/19718766" target="_blank"> 19718766</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q05086" target="_blank">  Q05086 </a></td>
+   </tr>
+   <tr>
+      <td>UBE3B</td>
+      <td>ubiquitin protein ligase E3B</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/394025737" target="_blank"> 394025737</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7Z3V4" target="_blank">  Q7Z3V4 </a></td>
+   </tr>
+   <tr>
+      <td>UBE3C</td>
+      <td>ubiquitin protein ligase E3C</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/187960100" target="_blank"> 187960100</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q15386" target="_blank">  Q15386 </a></td>
+   </tr>
+   <tr>
+      <td>UBE3D</td>
+      <td>ubiquitin protein ligase E3D</td>
+      <td>HECT_2</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/750321479" target="_blank"> 750321479</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q7Z6J8" target="_blank">  Q7Z6J8 </a></td>
+   </tr>
+   <tr>
+      <td>UBE4A</td>
+      <td>ubiquitination factor E4A</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/323362983" target="_blank"> 323362983</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q14139" target="_blank">  Q14139 </a></td>
+   </tr>
+   <tr>
+      <td>UBE4B</td>
+      <td>ubiquitination factor E4B</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/157739864" target="_blank"> 157739864</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O95155" target="_blank">  O95155 </a></td>
+   </tr>
+   <tr>
+      <td>UHRF1</td>
+      <td>ubiquitin-like with PHD and ring finger domains 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/586798166" target="_blank"> 586798166</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96T88" target="_blank">  Q96T88 </a></td>
+   </tr>
+   <tr>
+      <td>UHRF2</td>
+      <td>ubiquitin-like with PHD and ring finger domains 2, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/23312364" target="_blank"> 23312364</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96PU4" target="_blank">  Q96PU4 </a></td>
+   </tr>
+   <tr>
+      <td>UBOX5</td>
+      <td>U-box domain containing 5</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/389886556" target="_blank"> 389886556</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O94941" target="_blank">  O94941 </a></td>
+   </tr>
+   <tr>
+      <td>UNKL</td>
+      <td>unkempt family zinc finger-like</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/448824848" target="_blank"> 448824848</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H9P5" target="_blank">  Q9H9P5 </a></td>
+   </tr>
+   <tr>
+      <td>VPS11</td>
+      <td>vacuolar protein sorting-associated protein 11 homolog isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/589058161" target="_blank"> 589058161</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H270" target="_blank">  Q9H270 </a></td>
+   </tr>
+   <tr>
+      <td>VPS18</td>
+      <td>vacuolar protein sorting-associated protein 18 homolog</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/17978485" target="_blank"> 17978485</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9P253" target="_blank">  Q9P253 </a></td>
+   </tr>
+   <tr>
+      <td>VPS41</td>
+      <td>vacuolar protein sorting-associated protein 41 homolog isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/114199475" target="_blank"> 114199475</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P49754" target="_blank">  P49754 </a></td>
+   </tr>
+   <tr>
+      <td>VPS8</td>
+      <td>vacuolar protein sorting-associated protein 8 homolog isoform a</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/57863277" target="_blank"> 57863277</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N3P4" target="_blank">  Q8N3P4 </a></td>
+   </tr>
+   <tr>
+      <td>WDSUB1</td>
+      <td>WD repeat, sterile alpha motif and U-box domain containing 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/808175923" target="_blank"> 808175923</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N9V3" target="_blank">  Q8N9V3 </a></td>
+   </tr>
+   <tr>
+      <td>WDR59</td>
+      <td>WD repeat-containing protein 59</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/58331266" target="_blank"> 58331266</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6PJI9" target="_blank"> Q6PJI9</a></td>
+   </tr>
+   <tr>
+      <td>WWP1</td>
+      <td>WW domain containing E3 ubiquitin protein ligase 1</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/13654239" target="_blank"> 13654239</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9H0M0" target="_blank">  Q9H0M0 </a></td>
+   </tr>
+   <tr>
+      <td>WWP2</td>
+      <td>WW domain containing E3 ubiquitin protein ligase 2</td>
+      <td>HECTc</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/394581985" target="_blank"> 394581985</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O00308" target="_blank">  O00308 </a></td>
+   </tr>
+   <tr>
+      <td>XIAP</td>
+      <td>X-linked inhibitor of apoptosis</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/324711009" target="_blank"> 324711009</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P98170" target="_blank">  P98170 </a></td>
+   </tr>
+   <tr>
+      <td>ZFP91</td>
+      <td>ZFP91 zinc finger protein</td>
+      <td>zf-C2H2</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/308081964" target="_blank"> 308081964</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96JP5" target="_blank">  Q96JP5 </a></td>
+   </tr>
+   <tr>
+      <td>ZNRF1</td>
+      <td>zinc and ring finger 1, E3 ubiquitin protein ligase</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/14150005" target="_blank"> 14150005</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8ND25" target="_blank">  Q8ND25 </a></td>
+   </tr>
+   <tr>
+      <td>ZNRF2</td>
+      <td>zinc and ring finger 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/23821044" target="_blank"> 23821044</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NHG8" target="_blank">  Q8NHG8 </a></td>
+   </tr>
+   <tr>
+      <td>ZNRF3</td>
+      <td>zinc and ring finger 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/332801080" target="_blank"> 332801080</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9ULT6" target="_blank">  Q9ULT6 </a></td>
+   </tr>
+   <tr>
+      <td>ZNRF4</td>
+      <td>zinc and ring finger 4</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/150170725" target="_blank"> 150170725</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8WWF5" target="_blank"> Q8WWF5</a></td>
+   </tr>
+   <tr>
+      <td>ZBTB12</td>
+      <td>zinc finger and BTB domain-containing protein 12</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/32469509" target="_blank"> 32469509</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9Y330" target="_blank"> Q9Y330</a></td>
+   </tr>
+   <tr>
+      <td>ZNF280A</td>
+      <td>zinc finger protein 280A</td>
+      <td>HECT</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/618857456" target="_blank"> 618857456</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/P59817" target="_blank">  P59817 </a></td>
+   </tr>
+   <tr>
+      <td>ZNF341</td>
+      <td>zinc finger protein 341 isoform 3</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/544711270" target="_blank"> 544711270</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9BYN7" target="_blank"> Q9BYN7</a></td>
+   </tr>
+   <tr>
+      <td>ZNF511</td>
+      <td>zinc finger protein 511</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/28274701" target="_blank"> 28274701</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NB15" target="_blank"> Q8NB15</a></td>
+   </tr>
+   <tr>
+      <td>ZNF521</td>
+      <td>zinc finger protein 521 isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/815891044" target="_blank"> 815891044</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q96K83" target="_blank"> Q96K83</a></td>
+   </tr>
+   <tr>
+      <td>ZNF598</td>
+      <td>zinc finger protein 598</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/409264581" target="_blank"> 409264581</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q86UK7" target="_blank"> Q86UK7</a></td>
+   </tr>
+   <tr>
+      <td>ZNF645</td>
+      <td>zinc finger protein 645</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/22749189" target="_blank"> 22749189</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8N7E2" target="_blank">  Q8N7E2 </a></td>
+   </tr>
+   <tr>
+      <td>PLAG1</td>
+      <td>zinc finger protein PLAG1 isoform b</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/167857798" target="_blank"> 167857798</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q6DJT9" target="_blank"> Q6DJT9</a></td>
+   </tr>
+   <tr>
+      <td>PLAGL1</td>
+      <td>zinc finger protein PLAGL1 isoform 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/573459768" target="_blank"> 573459768</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q9UM63" target="_blank"> Q9UM63</a></td>
+   </tr>
+   <tr>
+      <td>RLF</td>
+      <td>zinc finger protein Rlf</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/157671949" target="_blank"> 157671949</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q13129" target="_blank"> Q13129</a></td>
+   </tr>
+   <tr>
+      <td>ZXDC</td>
+      <td>zinc finger protein ZXDC isoform 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/98961138" target="_blank"> 98961138</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q2QGD7" target="_blank"> Q2QGD7</a></td>
+   </tr>
+   <tr>
+      <td>ZFPL1</td>
+      <td>zinc finger protein-like 1</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/33300635" target="_blank"> 33300635</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/O95159" target="_blank">  O95159 </a></td>
+   </tr>
+   <tr>
+      <td>Zswim2</td>
+      <td>zinc finger, SWIM-type containing 2</td>
+      <td>RING</td>
+      <td><a href="http://www.ncbi.nlm.nih.gov/protein/71043932" target="_blank"> 71043932</a></td>
+      <td><a href="http://www.uniprot.org/uniprot/Q8NEG5" target="_blank">  Q8NEG5 </a></td>
+   </tr>
+</table>
+</div>
+</div>
+
+<p> &nbsp;&nbsp;&nbsp;&nbsp;<font size =2>*</font> <font size=1> Proteins also show SUMO ligase activity </font> <p>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;<font size =2>**</font> <font size=1> Proteins also show neddylation activity </font> <p>
+<p> &nbsp;</p>
+</article>
+
+<!-- This is the footer, and it's just sort of the last set of things you'd like to say.
+It can be site information, contact information, or links, if you're so inclined.-->
+<footer>
+<p > &nbsp;</p>
+</footer>
+
+
+<!-- This is a designated navigation element. It can be placed at the top of the page as well. 
+It will allow you to include links to related sites. -->
+<nav style="text-align: center"> 
+<p> 
+<a href="http://www.nhlbi.nih.gov/" target="_blank">NHLBI Home</a>  &nbsp;
+<a href="http://www.nhlbi.nih.gov/search1/index.htm" target="_blank">Search NHLBI</a> &nbsp;
+<a href="http://www.nhlbi.nih.gov/nhlbi508form.htm" target="_blank">Accessibility Information<a> &nbsp;
+<a href="http://www.nhlbi.nih.gov/siteindex/" target="_blank">NHLBI Site Index</a> &nbsp;
+</p>
+</nav>
+
+
+</body>
+
+</html>

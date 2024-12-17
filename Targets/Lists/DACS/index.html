@@ -1,0 +1,584 @@
+<html>
+<head>
+<script type="text/javascript">
+		function redirect(site) {
+                window.location = site;
+            }
+	</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="This website presents RNA-Seq transcriptomic data from mouse.">
+		<meta name="author" content="Lihe Chen and Mark A. Knepper">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+				
+		<title>Deacetylases</title>
+		<style type="text/css">
+			@import "DataTables-1.10.0/media/css/jquery.dataTables.css";
+			@import "DataTables-1.10.0/extensions/Scroller/css/dataTables.scroller.css";
+		</style>
+		
+		<style>
+		img {
+			vertical-align: middle;
+			margin-right: 20px;
+		}
+
+		p {font-size: 90%; font-family:"Arial", Sans-serif; }
+		h1 {font-size: 200%; font-family:"Arial", Sans-serif; text-align: center;}
+		div#bottomdiv {
+position:fixed;
+bottom:0px;
+left:0px;
+width:100%;
+color:yellow;
+background:white;
+padding-left:0px;
+}	
+		</style>
+		<!--<script type="text/javascript">
+
+  			var _gaq = _gaq || [];
+  			_gaq.push(['_setAccount', 'UA-28923713-1']);
+  			_gaq.push(['_trackPageview']);
+
+  			(function() {
+    			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  			})();
+
+		</script>-->
+		 
+		 
+		<!--<script type="text/javascript" charset="utf-8" src="pace-0.4.17/pace.js"></script>-->
+		<!--<link rel="stylesheet" href="pace-0.4.17/themes/pace-theme-loading-bar.css">-->
+ 
+<link rel="File-List" href="file:///L:/Lab-Knepper/Knepper_Lab/Depot%20-%20Single%20Cell%20RNA-seq/Web%20pages/index_files/filelist.xml">
+<style id="For Webpage scRNA-Seq2_23721_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.font59998
+	{color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.font69998
+	{color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl649998
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl659998
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl669998
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl679998
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl689998
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl699998
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl709998
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#819FF7;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl719998
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl729998
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	background:#819FF7;
+	mso-pattern:black none;
+	white-space:normal;}
+-->
+</style>
+
+	</head>
+	
+	<body>
+		<header>
+        	<h1 style="margin-top: 20px; margin-bottom: 20px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="Transcriptomes%20of%20Mouse%20Renal%20Intercalated%20Cells%20and%20Principal%20Cells%20from%20Single-Cell%20RNA-Seq%20Analysis_files/nhlbilogostandard-new.jpg" alt="National Heart, Lung, and Blood Institute" height="40"></a>
+        	<a href="https://esbl.nhlbi.nih.gov/" target="_blank"><img src="Transcriptomes%20of%20Mouse%20Renal%20Intercalated%20Cells%20and%20Principal%20Cells%20from%20Single-Cell%20RNA-Seq%20Analysis_files/ESBL_2.png" ,="" alt="Epithelial Systems Biology Laboratory" height="33"></a></h1>
+        	
+			<h1><font color="#819FF7">List of Lysine Deacetylases in Mammals</font></h1>
+		</header>
+		<section>
+			<br>
+			<p>
+				Below are the lysine deacetylases found in mammals.  The information was culled and curated from several existing resources (click to open): <a href="http://www.actrec.gov.in/histome/">Histome: The Histone Infobase</a>, <a href="http://www.uniprot.org/">UniProtKB</a>, <a href="https://www.ncbi.nlm.nih.gov/">NCBI</a>, <a href="http://rgd.mcw.edu/">Rat Genome Database</a>,Drazic et al.<a href="https://www.ncbi.nlm.nih.gov/pubmed/27296530">2016</a>.  By BLAST searches with conserved catalytic domains, we found 3 putative novel lysine deacetylase enzymes (Fam118A, Famm118B, HDA1L).  HDAC1L is exclusively expressed by rats.
+ 
+			</p>
+			<p> To see expression of the deacetylases along the rat nephron <a href="indexnephron.html">click here<a/>.
+			</p>
+			
+			<p>
+				To search, use browser's search modality, usually Ctrl-F.
+			</p>
+			 
+			<p>
+				<b>Reference</b>: Hyndman KA, Knepper MA. Dynamic regulation of lysine acetylation; the balance 
+between acetyltransferase and deacetylase activities. Am J Physiol Renal Physiol.
+2017 Jul 12:ajprenal.00313.2017. 
+PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28701313" target="_Blank">28701313</a></p> <br><br>
+
+
+				This website was created by Kelly Hyndman and Mark Knepper. Contact us with questions or comments:  <a href="mailto:knep@helix.nih.gov">knep@helix.nih.gov</a> or <a href="mailto:hyndmank@uab.edu">hyndmank@uab.edu</a>.
+				<a href="http://www.uab.edu">
+				<img src="Transcriptomes%20of%20Mouse%20Renal%20Intercalated%20Cells%20and%20Principal%20Cells%20from%20Single-Cell%20RNA-Seq%20Analysis_files/UAB_WORDMARK.png" alt="UAB" height="50" border="0"></a></p>
+			</p>
+			<p>
+				          <a href="Deacetylases.xlsx">Download data</a> </p>
+
+
+
+<div id="For Webpage scRNA-Seq2_23721" x:publishsource="Excel" align="center">
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=1120 class=xl649998
+ style='border-collapse:collapse;table-layout:fixed;width:843pt'>
+ <col class=xl649998 width=98 style='mso-width-source:userset;mso-width-alt:
+ 3584;width:74pt'>
+ <col class=xl649998 width=170 style='mso-width-source:userset;mso-width-alt:
+ 6217;width:128pt'>
+ <col class=xl699998 width=117 style='mso-width-source:userset;mso-width-alt:
+ 4278;width:88pt'>
+ <col class=xl669998 width=66 style='mso-width-source:userset;mso-width-alt:
+ 2413;width:50pt'>
+ <col class=xl699998 width=70 style='mso-width-source:userset;mso-width-alt:
+ 2560;width:53pt'>
+ <col class=xl669998 width=112 style='mso-width-source:userset;mso-width-alt:
+ 4096;width:84pt'>
+ <col class=xl699998 width=265 style='mso-width-source:userset;mso-width-alt:
+ 9691;width:199pt'>
+ <col class=xl699998 width=222 style='mso-width-source:userset;mso-width-alt:
+ 8118;width:167pt'>
+ <tr class=xl719998 height=60 style='mso-height-source:userset;height:45.0pt'>
+  <td height=60 class=xl729998 width=98 style='height:45.0pt;width:74pt'>UniProt</td>
+  <td class=xl709998 width=170 style='width:128pt'>Protein Name</td>
+  <td class=xl709998 width=117 style='width:88pt'>Gene Symbol</td>
+  <td class=xl709998 width=66 style='width:50pt'>Amino Acid Number</td>
+  <td class=xl709998 width=70 style='width:53pt'>Cofactor</td>
+  <td class=xl709998 width=112 style='width:84pt'>Pfam Conserved Domain</td>
+  <td class=xl709998 width=265 style='width:199pt'>Predominant Localization</td>
+  <td class=xl709998 width=222 style='width:167pt'>Known Substrates</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>O09106</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 1</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac1</td>
+  <td class=xl699998 width=66 style='width:50pt'>482</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>nucleus</td>
+  <td class=xl699998 width=222 style='width:167pt'>H3K56, H2A, H2B, H4,
+  RELA,AR,NR1D2, TSHZ3<span style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>P70288</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 2</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac2</td>
+  <td class=xl699998 width=66 style='width:50pt'>488</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>nucleus</td>
+  <td class=xl699998 width=222 style='width:167pt'>H2A, H2B, H3, H4, TSHZ3</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>O88895</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 3</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac3</td>
+  <td class=xl699998 width=66 style='width:50pt'>428</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>nucleus</td>
+  <td class=xl699998 width=222 style='width:167pt'>H2A, H2B, H3K4, H3K27, H4,
+  NF-KB, KAT2B, STAT1, RELA</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q6NZM9</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 4</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac4</td>
+  <td class=xl699998 width=66 style='width:50pt'>1076</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>nulceus,cytosol</td>
+  <td class=xl699998 width=222 style='width:167pt'>H2A, H2B, H3, H4,
+  HIF1&#945;, p53, HSPA1A, HSPA1B</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q9Z2V6</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 5</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac5</td>
+  <td class=xl699998 width=66 style='width:50pt'>1115</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>nulceus,cytosol</td>
+  <td class=xl699998 width=222 style='width:167pt'>GATA-2, GCM1,&#945;-tubulin</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q9Z2V5</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 6</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac6</td>
+  <td class=xl699998 width=66 style='width:50pt'>1149</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>cytosol</td>
+  <td class=xl699998 width=222 style='width:167pt'>CTTN, &#945;-tubulin, HSP90</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q8C2B3</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 7</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac7</td>
+  <td class=xl699998 width=66 style='width:50pt'>953</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>nulceus/cytosol/mitochondrion
+  inner membrane space</td>
+  <td class=xl699998 width=222 style='width:167pt'>PLAG1</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q8VH37</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 8</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac8</td>
+  <td class=xl699998 width=66 style='width:50pt'>377</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>nulceus,cytosol</td>
+  <td class=xl699998 width=222 style='width:167pt'>H2A, H2B, H3, H4, p53,
+  ERR&#945;</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q99N13</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 9</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac9</td>
+  <td class=xl699998 width=66 style='width:50pt'>1088</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>nulceus,cytosol</td>
+  <td class=xl699998 width=222 style='width:167pt'>ATDC</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q6P3E7</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 10</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac10</td>
+  <td class=xl699998 width=66 style='width:50pt'>666</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>cytosol</td>
+  <td class=xl699998 width=222 style='width:167pt'>HSP70, PP1</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q91WA3</td>
+  <td class=xl689998 width=170 style='width:128pt'>Histone deacetylase 11</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac11</td>
+  <td class=xl699998 width=66 style='width:50pt'>347</td>
+  <td class=xl699998 width=70 style='width:53pt'>Zn<font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>nulceus,cytosol</td>
+  <td class=xl699998 width=222 style='width:167pt'>H2A, H2B, H3, H4</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q923E4</td>
+  <td class=xl689998 width=170 style='width:128pt'>Sirtuin-1</td>
+  <td class=xl699998 width=117 style='width:88pt'>Sirt1</td>
+  <td class=xl699998 width=66 style='width:50pt'>737</td>
+  <td class=xl699998 width=70 style='width:53pt'>NAD<font class="font69998"><sup>+</sup></font><font
+  class="font59998">, Zn</font><font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl669998>Sir2</td>
+  <td class=xl699998 width=265 style='width:199pt'>nucleus</td>
+  <td class=xl699998 width=222 style='width:167pt'>H4K16, H3K9, H1K25, P53,
+  FOXO1, HSF1, KAT7, CBP</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q8VDQ8</td>
+  <td class=xl689998 width=170 style='width:128pt'>Sirtuin-2</td>
+  <td class=xl699998 width=117 style='width:88pt'>Sirt2</td>
+  <td class=xl699998 width=66 style='width:50pt'>389</td>
+  <td class=xl699998 width=70 style='width:53pt'>NAD<font class="font69998"><sup>+</sup></font><font
+  class="font59998">, Zn</font><font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl669998>Sir2</td>
+  <td class=xl699998 width=265 style='width:199pt'>nucleus, cytosol</td>
+  <td class=xl699998 width=222 style='width:167pt'>H4K16, H3K56, &#945;-tubulin</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q8R104</td>
+  <td class=xl689998 width=170 style='width:128pt'>Sirtuin-3</td>
+  <td class=xl699998 width=117 style='width:88pt'>Sirt3</td>
+  <td class=xl699998 width=66 style='width:50pt'>334</td>
+  <td class=xl699998 width=70 style='width:53pt'>NAD<font class="font69998"><sup>+</sup></font><font
+  class="font59998">, Zn</font><font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl669998>Sir2</td>
+  <td class=xl699998 width=265 style='width:199pt'>mitochondrion matrix,
+  nucleus</td>
+  <td class=xl699998 width=222 style='width:167pt'>H3K56, GLUD1, Ku70, ACSS1</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q8R216</td>
+  <td class=xl689998 width=170 style='width:128pt'>Sirtuin-4</td>
+  <td class=xl699998 width=117 style='width:88pt'>Sirt4</td>
+  <td class=xl699998 width=66 style='width:50pt'>333</td>
+  <td class=xl699998 width=70 style='width:53pt'>NAD<font class="font69998"><sup>+</sup></font><font
+  class="font59998">, Zn</font><font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl669998>Sir2</td>
+  <td class=xl699998 width=265 style='width:199pt'>mitochondrion matrix</td>
+  <td class=xl699998 width=222 style='width:167pt'>GLUD1</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q8K2C6</td>
+  <td class=xl689998 width=170 style='width:128pt'>Sirtuin-5</td>
+  <td class=xl699998 width=117 style='width:88pt'>Sirt5</td>
+  <td class=xl699998 width=66 style='width:50pt'>310</td>
+  <td class=xl699998 width=70 style='width:53pt'>NAD<font class="font69998"><sup>+</sup></font><font
+  class="font59998">, Zn</font><font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl669998>Sir2</td>
+  <td class=xl699998 width=265 style='width:199pt'>mitochondrion matrix and
+  inter-membrane space, cytoplasm, nucleus</td>
+  <td class=xl699998 width=222 style='width:167pt'>CPS1, CYCS</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>P59941</td>
+  <td class=xl689998 width=170 style='width:128pt'>Sirtuin-6</td>
+  <td class=xl699998 width=117 style='width:88pt'>Sirt6</td>
+  <td class=xl699998 width=66 style='width:50pt'>334</td>
+  <td class=xl699998 width=70 style='width:53pt'>NAD<font class="font69998"><sup>+</sup></font><font
+  class="font59998">, Zn</font><font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl669998>Sir2</td>
+  <td class=xl699998 width=265 style='width:199pt'>nucleus</td>
+  <td class=xl699998 width=222 style='width:167pt'>H3K9, H3K5, RBBP8</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl659998 style='height:30.0pt'>Q8BKJ9</td>
+  <td class=xl689998 width=170 style='width:128pt'>Sirtuin-7</td>
+  <td class=xl699998 width=117 style='width:88pt'>Sirt7</td>
+  <td class=xl699998 width=66 style='width:50pt'>402</td>
+  <td class=xl699998 width=70 style='width:53pt'>NAD<font class="font69998"><sup>+</sup></font><font
+  class="font59998">, Zn</font><font class="font69998"><sup>2+</sup></font></td>
+  <td class=xl669998>Sir2</td>
+  <td class=xl699998 width=265 style='width:199pt'>nucleus</td>
+  <td class=xl699998 width=222 style='width:167pt'>H3K18, POLR1E</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl689998 width=98 style='height:30.0pt;width:74pt'>Q91YN1</td>
+  <td class=xl689998 width=170 style='width:128pt'>Family with sequence
+  similarity 118, member A</td>
+  <td class=xl699998 width=117 style='width:88pt'>Fam118a</td>
+  <td class=xl699998 width=66 style='width:50pt'>357</td>
+  <td class=xl699998 width=70 style='width:53pt'>?</td>
+  <td class=xl669998>Sir2-like</td>
+  <td class=xl699998 width=265 style='width:199pt'>membrane</td>
+  <td class=xl699998 width=222 style='width:167pt'>?</td>
+ </tr>
+ <tr class=xl679998 height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl689998 width=98 style='height:30.0pt;width:74pt'>Q8C569</td>
+  <td class=xl689998 width=170 style='width:128pt'>Family with sequence
+  similarity 118, member B</td>
+  <td class=xl699998 width=117 style='width:88pt'>Fam118b</td>
+  <td class=xl699998 width=66 style='width:50pt'>351</td>
+  <td class=xl699998 width=70 style='width:53pt'>?</td>
+  <td class=xl669998>Sir2-like</td>
+  <td class=xl699998 width=265 style='width:199pt'>cajal bodies in nucleus</td>
+  <td class=xl699998 width=222 style='width:167pt'>?</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl689998 width=98 style='height:30.0pt;width:74pt'>D3ZVU7</td>
+  <td class=xl689998 width=170 style='width:128pt'>histone deacetylase 1-like</td>
+  <td class=xl699998 width=117 style='width:88pt'>Hdac1l</td>
+  <td class=xl699998 width=66 style='width:50pt'>484</td>
+  <td class=xl699998 width=70 style='width:53pt'>?</td>
+  <td class=xl699998 width=112 style='width:84pt'>Hist_deacetyl</td>
+  <td class=xl699998 width=265 style='width:199pt'>cytosol (predicted)</td>
+  <td class=xl699998 width=222 style='width:167pt'>?</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=98 style='width:74pt'></td>
+  <td width=170 style='width:128pt'></td>
+  <td width=117 style='width:88pt'></td>
+  <td width=66 style='width:50pt'></td>
+  <td width=70 style='width:53pt'></td>
+  <td width=112 style='width:84pt'></td>
+  <td width=265 style='width:199pt'></td>
+  <td width=222 style='width:167pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+
+</div>
+
+			
+
+
+				
+  
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+
+
+
+
+			<p>	
+			<br>This website is hosted and supported by :<a href="http://biowulf.nih.gov/" target="_blank"><img src="Transcriptomes%20of%20Mouse%20Renal%20Intercalated%20Cells%20and%20Principal%20Cells%20from%20Single-Cell%20RNA-Seq%20Analysis_files/Biowulf.png" alt="Biowulf at the NIH" height="30" border="0"></a></p>
+			<p style="text-align: center;">
+			<a href="http://helix.nih.gov/disclaimer.html" class="footlink" target="_blank">Disclaimer</a> |
+			<a href="http://helix.nih.gov/privacy.html" class="footlink" target="_blank">Privacy</a> |
+			<a href="http://helix.nih.gov/accessibility.html" class="footlink" target="_blank">Accessibility</a> |
+    		<a href="http://helix.nih.gov/" class="footlink" target="_blank">Helix Systems</a> |
+        	<a href="http://cit.nih.gov/" class="footlink" target="_blank">CIT</a> |
+        	<a href="http://www.nhlbi.nih.gov/" class="footlink" target="_blank">NHLBI</a> |
+        	<a href="http://www.nih.gov/" class="footlink" target="_blank">NIH</a> |
+        	<a href="http://www.dhhs.gov/" class="footlink" target="_blank">DHHS</a> |
+        	<a href="http://www.firstgov.gov/" class="footlink" target="_blank">USA.gov</a>
+    		</p>
+</section>
+</body>
+</html>
