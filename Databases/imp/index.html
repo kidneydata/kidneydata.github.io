@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>IMCD Phosphoproteome</title>
+
+<style type="text/css">
+body {
+	margin:0;
+	padding-right:40px;
+	padding-left:40px;
+	background:#FFF;
+	font:80% Arial, Helvetica, sans-serif;
+	color:#000000;
+	line-height:180%;
+}
+#topbg 
+    {
+        position: absolute; top: 0; left: 0; z-index: -1;
+        width: 100%; height: 143px;
+        background: #014172;
+    }
+h1{
+	font-size:180%;
+	font-weight:bold;
+	color: red;
+	text-align: center;
+}
+h2{
+	clear:both;
+	font-size:160%;
+	font-weight:normal;
+	color:#000;
+	background-color:#DAE4F4;
+	margin:0;
+	padding:.5em 0;
+}
+a{
+	text-decoration:none;
+	color:#00F;	
+}
+p{
+	clear:both;
+	margin:0;
+	padding:.5em 0;
+}
+pre{
+	display:block;
+	font:100% "Courier New", Courier, monospace;
+	padding:10px;
+	border:1px solid #bae2f0;
+	background:#e3f4f9;	
+	margin:.5em 0;
+	overflow:auto;
+	width:800px;
+}
+img{
+	border:none;
+}
+ul,li{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+	float:left;
+	display:inline;
+	margin-right:10px;
+}
+table, td, th{
+	border:0px;
+}
+th{
+	text-align:left;
+}
+
+/*  */
+
+#preview{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:5px;
+	display:none;
+	color:#fff;
+	}
+
+/*  */
+</style>
+<style id="Book1_9536_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl639536
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl649536
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl659536
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl669536
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl679536
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl689536
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl699536
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+-->
+</style>
+<style id="IMCD IMPs_7613_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl157613
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl657613
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl667613
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl677613
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:normal;}
+-->
+</style>
+
+<script src="IMCD%20Phosphoproteome_files/ga_002.js" async="" type="text/javascript"></script><script src="IMCD%20Phosphoproteome_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28923713-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="topbg"></div>
+        <h1 style="margin-top: 15px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="IMCD%20Phosphoproteome_files/LinearSignature_RGB.png" alt="National Heart, Lung, and Blood Institute" style="border-style: none"></a></h1>
+        <h1><a href="http://esbl.nhlbi.nih.gov/" target="_blank"><img src="IMCD%20Phosphoproteome_files/ESBL.png" alt="Epithelial Systems Biology Laboratory (ESBL)" style="border-style: none"></a></h1>
+<br>
+<h1>Rat Inner Medullary Collecting Duct (IMCD) Membrane Proteins</h1>
+<p>This protein list has been extracted from the full IMCD proteome found on the <a href="http://helixweb.nih.gov/ESBL/Database/IMCD_Proteome/index.html" target="_blank">IMCD Proteome Database</a>. The list includes both integral-membrane proteins and GPI-linked proteins. 
+The list was reported in Yu et al., 2008, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/18596208" target="_blank">18596208</a>. All data
+ are from IMCD cells freshly purified from rat inner medullas.  See <a href="http://helixweb.nih.gov/ESBL/Database/" target="_blank">ESBL Databases</a> for more extensive compendia of IMCD proteins.</p>
+
+ 
+<p>
+This website was created by Brad Yu and Mark Knepper. Contact us with questions or comments: <a href="mailto:knep@helix.nih.gov">knep@helix.nih.gov</a>.    Click to <a href="IMCD.xls">download data</a>.
+</p>
+<br>
+
+<div id="Book1_9536" x:publishsource="Excel" align="center">
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=557 style='border-collapse:
+ collapse;table-layout:fixed;width:418pt'>
+ <col width=327 style='mso-width-source:userset;mso-width-alt:11958;width:245pt'>
+ <col width=64 span=2 style='width:48pt'>
+ <col width=102 style='mso-width-source:userset;mso-width-alt:3730;width:77pt'>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl677613 width=327 style='height:45.0pt;width:245pt'>Protein
+  Annotation</td>
+  <td class=xl677613 width=64 style='width:48pt'>Gene Symbol</td>
+  <td class=xl677613 width=64 style='width:48pt'>Amino Acid Number</td>
+  <td class=xl677613 width=102 style='width:77pt'>Calculated M.W. (Da)</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>ATP-binding
+  cassette sub-family A member 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Abca2</td>
+  <td class=xl667613 width=64 style='width:48pt'>2434</td>
+  <td class=xl667613 width=102 style='width:77pt'>270798</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>bile
+  salt export pump</td>
+  <td class=xl667613 width=64 style='width:48pt'>Abcb11</td>
+  <td class=xl667613 width=64 style='width:48pt'>1321</td>
+  <td class=xl667613 width=102 style='width:77pt'>146128</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>multidrug
+  resistance protein 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Abcb1b</td>
+  <td class=xl667613 width=64 style='width:48pt'>1275</td>
+  <td class=xl667613 width=102 style='width:77pt'>141092</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>multidrug
+  resistance-associated protein 4</td>
+  <td class=xl667613 width=64 style='width:48pt'>Abcc4</td>
+  <td class=xl667613 width=64 style='width:48pt'>1325</td>
+  <td class=xl667613 width=102 style='width:77pt'>148734</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>ATP-binding
+  cassette sub-family C member 9</td>
+  <td class=xl667613 width=64 style='width:48pt'>Abcc9</td>
+  <td class=xl667613 width=64 style='width:48pt'>1545</td>
+  <td class=xl667613 width=102 style='width:77pt'>174175</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>ATP-binding
+  cassette sub-family F member 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Abcf1</td>
+  <td class=xl667613 width=64 style='width:48pt'>837</td>
+  <td class=xl667613 width=102 style='width:77pt'>94815</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>angiotensin-converting
+  enzyme precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Ace</td>
+  <td class=xl667613 width=64 style='width:48pt'>1313</td>
+  <td class=xl667613 width=102 style='width:77pt'>147263</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>long-chain-fatty-acid--CoA
+  ligase 4</td>
+  <td class=xl667613 width=64 style='width:48pt'>Acsl4</td>
+  <td class=xl667613 width=64 style='width:48pt'>670</td>
+  <td class=xl667613 width=102 style='width:77pt'>74196</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>long-chain-fatty-acid--CoA
+  ligase 5</td>
+  <td class=xl667613 width=64 style='width:48pt'>Acsl5</td>
+  <td class=xl667613 width=64 style='width:48pt'>683</td>
+  <td class=xl667613 width=102 style='width:77pt'>76274</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>serine/threonine-protein
+  kinase receptor R3 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Acvrl1</td>
+  <td class=xl667613 width=64 style='width:48pt'>504</td>
+  <td class=xl667613 width=102 style='width:77pt'>54483</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>disintegrin
+  and metalloproteinase domain-containing protein 10</td>
+  <td class=xl667613 width=64 style='width:48pt'>Adam10</td>
+  <td class=xl667613 width=64 style='width:48pt'>749</td>
+  <td class=xl667613 width=102 style='width:77pt'>83956</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>disintegrin
+  and metalloproteinase domain-containing protein 17 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Adam17</td>
+  <td class=xl667613 width=64 style='width:48pt'>827</td>
+  <td class=xl667613 width=102 style='width:77pt'>68285</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>disintegrin
+  and metalloproteinase domain-containing protein 7 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Adam7</td>
+  <td class=xl667613 width=64 style='width:48pt'>789</td>
+  <td class=xl667613 width=102 style='width:77pt'>86670</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>adenylate
+  cyclase type 6 isoform 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Adcy6</td>
+  <td class=xl667613 width=64 style='width:48pt'>1166</td>
+  <td class=xl667613 width=102 style='width:77pt'>130376</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>adenylate
+  cyclase type 8</td>
+  <td class=xl667613 width=64 style='width:48pt'>Adcy8</td>
+  <td class=xl667613 width=64 style='width:48pt'>1248</td>
+  <td class=xl667613 width=102 style='width:77pt'>139692</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>adhesion
+  G protein-coupled receptor F5 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Adgrf5</td>
+  <td class=xl667613 width=64 style='width:48pt'>1349</td>
+  <td class=xl667613 width=102 style='width:77pt'>146743</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>adhesion
+  G-protein coupled receptor G2 isoform 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Adgrg2</td>
+  <td class=xl667613 width=64 style='width:48pt'>1013</td>
+  <td class=xl667613 width=102 style='width:77pt'>106564</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>adhesion
+  G protein-coupled receptor L2 isoform 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Adgrl2</td>
+  <td class=xl667613 width=64 style='width:48pt'>1487</td>
+  <td class=xl667613 width=102 style='width:77pt'>163973</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>agrin
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Agrn</td>
+  <td class=xl667613 width=64 style='width:48pt'>1940</td>
+  <td class=xl667613 width=102 style='width:77pt'>206431</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>CD166
+  antigen precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Alcam</td>
+  <td class=xl667613 width=64 style='width:48pt'>583</td>
+  <td class=xl667613 width=102 style='width:77pt'>62293</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>alpha-1,3/1,6-mannosyltransferase
+  ALG2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Alg2</td>
+  <td class=xl667613 width=64 style='width:48pt'>415</td>
+  <td class=xl667613 width=102 style='width:77pt'>47274</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>alkaline
+  phosphatase, tissue-nonspecific isozyme precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Alpl</td>
+  <td class=xl667613 width=64 style='width:48pt'>524</td>
+  <td class=xl667613 width=102 style='width:77pt'>53580</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>aminopeptidase
+  N precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Anpep</td>
+  <td class=xl667613 width=64 style='width:48pt'>965</td>
+  <td class=xl667613 width=102 style='width:77pt'>106231</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>aquaporin-2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Aqp2</td>
+  <td class=xl667613 width=64 style='width:48pt'>271</td>
+  <td class=xl667613 width=102 style='width:77pt'>28800</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>aquaporin-4
+  isoform 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Aqp4</td>
+  <td class=xl667613 width=64 style='width:48pt'>323</td>
+  <td class=xl667613 width=102 style='width:77pt'>34349</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>potassium-transporting
+  ATPase alpha chain 2 a</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp12a</td>
+  <td class=xl667613 width=64 style='width:48pt'>1036</td>
+  <td class=xl667613 width=102 style='width:77pt'>114787</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium/potassium-transporting
+  ATPase subunit alpha-1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp1a1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1023</td>
+  <td class=xl667613 width=102 style='width:77pt'>112924</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium/potassium-transporting
+  ATPase subunit alpha-2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp1a2</td>
+  <td class=xl667613 width=64 style='width:48pt'>1020</td>
+  <td class=xl667613 width=102 style='width:77pt'>112087</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium/potassium-transporting
+  ATPase subunit alpha-3</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp1a3</td>
+  <td class=xl667613 width=64 style='width:48pt'>1013</td>
+  <td class=xl667613 width=102 style='width:77pt'>111605</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium/potassium-transporting
+  ATPase subunit alpha-4</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp1a4</td>
+  <td class=xl667613 width=64 style='width:48pt'>1028</td>
+  <td class=xl667613 width=102 style='width:77pt'>113874</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium/potassium-transporting
+  ATPase subunit beta-1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp1b1</td>
+  <td class=xl667613 width=64 style='width:48pt'>304</td>
+  <td class=xl667613 width=102 style='width:77pt'>35071</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium/potassium-transporting
+  ATPase subunit beta-3</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp1b3</td>
+  <td class=xl667613 width=64 style='width:48pt'>279</td>
+  <td class=xl667613 width=102 style='width:77pt'>31699</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sarcoplasmic/endoplasmic
+  reticulum calcium ATPase 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp2a1</td>
+  <td class=xl667613 width=64 style='width:48pt'>994</td>
+  <td class=xl667613 width=102 style='width:77pt'>109279</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>ATPase,
+  Ca++ transporting, slow twitch 2 isoform a</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp2a2</td>
+  <td class=xl667613 width=64 style='width:48pt'>1043</td>
+  <td class=xl667613 width=102 style='width:77pt'>114637</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sarcoplasmic/endoplasmic
+  reticulum calcium ATPase 3</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp2a3</td>
+  <td class=xl667613 width=64 style='width:48pt'>999</td>
+  <td class=xl667613 width=102 style='width:77pt'>109229</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>plasma
+  membrane calcium-transporting ATPase 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp2b1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1176</td>
+  <td class=xl667613 width=102 style='width:77pt'>129380</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>plasma
+  membrane calcium-transporting ATPase 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp2b2</td>
+  <td class=xl667613 width=64 style='width:48pt'>1198</td>
+  <td class=xl667613 width=102 style='width:77pt'>132485</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>plasma
+  membrane calcium-transporting ATPase 4</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp2b4</td>
+  <td class=xl667613 width=64 style='width:48pt'>1169</td>
+  <td class=xl667613 width=102 style='width:77pt'>128660</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>Potassium-transporting
+  ATPase alpha chain 1 (Proton pump) (Gastric H+/K+ ATPase alpha subunit)</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp4a</td>
+  <td class=xl667613 width=64 style='width:48pt'>1034</td>
+  <td class=xl667613 width=102 style='width:77pt'>113977</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>V-type
+  proton ATPase 116 kDa subunit a isoform 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp6v0a1</td>
+  <td class=xl667613 width=64 style='width:48pt'>838</td>
+  <td class=xl667613 width=102 style='width:77pt'>96125</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>copper-transporting
+  ATPase 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Atp7a</td>
+  <td class=xl667613 width=64 style='width:48pt'>1492</td>
+  <td class=xl667613 width=102 style='width:77pt'>161963</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>basal
+  cell adhesion molecule precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Bcam</td>
+  <td class=xl667613 width=64 style='width:48pt'>624</td>
+  <td class=xl667613 width=102 style='width:77pt'>64899</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>basigin
+  isoform 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Bsg</td>
+  <td class=xl667613 width=64 style='width:48pt'>272</td>
+  <td class=xl667613 width=102 style='width:77pt'>27492</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>barttin</td>
+  <td class=xl667613 width=64 style='width:48pt'>Bsnd</td>
+  <td class=xl667613 width=64 style='width:48pt'>308</td>
+  <td class=xl667613 width=102 style='width:77pt'>33764</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>voltage-dependent
+  L-type calcium channel subunit alpha-1C</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cacna1c</td>
+  <td class=xl667613 width=64 style='width:48pt'>2170</td>
+  <td class=xl667613 width=102 style='width:77pt'>243373</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>voltage-dependent
+  T-type calcium channel subunit alpha-1G isoform 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cacna1g</td>
+  <td class=xl667613 width=64 style='width:48pt'>2255</td>
+  <td class=xl667613 width=102 style='width:77pt'>250176</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>voltage-dependent
+  calcium channel subunit alpha-2/delta-1 isoform 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cacna2d1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1091</td>
+  <td class=xl667613 width=102 style='width:77pt'>120963</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>calreticulin
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Calr</td>
+  <td class=xl667613 width=64 style='width:48pt'>416</td>
+  <td class=xl667613 width=102 style='width:77pt'>46349</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>calnexin
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Canx</td>
+  <td class=xl667613 width=64 style='width:48pt'>591</td>
+  <td class=xl667613 width=102 style='width:77pt'>65129</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>carbonic
+  anhydrase 4 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Car4</td>
+  <td class=xl667613 width=64 style='width:48pt'>309</td>
+  <td class=xl667613 width=102 style='width:77pt'>30353</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>caveolin-1
+  isoform beta</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cav1</td>
+  <td class=xl667613 width=64 style='width:48pt'>147</td>
+  <td class=xl667613 width=102 style='width:77pt'>16972</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>monocyte
+  differentiation antigen CD14 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cd14</td>
+  <td class=xl667613 width=64 style='width:48pt'>372</td>
+  <td class=xl667613 width=102 style='width:77pt'>35335</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>CD151
+  antigen</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cd151</td>
+  <td class=xl667613 width=64 style='width:48pt'>253</td>
+  <td class=xl667613 width=102 style='width:77pt'>28224</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>antigen-presenting
+  glycoprotein CD1d precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cd1d1</td>
+  <td class=xl667613 width=64 style='width:48pt'>336</td>
+  <td class=xl667613 width=102 style='width:77pt'>36334</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>CD40
+  ligand</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cd40lg</td>
+  <td class=xl667613 width=64 style='width:48pt'>260</td>
+  <td class=xl667613 width=102 style='width:77pt'>29129</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>CD48
+  antigen precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cd48</td>
+  <td class=xl667613 width=64 style='width:48pt'>240</td>
+  <td class=xl667613 width=102 style='width:77pt'>22542</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>CD59
+  glycoprotein precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cd59</td>
+  <td class=xl667613 width=64 style='width:48pt'>126</td>
+  <td class=xl667613 width=102 style='width:77pt'>11418</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>CD9
+  antigen</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cd9</td>
+  <td class=xl667613 width=64 style='width:48pt'>226</td>
+  <td class=xl667613 width=102 style='width:77pt'>25127</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cadherin-1
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cdh1</td>
+  <td class=xl667613 width=64 style='width:48pt'>886</td>
+  <td class=xl667613 width=102 style='width:77pt'>80448</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cadherin-16
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cdh16</td>
+  <td class=xl667613 width=64 style='width:48pt'>830</td>
+  <td class=xl667613 width=102 style='width:77pt'>87707</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cadherin-23
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cdh23</td>
+  <td class=xl667613 width=64 style='width:48pt'>3317</td>
+  <td class=xl667613 width=102 style='width:77pt'>362802</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cadherin
+  EGF LAG seven-pass G-type receptor 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Celsr2</td>
+  <td class=xl667613 width=64 style='width:48pt'>2919</td>
+  <td class=xl667613 width=102 style='width:77pt'>316993</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cadherin
+  EGF LAG seven-pass G-type receptor 3 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Celsr3</td>
+  <td class=xl667613 width=64 style='width:48pt'>3313</td>
+  <td class=xl667613 width=102 style='width:77pt'>355822</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>acetylcholine
+  receptor subunit delta precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Chrnd</td>
+  <td class=xl667613 width=64 style='width:48pt'>517</td>
+  <td class=xl667613 width=102 style='width:77pt'>56890</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>chloride
+  channel protein ClC-Ka</td>
+  <td class=xl667613 width=64 style='width:48pt'>Clcnka</td>
+  <td class=xl667613 width=64 style='width:48pt'>687</td>
+  <td class=xl667613 width=102 style='width:77pt'>75438</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>chloride
+  channel protein ClC-Ka</td>
+  <td class=xl667613 width=64 style='width:48pt'>Clcnka</td>
+  <td class=xl667613 width=64 style='width:48pt'>687</td>
+  <td class=xl667613 width=102 style='width:77pt'>75554</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>claudin-4</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cldn4</td>
+  <td class=xl667613 width=64 style='width:48pt'>210</td>
+  <td class=xl667613 width=102 style='width:77pt'>22208</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>chloride
+  intracellular channel protein 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Clic1</td>
+  <td class=xl667613 width=64 style='width:48pt'>241</td>
+  <td class=xl667613 width=102 style='width:77pt'>26850</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>chloride
+  intracellular channel protein 4</td>
+  <td class=xl667613 width=64 style='width:48pt'>Clic4</td>
+  <td class=xl667613 width=64 style='width:48pt'>253</td>
+  <td class=xl667613 width=102 style='width:77pt'>28502</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>protein
+  canopy homolog 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cnpy2</td>
+  <td class=xl667613 width=64 style='width:48pt'>182</td>
+  <td class=xl667613 width=102 style='width:77pt'>18629</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cannabinoid
+  receptor 2 isoform 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cnr2</td>
+  <td class=xl667613 width=64 style='width:48pt'>410</td>
+  <td class=xl667613 width=102 style='width:77pt'>45032</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>contactin-1
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cntn1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1021</td>
+  <td class=xl667613 width=102 style='width:77pt'>109189</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>contactin-associated
+  protein 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cntnap1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1381</td>
+  <td class=xl667613 width=102 style='width:77pt'>153822</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>catechol
+  O-methyltransferase</td>
+  <td class=xl667613 width=64 style='width:48pt'>Comt</td>
+  <td class=xl667613 width=64 style='width:48pt'>264</td>
+  <td class=xl667613 width=102 style='width:77pt'>29466</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cytochrome
+  c oxidase subunit I (mitochondrion)</td>
+  <td class=xl667613 width=64 style='width:48pt'>COX1</td>
+  <td class=xl667613 width=64 style='width:48pt'>514</td>
+  <td class=xl667613 width=102 style='width:77pt'>56806</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cytochrome
+  c oxidase subunit II (mitochondrion)</td>
+  <td class=xl667613 width=64 style='width:48pt'>COX2</td>
+  <td class=xl667613 width=64 style='width:48pt'>227</td>
+  <td class=xl667613 width=102 style='width:77pt'>25797</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cytochrome
+  c oxidase subunit 4 isoform 1, mitochondrial precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cox4i1</td>
+  <td class=xl667613 width=64 style='width:48pt'>169</td>
+  <td class=xl667613 width=102 style='width:77pt'></td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>carboxypeptidase
+  D precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cpd</td>
+  <td class=xl667613 width=64 style='width:48pt'>1378</td>
+  <td class=xl667613 width=102 style='width:77pt'>148427</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>carnitine
+  O-palmitoyltransferase 1, liver isoform</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cpt1a</td>
+  <td class=xl667613 width=64 style='width:48pt'>773</td>
+  <td class=xl667613 width=102 style='width:77pt'>87995</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cytochrome
+  b5</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cyb5a</td>
+  <td class=xl667613 width=64 style='width:48pt'>134</td>
+  <td class=xl667613 width=102 style='width:77pt'>15224</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cytochrome
+  b5 type B precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cyb5b</td>
+  <td class=xl667613 width=64 style='width:48pt'>146</td>
+  <td class=xl667613 width=102 style='width:77pt'>16134</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cytochrome
+  b-245, beta polypeptide</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cybb</td>
+  <td class=xl667613 width=64 style='width:48pt'>570</td>
+  <td class=xl667613 width=102 style='width:77pt'>65219</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cytochrome
+  P450 1A1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cyp1a1</td>
+  <td class=xl667613 width=64 style='width:48pt'>524</td>
+  <td class=xl667613 width=102 style='width:77pt'>59280</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cytochrome
+  P450 2C70</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cyp2c22</td>
+  <td class=xl667613 width=64 style='width:48pt'>489</td>
+  <td class=xl667613 width=102 style='width:77pt'>56083</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cytochrome
+  P450 4B1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Cyp4b1</td>
+  <td class=xl667613 width=64 style='width:48pt'>511</td>
+  <td class=xl667613 width=102 style='width:77pt'>58806</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>dolichyl-diphosphooligosaccharide--protein
+  glycosyltransferase subunit DAD1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Dad1</td>
+  <td class=xl667613 width=64 style='width:48pt'>113</td>
+  <td class=xl667613 width=102 style='width:77pt'>12366</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>dolichyl-diphosphooligosaccharide--protein
+  glycosyltransferase 48 kDa subunit precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Ddost</td>
+  <td class=xl667613 width=64 style='width:48pt'>441</td>
+  <td class=xl667613 width=102 style='width:77pt'>45970</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>endomucin
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Emcn</td>
+  <td class=xl667613 width=64 style='width:48pt'>250</td>
+  <td class=xl667613 width=102 style='width:77pt'>24251</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>ectonucleotide
+  pyrophosphatase/phosphodiesterase family member 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Enpp1</td>
+  <td class=xl667613 width=64 style='width:48pt'>906</td>
+  <td class=xl667613 width=102 style='width:77pt'>102812</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>epithelial
+  cell adhesion molecule precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Epcam</td>
+  <td class=xl667613 width=64 style='width:48pt'>315</td>
+  <td class=xl667613 width=102 style='width:77pt'>33015</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>endoplasmic
+  reticulum resident protein 29 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Erp29</td>
+  <td class=xl667613 width=64 style='width:48pt'>260</td>
+  <td class=xl667613 width=102 style='width:77pt'>25609</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>extended
+  synaptotagmin-1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Esyt1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1088</td>
+  <td class=xl667613 width=102 style='width:77pt'>121048</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>protocadherin
+  Fat 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Fat2</td>
+  <td class=xl667613 width=64 style='width:48pt'>4351</td>
+  <td class=xl667613 width=102 style='width:77pt'>478752</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>flotillin-1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Flot1</td>
+  <td class=xl667613 width=64 style='width:48pt'>428</td>
+  <td class=xl667613 width=102 style='width:77pt'>47368</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium/potassium-transporting
+  ATPase subunit gamma isoform b</td>
+  <td class=xl667613 width=64 style='width:48pt'>Fxyd2</td>
+  <td class=xl667613 width=64 style='width:48pt'>64</td>
+  <td class=xl667613 width=102 style='width:77pt'>7107</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>FXYD
+  domain-containing ion transport regulator 4 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Fxyd4</td>
+  <td class=xl667613 width=64 style='width:48pt'>87</td>
+  <td class=xl667613 width=102 style='width:77pt'>7041</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>frizzled-1
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Fzd1</td>
+  <td class=xl667613 width=64 style='width:48pt'>642</td>
+  <td class=xl667613 width=102 style='width:77pt'>63642</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>mannosyl-oligosaccharide
+  glucosidase</td>
+  <td class=xl667613 width=64 style='width:48pt'>Gcs1</td>
+  <td class=xl667613 width=64 style='width:48pt'>834</td>
+  <td class=xl667613 width=102 style='width:77pt'>91741</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>vitamin
+  K-dependent gamma-carboxylase</td>
+  <td class=xl667613 width=64 style='width:48pt'>Ggcx</td>
+  <td class=xl667613 width=64 style='width:48pt'>758</td>
+  <td class=xl667613 width=102 style='width:77pt'>87348</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>Golgi
+  apparatus protein 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Glg1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1171</td>
+  <td class=xl667613 width=102 style='width:77pt'>130136</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>glutamate
+  receptor 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Gria1</td>
+  <td class=xl667613 width=64 style='width:48pt'>907</td>
+  <td class=xl667613 width=102 style='width:77pt'>99657</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>glutamate
+  receptor ionotropic, kainate 4 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Grik4</td>
+  <td class=xl667613 width=64 style='width:48pt'>956</td>
+  <td class=xl667613 width=102 style='width:77pt'>105121</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>glutamate
+  receptor ionotropic, NMDA 2A precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Grin2a</td>
+  <td class=xl667613 width=64 style='width:48pt'>1464</td>
+  <td class=xl667613 width=102 style='width:77pt'>162960</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>glutamate
+  receptor ionotropic, NMDA 2D precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Grin2d</td>
+  <td class=xl667613 width=64 style='width:48pt'>1323</td>
+  <td class=xl667613 width=102 style='width:77pt'>140314</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>metabotropic
+  glutamate receptor 4 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Grm4</td>
+  <td class=xl667613 width=64 style='width:48pt'>912</td>
+  <td class=xl667613 width=102 style='width:77pt'>98262</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>olfactory
+  guanylyl cyclase GC-D precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Gucy2d</td>
+  <td class=xl667613 width=64 style='width:48pt'>1110</td>
+  <td class=xl667613 width=102 style='width:77pt'>114710</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>potassium/sodium
+  hyperpolarization-activated cyclic nucleotide-gated channel 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Hcn1</td>
+  <td class=xl667613 width=64 style='width:48pt'>910</td>
+  <td class=xl667613 width=102 style='width:77pt'>102291</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>Huntingtin
+  (Huntington disease protein homolog) (HD protein)</td>
+  <td class=xl667613 width=64 style='width:48pt'>Hdh</td>
+  <td class=xl667613 width=64 style='width:48pt'>3120</td>
+  <td class=xl667613 width=102 style='width:77pt'>344617</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>endoplasmin
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Hsp90b1</td>
+  <td class=xl667613 width=64 style='width:48pt'>802</td>
+  <td class=xl667613 width=102 style='width:77pt'>90097</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>5-hydroxytryptamine
+  receptor 2A</td>
+  <td class=xl667613 width=64 style='width:48pt'>Htr2a</td>
+  <td class=xl667613 width=64 style='width:48pt'>471</td>
+  <td class=xl667613 width=102 style='width:77pt'>52719</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>intercellular
+  adhesion molecule 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Icam1</td>
+  <td class=xl667613 width=64 style='width:48pt'>545</td>
+  <td class=xl667613 width=102 style='width:77pt'>57418</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>insulin-like
+  growth factor 1 receptor precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Igf1r</td>
+  <td class=xl667613 width=64 style='width:48pt'>1370</td>
+  <td class=xl667613 width=102 style='width:77pt'>80638</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cation-independent
+  mannose-6-phosphate receptor precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Igf2r</td>
+  <td class=xl667613 width=64 style='width:48pt'>2481</td>
+  <td class=xl667613 width=102 style='width:77pt'>270169</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>integrin
+  alpha-1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Itga1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1180</td>
+  <td class=xl667613 width=102 style='width:77pt'>127753</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>integrin
+  alpha-2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Itga2</td>
+  <td class=xl667613 width=64 style='width:48pt'>1178</td>
+  <td class=xl667613 width=102 style='width:77pt'>126350</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>integrin
+  alpha-3 isoform 1 preproprotein</td>
+  <td class=xl667613 width=64 style='width:48pt'>Itga3</td>
+  <td class=xl667613 width=64 style='width:48pt'>1053</td>
+  <td class=xl667613 width=102 style='width:77pt'>113455</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>integrin
+  alpha-7 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Itga7</td>
+  <td class=xl667613 width=64 style='width:48pt'>1135</td>
+  <td class=xl667613 width=102 style='width:77pt'>120651</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>integrin
+  alpha-V precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Itgav</td>
+  <td class=xl667613 width=64 style='width:48pt'>1044</td>
+  <td class=xl667613 width=102 style='width:77pt'>112290</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>integrin
+  beta-1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Itgb1</td>
+  <td class=xl667613 width=64 style='width:48pt'>798</td>
+  <td class=xl667613 width=102 style='width:77pt'>86109</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>inositol
+  1,4,5-trisphosphate receptor type 1 isoform 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Itpr1</td>
+  <td class=xl667613 width=64 style='width:48pt'>2748</td>
+  <td class=xl667613 width=102 style='width:77pt'>312878</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>inositol
+  1,4,5-trisphosphate receptor type 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Itpr2</td>
+  <td class=xl667613 width=64 style='width:48pt'>2701</td>
+  <td class=xl667613 width=102 style='width:77pt'>306929</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>inositol
+  1,4,5-trisphosphate receptor type 3</td>
+  <td class=xl667613 width=64 style='width:48pt'>Itpr3</td>
+  <td class=xl667613 width=64 style='width:48pt'>2670</td>
+  <td class=xl667613 width=102 style='width:77pt'>304157</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>potassium
+  voltage-gated channel subfamily D member 3 isoform 3 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Kcnd3</td>
+  <td class=xl667613 width=64 style='width:48pt'>611</td>
+  <td class=xl667613 width=102 style='width:77pt'>67738</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>potassium
+  voltage-gated channel subfamily H member 5</td>
+  <td class=xl667613 width=64 style='width:48pt'>Kcnh5</td>
+  <td class=xl667613 width=64 style='width:48pt'>988</td>
+  <td class=xl667613 width=102 style='width:77pt'>111699</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>potassium
+  voltage-gated channel subfamily H member 6</td>
+  <td class=xl667613 width=64 style='width:48pt'>Kcnh6</td>
+  <td class=xl667613 width=64 style='width:48pt'>950</td>
+  <td class=xl667613 width=102 style='width:77pt'>105575</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>ATP-sensitive
+  inward rectifier potassium channel 1 isoform 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Kcnj1</td>
+  <td class=xl667613 width=64 style='width:48pt'>391</td>
+  <td class=xl667613 width=102 style='width:77pt'>44818</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>potassium
+  channel subfamily K member 13</td>
+  <td class=xl667613 width=64 style='width:48pt'>Kcnk13</td>
+  <td class=xl667613 width=64 style='width:48pt'>405</td>
+  <td class=xl667613 width=102 style='width:77pt'>44950</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>small
+  conductance calcium-activated potassium channel protein 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Kcnn1</td>
+  <td class=xl667613 width=64 style='width:48pt'>536</td>
+  <td class=xl667613 width=102 style='width:77pt'>59084</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>potassium
+  voltage-gated channel subfamily KQT member 3</td>
+  <td class=xl667613 width=64 style='width:48pt'>Kcnq3</td>
+  <td class=xl667613 width=64 style='width:48pt'>912</td>
+  <td class=xl667613 width=102 style='width:77pt'>100817</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>neural
+  cell adhesion molecule L1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>L1cam</td>
+  <td class=xl667613 width=64 style='width:48pt'>1255</td>
+  <td class=xl667613 width=102 style='width:77pt'>138229</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>lysosome-associated
+  membrane glycoprotein 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Lamp1</td>
+  <td class=xl667613 width=64 style='width:48pt'>407</td>
+  <td class=xl667613 width=102 style='width:77pt'>41846</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>lysosome-associated
+  membrane glycoprotein 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Lamp2</td>
+  <td class=xl667613 width=64 style='width:48pt'>411</td>
+  <td class=xl667613 width=102 style='width:77pt'>42429</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>LETM1
+  and EF-hand domain-containing protein 1, mitochondrial precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Letm1</td>
+  <td class=xl667613 width=64 style='width:48pt'>739</td>
+  <td class=xl667613 width=102 style='width:77pt'>70764</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>lutropin-choriogonadotropic
+  hormone receptor precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Lhcgr</td>
+  <td class=xl667613 width=64 style='width:48pt'>700</td>
+  <td class=xl667613 width=102 style='width:77pt'>75154</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>vesicular
+  integral-membrane protein VIP36 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Lman2</td>
+  <td class=xl667613 width=64 style='width:48pt'>358</td>
+  <td class=xl667613 width=102 style='width:77pt'>35469</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>leucyl-cystinyl
+  aminopeptidase isoform 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Lnpep</td>
+  <td class=xl667613 width=64 style='width:48pt'>916</td>
+  <td class=xl667613 width=102 style='width:77pt'>104439</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>lipoprotein
+  lipase precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Lpl</td>
+  <td class=xl667613 width=64 style='width:48pt'>474</td>
+  <td class=xl667613 width=102 style='width:77pt'>50298</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>low-density
+  lipoprotein receptor-related protein 4 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Lrp4</td>
+  <td class=xl667613 width=64 style='width:48pt'>1905</td>
+  <td class=xl667613 width=102 style='width:77pt'>209755</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>cation-dependent
+  mannose-6-phosphate receptor precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>M6pr</td>
+  <td class=xl667613 width=64 style='width:48pt'>278</td>
+  <td class=xl667613 width=102 style='width:77pt'>28754</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>Amine
+  oxidase [flavin-containing] A (Monoamine oxidase type A) (MAO-A)</td>
+  <td class=xl667613 width=64 style='width:48pt'>Maoa</td>
+  <td class=xl667613 width=64 style='width:48pt'>892</td>
+  <td class=xl667613 width=102 style='width:77pt'>97944</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>malectin
+  isoform1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>MLEC</td>
+  <td class=xl667613 width=64 style='width:48pt'>292</td>
+  <td class=xl667613 width=102 style='width:77pt'>29323</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>myoferlin</td>
+  <td class=xl667613 width=64 style='width:48pt'>Myof</td>
+  <td class=xl667613 width=64 style='width:48pt'>2050</td>
+  <td class=xl667613 width=102 style='width:77pt'>233515</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>NACHT-,
+  LRR- and PYD-containing protein 6 (PYRIN-containing APAF1-like protein
+  5-like) (Angiotensin II/vasopressin receptor)</td>
+  <td class=xl667613 width=64 style='width:48pt'>Nalp6</td>
+  <td class=xl667613 width=64 style='width:48pt'>900</td>
+  <td class=xl667613 width=102 style='width:77pt'>100139</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>Neurogenic
+  locus notch homolog protein 1 precursor (Notch 1)</td>
+  <td class=xl667613 width=64 style='width:48pt'>Notch1</td>
+  <td class=xl667613 width=64 style='width:48pt'>2548</td>
+  <td class=xl667613 width=102 style='width:77pt'>272684</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>neurogenic
+  locus notch homolog protein 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Notch2</td>
+  <td class=xl667613 width=64 style='width:48pt'>2471</td>
+  <td class=xl667613 width=102 style='width:77pt'>262498</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>neurogenic
+  locus notch homolog protein 3 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Notch3</td>
+  <td class=xl667613 width=64 style='width:48pt'>2319</td>
+  <td class=xl667613 width=102 style='width:77pt'>240040</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>atrial
+  natriuretic peptide receptor 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Npr1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1057</td>
+  <td class=xl667613 width=102 style='width:77pt'>115840</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>neuropilin-1
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Nrp1</td>
+  <td class=xl667613 width=64 style='width:48pt'>922</td>
+  <td class=xl667613 width=102 style='width:77pt'>101032</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>oxidation
+  resistance 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Oxr1</td>
+  <td class=xl667613 width=64 style='width:48pt'>873</td>
+  <td class=xl667613 width=102 style='width:77pt'>96891</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>protein
+  disulfide-isomerase precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>P4hb</td>
+  <td class=xl667613 width=64 style='width:48pt'>509</td>
+  <td class=xl667613 width=102 style='width:77pt'>54983</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>prenylcysteine
+  oxidase precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Pcyox1</td>
+  <td class=xl667613 width=64 style='width:48pt'>504</td>
+  <td class=xl667613 width=102 style='width:77pt'>53541</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>protein
+  disulfide-isomerase A3 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Pdia3</td>
+  <td class=xl667613 width=64 style='width:48pt'>505</td>
+  <td class=xl667613 width=102 style='width:77pt'>54206</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>protein
+  disulfide-isomerase A4 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Pdia4</td>
+  <td class=xl667613 width=64 style='width:48pt'>643</td>
+  <td class=xl667613 width=102 style='width:77pt'>70216</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>protein
+  disulfide-isomerase A6 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Pdia6</td>
+  <td class=xl667613 width=64 style='width:48pt'>445</td>
+  <td class=xl667613 width=102 style='width:77pt'>46193</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>protein
+  disulfide-isomerase A6 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Pdia6</td>
+  <td class=xl667613 width=64 style='width:48pt'>445</td>
+  <td class=xl667613 width=102 style='width:77pt'>46193</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>membrane-associated
+  progesterone receptor component 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Pgrmc1</td>
+  <td class=xl667613 width=64 style='width:48pt'>223</td>
+  <td class=xl667613 width=102 style='width:77pt'>24534</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>membrane-associated
+  progesterone receptor component 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Pgrmc2</td>
+  <td class=xl667613 width=64 style='width:48pt'>217</td>
+  <td class=xl667613 width=102 style='width:77pt'>23272</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>GPI
+  transamidase component PIG-S</td>
+  <td class=xl667613 width=64 style='width:48pt'>Pigs</td>
+  <td class=xl667613 width=64 style='width:48pt'>555</td>
+  <td class=xl667613 width=102 style='width:77pt'>61593</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>proteolipid
+  protein 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Plp2</td>
+  <td class=xl667613 width=64 style='width:48pt'>151</td>
+  <td class=xl667613 width=102 style='width:77pt'>16425</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>plasmalemma
+  vesicle-associated protein</td>
+  <td class=xl667613 width=64 style='width:48pt'>Plvap</td>
+  <td class=xl667613 width=64 style='width:48pt'>438</td>
+  <td class=xl667613 width=102 style='width:77pt'>49902</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>podocalyxin
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Podxl</td>
+  <td class=xl667613 width=64 style='width:48pt'>485</td>
+  <td class=xl667613 width=102 style='width:77pt'>49111</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>lipid
+  phosphate phosphohydrolase 3</td>
+  <td class=xl667613 width=64 style='width:48pt'>Ppap2b</td>
+  <td class=xl667613 width=64 style='width:48pt'>312</td>
+  <td class=xl667613 width=102 style='width:77pt'>35102</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>peripherin-2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Prph2</td>
+  <td class=xl667613 width=64 style='width:48pt'>346</td>
+  <td class=xl667613 width=102 style='width:77pt'>39137</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>prostaglandin
+  F2-alpha receptor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Ptgfr</td>
+  <td class=xl667613 width=64 style='width:48pt'>366</td>
+  <td class=xl667613 width=102 style='width:77pt'>40524</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>prostaglandin
+  F2 receptor negative regulator precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Ptgfrn</td>
+  <td class=xl667613 width=64 style='width:48pt'>879</td>
+  <td class=xl667613 width=102 style='width:77pt'>96544</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>redox-regulatory
+  protein FAM213A</td>
+  <td class=xl667613 width=64 style='width:48pt'>RGD1309676</td>
+  <td class=xl667613 width=64 style='width:48pt'>229</td>
+  <td class=xl667613 width=102 style='width:77pt'>25632</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>dolichyl-diphosphooligosaccharide--protein
+  glycosyltransferase subunit 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Rpn1</td>
+  <td class=xl667613 width=64 style='width:48pt'>606</td>
+  <td class=xl667613 width=102 style='width:77pt'>66073</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>dolichyl-diphosphooligosaccharide--protein
+  glycosyltransferase subunit 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Rpn2</td>
+  <td class=xl667613 width=64 style='width:48pt'>631</td>
+  <td class=xl667613 width=102 style='width:77pt'>66932</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>RT1
+  class Ia, locus A2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>RT1-A2</td>
+  <td class=xl667613 width=64 style='width:48pt'>366</td>
+  <td class=xl667613 width=102 style='width:77pt'>39025</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>class
+  I histocompatibility antigen, Non-RT1.A alpha-1 chain precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>RT1-EC2</td>
+  <td class=xl667613 width=64 style='width:48pt'>319</td>
+  <td class=xl667613 width=102 style='width:77pt'>34078</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>reticulon-4</td>
+  <td class=xl667613 width=64 style='width:48pt'>Rtn4</td>
+  <td class=xl667613 width=64 style='width:48pt'>1163</td>
+  <td class=xl667613 width=102 style='width:77pt'>126257</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sphingosine
+  1-phosphate receptor 5</td>
+  <td class=xl667613 width=64 style='width:48pt'>S1pr5</td>
+  <td class=xl667613 width=64 style='width:48pt'>400</td>
+  <td class=xl667613 width=102 style='width:77pt'>42238</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>secretory
+  carrier-associated membrane protein 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Scamp1</td>
+  <td class=xl667613 width=64 style='width:48pt'>338</td>
+  <td class=xl667613 width=102 style='width:77pt'>37898</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>secretory
+  carrier-associated membrane protein 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Scamp2</td>
+  <td class=xl667613 width=64 style='width:48pt'>329</td>
+  <td class=xl667613 width=102 style='width:77pt'>36419</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>secretory
+  carrier-associated membrane protein 3 isoform 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Scamp3</td>
+  <td class=xl667613 width=64 style='width:48pt'>349</td>
+  <td class=xl667613 width=102 style='width:77pt'>38327</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>lysosome
+  membrane protein 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Scarb2</td>
+  <td class=xl667613 width=64 style='width:48pt'>478</td>
+  <td class=xl667613 width=102 style='width:77pt'>51349</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium
+  channel protein type 11 subunit alpha</td>
+  <td class=xl667613 width=64 style='width:48pt'>Scn11a</td>
+  <td class=xl667613 width=64 style='width:48pt'>1765</td>
+  <td class=xl667613 width=102 style='width:77pt'>201715</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium
+  channel protein type 4 subunit alpha</td>
+  <td class=xl667613 width=64 style='width:48pt'>Scn4a</td>
+  <td class=xl667613 width=64 style='width:48pt'>1840</td>
+  <td class=xl667613 width=102 style='width:77pt'>208737</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium
+  channel protein type 5 subunit alpha isoform 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Scn5a</td>
+  <td class=xl667613 width=64 style='width:48pt'>2019</td>
+  <td class=xl667613 width=102 style='width:77pt'>227237</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium
+  channel protein type 9 subunit alpha</td>
+  <td class=xl667613 width=64 style='width:48pt'>Scn9a</td>
+  <td class=xl667613 width=64 style='width:48pt'>1984</td>
+  <td class=xl667613 width=102 style='width:77pt'>225909</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>signal
+  peptidase complex catalytic subunit SEC11A</td>
+  <td class=xl667613 width=64 style='width:48pt'>Sec11a</td>
+  <td class=xl667613 width=64 style='width:48pt'>179</td>
+  <td class=xl667613 width=102 style='width:77pt'>20495</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>semaphorin-6C
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Sema6c</td>
+  <td class=xl667613 width=64 style='width:48pt'>960</td>
+  <td class=xl667613 width=102 style='width:77pt'>100088</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sideroflexin-3</td>
+  <td class=xl667613 width=64 style='width:48pt'>Sfxn3</td>
+  <td class=xl667613 width=64 style='width:48pt'>321</td>
+  <td class=xl667613 width=102 style='width:77pt'>35302</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sphingosine-1-phosphate
+  lyase 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Sgpl1</td>
+  <td class=xl667613 width=64 style='width:48pt'>568</td>
+  <td class=xl667613 width=102 style='width:77pt'>63627</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>solute
+  carrier family 12 member 5</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc12a5</td>
+  <td class=xl667613 width=64 style='width:48pt'>1116</td>
+  <td class=xl667613 width=102 style='width:77pt'>123433</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>urea
+  transporter 2 isoform 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc14a2</td>
+  <td class=xl667613 width=64 style='width:48pt'>929</td>
+  <td class=xl667613 width=102 style='width:77pt'>101767</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>monocarboxylate
+  transporter 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc16a7</td>
+  <td class=xl667613 width=64 style='width:48pt'>489</td>
+  <td class=xl667613 width=102 style='width:77pt'>52912</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>mitochondrial
+  2-oxoglutarate/malate carrier protein</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc25a11</td>
+  <td class=xl667613 width=64 style='width:48pt'>314</td>
+  <td class=xl667613 width=102 style='width:77pt'></td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>mitochondrial
+  2-oxoglutarate/malate carrier protein</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc25a11</td>
+  <td class=xl667613 width=64 style='width:48pt'>314</td>
+  <td class=xl667613 width=102 style='width:77pt'></td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>phosphate
+  carrier protein, mitochondrial isoform 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc25a3</td>
+  <td class=xl667613 width=64 style='width:48pt'>356</td>
+  <td class=xl667613 width=102 style='width:77pt'>34828</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>ADP/ATP
+  translocase 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc25a4</td>
+  <td class=xl667613 width=64 style='width:48pt'>298</td>
+  <td class=xl667613 width=102 style='width:77pt'>32858</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>ADP/ATP
+  translocase 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc25a5</td>
+  <td class=xl667613 width=64 style='width:48pt'>298</td>
+  <td class=xl667613 width=102 style='width:77pt'>32770</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>solute
+  carrier family 2, facilitated glucose transporter member 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc2a1</td>
+  <td class=xl667613 width=64 style='width:48pt'>492</td>
+  <td class=xl667613 width=102 style='width:77pt'>53832</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>band
+  3 anion transport protein</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc4a1</td>
+  <td class=xl667613 width=64 style='width:48pt'>928</td>
+  <td class=xl667613 width=102 style='width:77pt'>103113</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium/glucose
+  cotransporter 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc5a1</td>
+  <td class=xl667613 width=64 style='width:48pt'>665</td>
+  <td class=xl667613 width=102 style='width:77pt'>72936</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium-dependent
+  dopamine transporter</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc6a3</td>
+  <td class=xl667613 width=64 style='width:48pt'>619</td>
+  <td class=xl667613 width=102 style='width:77pt'>68615</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium-
+  and chloride-dependent taurine transporter</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc6a6</td>
+  <td class=xl667613 width=64 style='width:48pt'>621</td>
+  <td class=xl667613 width=102 style='width:77pt'>69738</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sodium/hydrogen
+  exchanger 2 isoform 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Slc9a2</td>
+  <td class=xl667613 width=64 style='width:48pt'>697</td>
+  <td class=xl667613 width=102 style='width:77pt'>78932</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sortilin-related
+  receptor, LDLR class A repeats-containing</td>
+  <td class=xl667613 width=64 style='width:48pt'>Sorl1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1811</td>
+  <td class=xl667613 width=102 style='width:77pt'>201899</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>sortilin
+  1 isoform 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Sort1</td>
+  <td class=xl667613 width=64 style='width:48pt'>858</td>
+  <td class=xl667613 width=102 style='width:77pt'>94598</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>signal
+  peptidase complex subunit 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Spcs2</td>
+  <td class=xl667613 width=64 style='width:48pt'>226</td>
+  <td class=xl667613 width=102 style='width:77pt'>24847</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>squalene
+  monooxygenase</td>
+  <td class=xl667613 width=64 style='width:48pt'>Sqle</td>
+  <td class=xl667613 width=64 style='width:48pt'>573</td>
+  <td class=xl667613 width=102 style='width:77pt'>63893</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>translocon-associated
+  protein subunit alpha precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Ssr1</td>
+  <td class=xl667613 width=64 style='width:48pt'>287</td>
+  <td class=xl667613 width=102 style='width:77pt'>29831</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>translocon-associated
+  protein subunit delta precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Ssr4</td>
+  <td class=xl667613 width=64 style='width:48pt'>173</td>
+  <td class=xl667613 width=102 style='width:77pt'>16796</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>suppression
+  of tumorigenicity 14</td>
+  <td class=xl667613 width=64 style='width:48pt'>St14</td>
+  <td class=xl667613 width=64 style='width:48pt'>827</td>
+  <td class=xl667613 width=102 style='width:77pt'>91888</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>syntaxin-12</td>
+  <td class=xl667613 width=64 style='width:48pt'>Stx12</td>
+  <td class=xl667613 width=64 style='width:48pt'>274</td>
+  <td class=xl667613 width=102 style='width:77pt'>31056</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>syntaxin
+  16 isoform b</td>
+  <td class=xl667613 width=64 style='width:48pt'>Stx16</td>
+  <td class=xl667613 width=64 style='width:48pt'>309</td>
+  <td class=xl667613 width=102 style='width:77pt'>35310</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>syntaxin-5</td>
+  <td class=xl667613 width=64 style='width:48pt'>Stx5</td>
+  <td class=xl667613 width=64 style='width:48pt'>355</td>
+  <td class=xl667613 width=102 style='width:77pt'>39620</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>syntaxin-7</td>
+  <td class=xl667613 width=64 style='width:48pt'>Stx7</td>
+  <td class=xl667613 width=64 style='width:48pt'>261</td>
+  <td class=xl667613 width=102 style='width:77pt'>29720</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>syntaxin-8</td>
+  <td class=xl667613 width=64 style='width:48pt'>Stx8</td>
+  <td class=xl667613 width=64 style='width:48pt'>236</td>
+  <td class=xl667613 width=102 style='width:77pt'>26780</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>synaptogyrin-2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Syngr2</td>
+  <td class=xl667613 width=64 style='width:48pt'>234</td>
+  <td class=xl667613 width=102 style='width:77pt'>25578</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>synaptophysin-like
+  protein 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Sypl1</td>
+  <td class=xl667613 width=64 style='width:48pt'>258</td>
+  <td class=xl667613 width=102 style='width:77pt'>28497</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>synaptotagmin-13</td>
+  <td class=xl667613 width=64 style='width:48pt'>Syt13</td>
+  <td class=xl667613 width=64 style='width:48pt'>426</td>
+  <td class=xl667613 width=102 style='width:77pt'>46750</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>synaptotagmin-like
+  protein 5</td>
+  <td class=xl667613 width=64 style='width:48pt'>Sytl5</td>
+  <td class=xl667613 width=64 style='width:48pt'>753</td>
+  <td class=xl667613 width=102 style='width:77pt'>83514</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>very-long-chain
+  enoyl-CoA reductase</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tecr</td>
+  <td class=xl667613 width=64 style='width:48pt'>308</td>
+  <td class=xl667613 width=102 style='width:77pt'>35992</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>transferrin
+  receptor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tfrc</td>
+  <td class=xl667613 width=64 style='width:48pt'>760</td>
+  <td class=xl667613 width=102 style='width:77pt'>85615</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>TGF-beta
+  receptor type-1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tgfbr1</td>
+  <td class=xl667613 width=64 style='width:48pt'>497</td>
+  <td class=xl667613 width=102 style='width:77pt'>52722</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>trans-Golgi
+  network integral membrane protein TGN38 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tgoln2</td>
+  <td class=xl667613 width=64 style='width:48pt'>357</td>
+  <td class=xl667613 width=102 style='width:77pt'>36508</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>thy-1
+  membrane glycoprotein preproprotein</td>
+  <td class=xl667613 width=64 style='width:48pt'>Thy1</td>
+  <td class=xl667613 width=64 style='width:48pt'>161</td>
+  <td class=xl667613 width=102 style='width:77pt'>12759</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>transmembrane
+  9 superfamily member 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tm9sf2</td>
+  <td class=xl667613 width=64 style='width:48pt'>663</td>
+  <td class=xl667613 width=102 style='width:77pt'>72678</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>transmembrane
+  emp24 domain-containing protein 10 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tmed10</td>
+  <td class=xl667613 width=64 style='width:48pt'>219</td>
+  <td class=xl667613 width=102 style='width:77pt'>21748</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>transmembrane
+  emp24 domain-containing protein 2 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tmed2</td>
+  <td class=xl667613 width=64 style='width:48pt'>201</td>
+  <td class=xl667613 width=102 style='width:77pt'>20781</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>transmembrane
+  emp24 domain-containing protein 4 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tmed4</td>
+  <td class=xl667613 width=64 style='width:48pt'>227</td>
+  <td class=xl667613 width=102 style='width:77pt'>23193</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>transmembrane
+  protein 16F</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tmem16f</td>
+  <td class=xl667613 width=64 style='width:48pt'>918</td>
+  <td class=xl667613 width=102 style='width:77pt'>106802</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>Transmembrane
+  protease, serine 9 (Polyserase-1) (Polyserine protease 1) (Polyserase-I)</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tmprss9</td>
+  <td class=xl667613 width=64 style='width:48pt'>1103</td>
+  <td class=xl667613 width=102 style='width:77pt'>118514</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>transient
+  receptor potential cation channel subfamily M member 8</td>
+  <td class=xl667613 width=64 style='width:48pt'>Trpm8</td>
+  <td class=xl667613 width=64 style='width:48pt'>1104</td>
+  <td class=xl667613 width=102 style='width:77pt'>127498</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>hamartin</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tsc1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1163</td>
+  <td class=xl667613 width=102 style='width:77pt'>128892</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>tuberin</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tsc2</td>
+  <td class=xl667613 width=64 style='width:48pt'>1809</td>
+  <td class=xl667613 width=102 style='width:77pt'>201148</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>tyrosine-protein
+  kinase receptor TYRO3 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Tyro3</td>
+  <td class=xl667613 width=64 style='width:48pt'>880</td>
+  <td class=xl667613 width=102 style='width:77pt'>92807</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>UDP-glucose:glycoprotein
+  glucosyltransferase 1 precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Uggt1</td>
+  <td class=xl667613 width=64 style='width:48pt'>1527</td>
+  <td class=xl667613 width=102 style='width:77pt'>172205</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>uromodulin
+  precursor</td>
+  <td class=xl667613 width=64 style='width:48pt'>Umod</td>
+  <td class=xl667613 width=64 style='width:48pt'>644</td>
+  <td class=xl667613 width=102 style='width:77pt'>65218</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>vesicle-associated
+  membrane protein 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Vamp2</td>
+  <td class=xl667613 width=64 style='width:48pt'>116</td>
+  <td class=xl667613 width=102 style='width:77pt'>12560</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>vesicle-associated
+  membrane protein 3</td>
+  <td class=xl667613 width=64 style='width:48pt'>Vamp3</td>
+  <td class=xl667613 width=64 style='width:48pt'>103</td>
+  <td class=xl667613 width=102 style='width:77pt'>11349</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>vesicle-associated
+  membrane protein-associated protein A</td>
+  <td class=xl667613 width=64 style='width:48pt'>Vapa</td>
+  <td class=xl667613 width=64 style='width:48pt'>249</td>
+  <td class=xl667613 width=102 style='width:77pt'>27710</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>vesicle-associated
+  membrane protein-associated protein B</td>
+  <td class=xl667613 width=64 style='width:48pt'>Vapb</td>
+  <td class=xl667613 width=64 style='width:48pt'>243</td>
+  <td class=xl667613 width=102 style='width:77pt'>26785</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>voltage-dependent
+  anion-selective channel protein 1</td>
+  <td class=xl667613 width=64 style='width:48pt'>Vdac1</td>
+  <td class=xl667613 width=64 style='width:48pt'>283</td>
+  <td class=xl667613 width=102 style='width:77pt'>30624</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>voltage-dependent
+  anion-selective channel protein 2</td>
+  <td class=xl667613 width=64 style='width:48pt'>Vdac2</td>
+  <td class=xl667613 width=64 style='width:48pt'>295</td>
+  <td class=xl667613 width=102 style='width:77pt'>31615</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>voltage-dependent
+  anion-selective channel protein 3</td>
+  <td class=xl667613 width=64 style='width:48pt'>Vdac3</td>
+  <td class=xl667613 width=64 style='width:48pt'>283</td>
+  <td class=xl667613 width=102 style='width:77pt'>30667</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>vesicle
+  transport through interaction with t-SNAREs homolog 1A</td>
+  <td class=xl667613 width=64 style='width:48pt'>Vti1a</td>
+  <td class=xl667613 width=64 style='width:48pt'>217</td>
+  <td class=xl667613 width=102 style='width:77pt'>25030</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl657613 width=327 style='height:30.0pt;width:245pt'>palmitoyltransferase
+  ZDHHC7</td>
+  <td class=xl667613 width=64 style='width:48pt'>Zdhhc7</td>
+  <td class=xl667613 width=64 style='width:48pt'>308</td>
+  <td class=xl667613 width=102 style='width:77pt'>35100</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=327 style='width:245pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=102 style='width:77pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+<hr>
+<h2>Rat Inner Medullary Collecting Duct Membrane Protein Database is hosted and supported by:</h2>
+<br>
+<a href="http://biowulf.nih.gov/" target="_blank"><img src="IMCD%20Phosphoproteome_files/Biowulf.png" alt="Biowulf at the NIH" border="0" height="58"></a>
+<br>
+<br>
+<a href="http://www.dhhs.gov/" target="_blank"><img src="IMCD%20Phosphoproteome_files/CoverLockup.gif" alt="DHHS" border="0"></a>
+<br>
+<hr>
+<div class="footarea" align="center">
+    <div class="footer">
+        <a href="http://helix.nih.gov/disclaimer.html" class="footlink" target="_blank">Disclaimer</a> |
+        <a href="http://helix.nih.gov/privacy.html" class="footlink" target="_blank">Privacy</a> |
+        <a href="http://helix.nih.gov/accessibility.html" class="footlink" target="_blank">Accessibility</a> |
+    </div>
+    <div class="footer2">
+        <a href="http://helix.nih.gov/" class="footlink" target="_blank">Helix Systems</a> |
+        <a href="http://cit.nih.gov/" class="footlink" target="_blank">CIT</a> |
+        <a href="http://www.nhlbi.nih.gov/" class="footlink" target="_blank">NHLBI</a> |
+        <a href="http://www.nih.gov/" class="footlink" target="_blank">NIH</a> |
+        <a href="http://www.dhhs.gov/" class="footlink" target="_blank">DHHS</a> |
+        <a href="http://www.firstgov.gov/" class="footlink" target="_blank">USA.gov</a>
+    </div>
+</div>
+
+</body></html>
