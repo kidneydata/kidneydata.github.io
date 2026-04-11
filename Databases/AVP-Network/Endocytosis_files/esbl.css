@@ -1,0 +1,19 @@
+body {font-size:12px; font-family:verdana,arial,helvetica,sans-serif; background-color:#ffffff}
+.text {font-size:12px; font-family:verdana,arial,helvetica,sans-serif}
+h1 {font-size:24px; font-weight:bold; font-family:verdana,arial,helvetica,sans-serif; color:#005050}
+h2 {font-size:18px; font-weight:bold; font-family:verdana,arial,helvetica,sans-serif; color:#005050}
+h3 {font-size:16px; font-weight:bold; font-family:verdana,arial,helvetica,sans-serif}
+h4 {font-size:14px; font-weight:bold; font-family:verdana,arial,helvetica,sans-serif}
+h5 {font-size:12px; font-weight:bold; font-family:verdana,arial,helvetica,sans-serif; color:#444444}
+b {font-size:12px; font-weight:bold; font-family:verdana,arial,helvetica,sans-serif}
+th {font-size:12px; font-weight:bold; font-family:verdana,arial,helvetica,sans-serif}
+td {font-size:12px; font-family:verdana,arial,helvetica,sans-serif}
+input {font-size:12px; font-family:verdana,arial,helvetica,sans-serif}
+select {font-size:12px; font-family:verdana,arial,helvetica,sans-serif}
+pre {font-size:12px; font-family:courier,monospace}
+a {text-decoration:none}
+a:link {color:#003399}
+a:visited {color:#003399}
+a:hover {color:#33cc99}
+font.title3 {color: #005050; font-size:20px; font-weight:bold; font-family:verdana,arial,helvetica,sans-serif}
+hr.frame0 {border: 1px solid #f5e05f; color: #f5e05f}

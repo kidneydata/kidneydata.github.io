@@ -1,0 +1,2286 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>AVP-Phos</title>
+	<script type="text/javascript">
+		function redirect(site) {
+                window.location = site;
+            }
+	</script>
+        <style type="text/css">
+body {
+        margin:0;
+        padding-right:40px;
+        padding-left:40px;
+        background:#FFF;
+        font:80% Arial, Helvetica, sans-serif;
+        color:#000000;
+        line-height:120%;
+}
+#topbg 
+    {
+        position: absolute; top: 0; left: 0; z-index: -1;
+        width: 100%; height: 143px;
+        background: #014172;
+    }
+h1{
+        font-size:160%;
+        font-weight:bold;
+        color: red;
+        text-align: center;
+}
+h2{
+        clear:both;
+        font-size:160%;
+        font-weight:normal;
+        color:#000;
+        background-color:#DAE4F4;
+        margin:0;
+        padding:.5em 0;
+}
+a{
+        text-decoration:none;
+        color:#00F;	
+}
+p{
+        clear:both;
+        margin:0;
+        padding:.5em 0;
+}
+pre{
+        display:block;
+        font:100% "Courier New", Courier, monospace;
+        padding:10px;
+        border:1px solid #bae2f0;
+        background:#e3f4f9;	
+        margin:.5em 0;
+        overflow:auto;
+        width:800px;
+}
+img{
+        border:none;
+}
+ul,li{
+        margin:0;
+        padding:0;
+}
+li{
+        list-style:none;
+        float:left;
+        display:inline;
+        margin-right:10px;
+}
+table, td, th{
+        border:0px;
+}
+th{
+        text-align:left;
+}
+div#bottomdiv {
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    color:yellow;
+    background:white;
+	align: center;
+    }
+
+/*  */
+
+#preview{
+        position:absolute;
+        border:1px solid #ccc;
+        background:#333;
+        padding:5px;
+        display:none;
+        color:#fff;
+        }
+
+/*  */
+        </style>
+
+<style id="UUO-CTAL-3hr_11048_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.font511048
+	{color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.font611048
+	{color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.xl6611048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6711048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl6811048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6911048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:bottom;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7011048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7111048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7211048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7311048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7411048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.000";
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7511048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.000";
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7611048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.00000";
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7711048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.00000";
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7811048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7911048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.00000";
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8011048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8111048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:yellow;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8211048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.000";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:yellow;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8311048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.00000";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:yellow;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8411048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:yellow;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8511048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:yellow;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8611048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8711048
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+-->
+</style>
+
+
+<style id="VasopressinTargets_1410_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl661410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl671410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl681410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl691410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl701410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl711410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#FFD9FA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl721410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#E1FFE1;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl731410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Courier New", serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl741410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#F2F2F2;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl751410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#F2F2F2;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl761410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl771410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl781410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl791410
+	{color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;
+	padding-left:15px;
+	mso-char-indent-count:1;}
+.xl801410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FFCCFF;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl811410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#E2EFDA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl821410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#E2EFDA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl831410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl841410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl851410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl861410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#E1FFE1;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl871410
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Courier New", serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl881410
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Courier New", serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;
+	padding-left:15px;
+	mso-char-indent-count:1;}
+.xl891410
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Courier New", serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;
+	padding-left:15px;
+	mso-char-indent-count:1;}
+-->
+</style>
+
+
+<style id="Vasopressin-Regulated-Phosphosites_25522_Styles"><!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl1525522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6525522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#F2F2F2;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6625522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#F2F2F2;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6725522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6825522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#E2EFDA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6925522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7025522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7125522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7225522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#E1FFE1;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7325522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Courier New", monospace;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7425522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FFCCFF;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7525522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#FFD9FA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7625522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#E2EFDA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7725522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7825522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7925522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8025522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#E1FFE1;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8125522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Courier New", monospace;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8225522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8325522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8425522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8525522
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+--></style>
+
+
+<title>AVP-Phos</title>
+	</head>
+
+		<body>
+		<div class="wrapper">
+            <div id="topbg"></div>
+            <h1 style="margin-top: 15px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="./Epithelial Systems Biology Laboratory_files/LinearSignature_RGB.png" alt="National Heart, Lung, and Blood Institute" style="border-style: none"></a></h1>
+            <h1><a href="https://esbl.nhlbi.nih.gov/" target="_blank"><img src="./Epithelial Systems Biology Laboratory_files/ESBL.png" alt="Epithelial Systems Biology Laboratory (ESBL)" style="border-style: none"></a></h1>
+            <br>
+            <h1>Vasopressin-Regulated Phosphorylation Sites in Collecting Duct</h1>
+            <div>
+                
+                <p>
+                    <strong>Brief methods:  Our prior studies using quantitative phosphoproteomics have identified phosphorylation changes in cultured mouse mpkCCD cells 
+(PMID: 33346914) and native inner medullary collecting duct cells (PMID: 31313956). Here, we have curated a list of  vasopressin regulated phosphoproteins based on a 
+consensus of the two studies. This includes 51 phosphorylation sites in 45 proteins.   The sites are mapped to cellular functions at <a href="../AVP-Network/"> AVP-Network</a>.</strong>
+                </p>
+                <p>
+                    This website was created by Euijung Park, Joe Chou, Chin-Rang Yang and Mark Knepper. Contact us with questions or comments: <a href="mailto:knep@helix.nih.gov">knep@helix.nih.gov</a>.
+                    <strong>Database updated:</strong> November 29, 2021.    <a href="VasopressinTargets.xlsx">     Click here </a> to download data and analysis.
+ <strong>Please cite</strong>: Park et al., 2023, 
+			PMID:<a href="https://pubmed.ncbi.nlm.nih.gov/36264882/" target="_blank">36264882</a>.                  </p>
+                <p>
+<!--				
+                    <strong>Sort database by:</strong>
+                    <select onchange="redirect(this.value)">
+					    <option value="index.html" selected="selected">Gene Symbol</option>
+                        <option value="CCD-30min-up-down.htm">Log2(UUO/Sham) 30min (high to low)</option>
+						<option value="CCD-30min-down-up.htm">Log2(UUO/Sham) 30min (low to high)</option> 
+                        <option value="CCD-3hr-up-down.htm">Log2(UUO/Sham) 3hr (high to low)</option>
+                        <option value="CCD-3hr-down-up.htm">Log2(UUO/Sham) 3hr (low to high)</option>
+                    </select>
+-->				
+                </p>
+                 
+			
+
+<body>
+<!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+<!--The following information was generated by Microsoft Excel's Publish as Web
+Page wizard.-->
+<!--If the same item is republished from Excel, all information between the DIV
+tags will be replaced.-->
+<!----------------------------->
+<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+<!----------------------------->
+
+<div id="CCD-GeneSymbol_20387" align=center x:publishsource="Excel">
+
+<h1 style='color:black;font-family:Calibri;font-size:12.0pt;font-weight:800;
+font-style:normal'>Search Using Browser "Find" Command</h1>
+
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=1175 style='border-collapse:
+ collapse;table-layout:fixed;width:882pt'>
+ <col class=xl8225522 width=65 style='mso-width-source:userset;mso-width-alt:
+ 1773;width:49pt'>
+ <col width=335 style='mso-width-source:userset;mso-width-alt:9197;width:252pt'>
+ <col width=67 span=4 style='mso-width-source:userset;mso-width-alt:1828;
+ width:50pt'>
+ <col width=78 style='mso-width-source:userset;mso-width-alt:2139;width:59pt'>
+ <col width=120 style='mso-width-source:userset;mso-width-alt:3291;width:90pt'>
+ <col width=130 style='mso-width-source:userset;mso-width-alt:3565;width:98pt'>
+ <col width=179 style='mso-width-source:userset;mso-width-alt:4900;width:134pt'>
+ <tr height=58 style='height:43.5pt'>
+  <td height=58 class=xl6525522 width=65 style='height:43.5pt;width:49pt'>Gene
+  Symbol</td>
+  <td class=xl6625522 width=335 style='width:252pt'>Annotaion</td>
+  <td class=xl6625522 width=67 style='width:50pt'>Rat UniProt No.</td>
+  <td class=xl6725522 width=67 style='width:50pt'>Rat Mod. Site</td>
+  <td class=xl6725522 width=67 style='width:50pt'>Mouse UniProt No.</td>
+  <td class=xl6725522 width=67 style='width:50pt'>Mouse Mod. Site</td>
+  <td class=xl6725522 width=78 style='width:59pt'>Direction of Change</td>
+  <td class=xl6725522 width=120 style='width:90pt'>Rat Centralized Sequence</td>
+  <td class=xl6725522 width=130 style='width:98pt'>Mouse Centralized Sequence</td>
+  <td class=xl6725522 width=179 style='width:134pt'>&nbsp;Molecular Function</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Agfg1</td>
+  <td class=xl6925522>arf-GAP domain and FG repeat-containing protein 1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q4KLH5</td>
+  <td class=xl7125522>S181</td>
+  <td class=xl7125522>Q8K2K6</td>
+  <td class=xl7125522>S181</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>KGTPTQS*PVVGRS</td>
+  <td class=xl7325522>KGTPSQS*PVVGRS</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of GTPase
+  activity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Akap12</td>
+  <td class=xl6925522>A-kinase anchor protein 12</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q5QD51</td>
+  <td class=xl7125522>S469</td>
+  <td class=xl7125522>Q9WTQ5</td>
+  <td class=xl7125522>S467</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>TQLTDLS*PEEKTL</td>
+  <td class=xl7325522>TQLTDLS*PEEKML</td>
+  <td class=xl8425522 style='border-image: initial'>cyclic AMP dependent
+  signaling</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Als2</td>
+  <td class=xl6925522>alsin&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>P0C5Y8</td>
+  <td class=xl7125522>S486</td>
+  <td class=xl7125522>Q920R0</td>
+  <td class=xl7125522>S486</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>GLLSQVS*PRLLRK</td>
+  <td class=xl7325522>GLLSQVS*PRLLRK</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of GTPase
+  activity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Aqp2</td>
+  <td class=xl6925522>aquaporin-2</td>
+  <td class=xl7025522 width=67 style='width:50pt'>P34080</td>
+  <td class=xl7125522>S261</td>
+  <td class=xl7125522>P56402</td>
+  <td class=xl7125522>S261</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>QSVELHS*PQSLPR</td>
+  <td class=xl7325522>QSVELHS*PQSLPR</td>
+  <td class=xl8425522 style='border-image: initial'>transmembrane transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Aqp2</td>
+  <td class=xl6925522>aquaporin-2</td>
+  <td class=xl7025522 width=67 style='width:50pt'>P34080</td>
+  <td class=xl7125522>S256</td>
+  <td class=xl7125522>P56402</td>
+  <td class=xl7125522>S256</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>EVRRRQS*VELHSP</td>
+  <td class=xl7325522>EVRRRQS*VELHSP</td>
+  <td class=xl8425522 style='border-image: initial'>transmembrane transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Arfgef1</td>
+  <td class=xl6925522>brefeldin A-inhibited guanine nucleotide-exchange protein
+  1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>D4A631</td>
+  <td class=xl7125522>S1566</td>
+  <td class=xl7125522>G3X9K3</td>
+  <td class=xl7125522>S1566</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>DAISQKS*VDIHDS</td>
+  <td class=xl7325522>DAISQKS*VDIHDS</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of GTPase
+  activity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Arhgef2</td>
+  <td class=xl6925522>rho guanine nucleotide exchange factor 2&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q5FVC2</td>
+  <td class=xl7125522>S885</td>
+  <td class=xl7125522>Q60875</td>
+  <td class=xl7125522>S885</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>LDPRRRS*LPAGDA</td>
+  <td class=xl7325522>LDPRRRS*LPAGDA</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of GTPase
+  activity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Bin1</td>
+  <td class=xl6925522>myc box-dependent-interacting protein 1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>O08839</td>
+  <td class=xl7125522>S304</td>
+  <td class=xl7125522>O08539</td>
+  <td class=xl7125522>S304</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>SPPPDGS*PAATPE</td>
+  <td class=xl7325522>SPPPDGS*PAATPE</td>
+  <td class=xl8425522 style='border-image: initial'>vesicle-mediated transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Bloc1s5</td>
+  <td class=xl6925522>biogenesis of lysosome-related organelles complex 1
+  subunit 5</td>
+  <td class=xl7025522 width=67 style='width:50pt'>B2GV52</td>
+  <td class=xl7125522>S25</td>
+  <td class=xl7125522>Q8R015</td>
+  <td class=xl7125522>S23</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>GGKKRDS*LGTAGA</td>
+  <td class=xl7325522>GGKKRDS*LGTPGA</td>
+  <td class=xl8425522 style='border-image: initial'>vesicle-mediated transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Borcs6</td>
+  <td class=xl6925522>BLOC-1-related complex subunit 6</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q66H43</td>
+  <td class=xl7125522>S173</td>
+  <td class=xl7125522>Q9D6W8</td>
+  <td class=xl7125522>S173</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>RLQDSRS*LDGLSG</td>
+  <td class=xl7325522>RLQDSRS*LDGLSG</td>
+  <td class=xl8425522 style='border-image: initial'>vesicle-mediated transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Camkk2</td>
+  <td class=xl6925522>calcium/calmodulin-dependent protein kinase kinase 2</td>
+  <td class=xl7025522 width=67 style='width:50pt'>O88831</td>
+  <td class=xl7125522>S494</td>
+  <td class=xl7125522>Q8C078</td>
+  <td class=xl7125522>S495</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>TMIRKRS*FGNPFE</td>
+  <td class=xl7325522>TMIRKRS*FGNPFE</td>
+  <td class=xl8425522 style='border-image: initial'>protein phosphorylation</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Camkk2</td>
+  <td class=xl6925522>calcium/calmodulin-dependent protein kinase kinase 2</td>
+  <td class=xl7025522 width=67 style='width:50pt'>O88831</td>
+  <td class=xl7125522>S510</td>
+  <td class=xl7125522>Q8C078</td>
+  <td class=xl7125522>S511</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>REERSLS*APGNLL</td>
+  <td class=xl7325522>REERSLS*APGNLL</td>
+  <td class=xl8425522 style='border-image: initial'>protein phosphorylation</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Cdk18</td>
+  <td class=xl6925522>cyclin-dependent kinase 18</td>
+  <td class=xl7025522 width=67 style='width:50pt'>O35832</td>
+  <td class=xl7125522>S66</td>
+  <td class=xl7125522>Q04899</td>
+  <td class=xl7125522>S66</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>QNQRRFS*MEDLNK</td>
+  <td class=xl7325522>QNQRRFS*MEDLNK</td>
+  <td class=xl8425522 style='border-image: initial'>protein phosphorylation</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Clip1</td>
+  <td class=xl6925522>CAP-Gly domain-containing linker protein 1&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9JK25</td>
+  <td class=xl7125522>S347</td>
+  <td class=xl7125522>Q922J3</td>
+  <td class=xl7125522>S347</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>RYARKIS*GTTALQ</td>
+  <td class=xl7325522>RYARKIS*GTTALQ</td>
+  <td class=xl8425522 style='border-image: initial'>microtubule cytoskeleton</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Ctnnb1</td>
+  <td class=xl6925522>catenin beta-1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9WU82</td>
+  <td class=xl7125522>S552</td>
+  <td class=xl7125522>Q02248</td>
+  <td class=xl7125522>S552</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>DTQRRTS*MGGTQQ</td>
+  <td class=xl7325522>DTQRRTS*MGGTQQ</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of transcription</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Ctnnb1</td>
+  <td class=xl6925522>catenin beta-1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9WU82</td>
+  <td class=xl7125522>T551</td>
+  <td class=xl7125522>Q02248</td>
+  <td class=xl7125522>T551</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>QDTQRRT*SMGGTQ</td>
+  <td class=xl7325522>QDTQRRT*SMGGTQ</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of transcription</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Erbb3</td>
+  <td class=xl6925522>receptor tyrosine-protein kinase erbB-3</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q62799</td>
+  <td class=xl7125522>S980</td>
+  <td class=xl7125522>Q61526</td>
+  <td class=xl7125522>S980</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>LVIKRAS*GPGTPP</td>
+  <td class=xl7325522>LVIKRAS*GPGIPP</td>
+  <td class=xl8425522 style='border-image: initial'>protein phosphorylation</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Exoc7</td>
+  <td class=xl6925522>exocyst complex component 7&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>O54922</td>
+  <td class=xl7125522>S250</td>
+  <td class=xl7125522>O35250</td>
+  <td class=xl7125522>S250</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>SSGVPYS*PAIPNK</td>
+  <td class=xl7325522>SSGVPYS*PAIPNK</td>
+  <td class=xl8425522 style='border-image: initial'>vesicle-mediated transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Hdac4</td>
+  <td class=xl6925522>histone deacetylase 4</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q99P99</td>
+  <td class=xl7125522>S245</td>
+  <td class=xl7125522>Q6NZM9</td>
+  <td class=xl7125522>S245</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>PLRKTAS*EPNLKL</td>
+  <td class=xl7325522>PLRKTAS*EPNLKL</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of transcription</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Igsf5</td>
+  <td class=xl6925522>immunoglobulin superfamily member 5&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q5VJ70</td>
+  <td class=xl7125522>S334</td>
+  <td class=xl7125522>Q7TSN7</td>
+  <td class=xl7125522>S335</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>LPEQRSS*LPQQEL</td>
+  <td class=xl7325522>PEKRSSS*LPYQEL</td>
+  <td class=xl8425522 style='border-image: initial'>cell polarity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Itpr1</td>
+  <td class=xl6925522>inositol 1,4,5-trisphosphate receptor type 1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>P29994</td>
+  <td class=xl7125522>S1589</td>
+  <td class=xl7125522>P11881</td>
+  <td class=xl7125522>S1588</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>NAARRDS*VLAASR</td>
+  <td class=xl7325522>NAARRDS*VLAASR</td>
+  <td class=xl8425522 style='border-image: initial'>calcium signaling</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Itpr1</td>
+  <td class=xl6925522>inositol 1,4,5-trisphosphate receptor type 1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>P29994</td>
+  <td class=xl7125522>S1756</td>
+  <td class=xl7125522>P11881</td>
+  <td class=xl7125522>S1755</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>PSGRRES*LTSFGN</td>
+  <td class=xl7325522>PSGRRES*LTSFGN</td>
+  <td class=xl8425522 style='border-image: initial'>calcium signaling</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Itpr2</td>
+  <td class=xl6925522>inositol 1,4,5-trisphosphate receptor type 2</td>
+  <td class=xl7025522 width=67 style='width:50pt'>P29995</td>
+  <td class=xl7125522>S1709</td>
+  <td class=xl7125522>Q9Z329</td>
+  <td class=xl7125522>S1709</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>YFKGDHS*VGVNGP</td>
+  <td class=xl7325522>YFKGDHS*ISVNGP</td>
+  <td class=xl8425522 style='border-image: initial'>calcium signaling</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Itpr3</td>
+  <td class=xl6925522>inositol 1,4,5-trisphosphate receptor type 3</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q63269</td>
+  <td class=xl7125522>S1832</td>
+  <td class=xl7125522>P70227</td>
+  <td class=xl7125522>S1832</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>TKGRVSS*FSMPSS</td>
+  <td class=xl7325522>TKGRVSS*FSMPSS</td>
+  <td class=xl8425522 style='border-image: initial'>calcium signaling</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Itsn1</td>
+  <td class=xl6925522>intersectin-1&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9WVE9</td>
+  <td class=xl7125522>S315</td>
+  <td class=xl7125522>Q9Z0R4</td>
+  <td class=xl7125522>S315</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>RRVRSGS*GMSVIS</td>
+  <td class=xl7325522>RRVRSGS*GMSVIS</td>
+  <td class=xl8425522 style='border-image: initial'>vesicle-mediated transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Lrrfip1</td>
+  <td class=xl6925522>leucine-rich repeat flightless-interacting protein 1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q66HF9</td>
+  <td class=xl7125522>S88</td>
+  <td class=xl7125522>Q3UZ39</td>
+  <td class=xl7125522>S88</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>TSSRRGS*GDTSIS</td>
+  <td class=xl7325522>TSSRRGS*GDTSIS</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of transcription</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Luzp1</td>
+  <td class=xl6925522>leucine zipper protein 1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9ESV1</td>
+  <td class=xl7125522>S261</td>
+  <td class=xl7125522>Q8R4U7</td>
+  <td class=xl7125522>S261</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>ESRRKGS*LDYLKQ</td>
+  <td class=xl7325522>ESKRKGS*LDYLKQ</td>
+  <td class=xl8425522 style='border-image: initial'>cell polarity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Mink1</td>
+  <td class=xl6925522>misshapen-like kinase 1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>F1LP90</td>
+  <td class=xl7125522>S782</td>
+  <td class=xl7125522>Q9JM52</td>
+  <td class=xl7125522>S746</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>STKLDSS*PVLSPG</td>
+  <td class=xl7325522>STKLDSS*PVLSPG</td>
+  <td class=xl8425522 style='border-image: initial'>protein phosphorylation</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Myo9b</td>
+  <td class=xl6925522>unconventional myosin-IXb&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q63358</td>
+  <td class=xl7125522>S1649</td>
+  <td class=xl7125522>Q9QY06</td>
+  <td class=xl7125522>S1647</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>YTGRRKS*ELGAEP</td>
+  <td class=xl7325522>YTGRRKS*ELGAEP</td>
+  <td class=xl8425522 style='border-image: initial'>actin cytoskeleton</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Nsfl1c</td>
+  <td class=xl6925522>NSFL1 cofactor p47&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>O35987</td>
+  <td class=xl7125522>S176</td>
+  <td class=xl7125522>Q9CZ44</td>
+  <td class=xl7125522>S176</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>GERRRHS*GQDVHV</td>
+  <td class=xl7325522>GERRRHS*GQDVHV</td>
+  <td class=xl8425522 style='border-image: initial'>vesicle-mediated transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Pde7a</td>
+  <td class=xl6925522>high affinity cAMP-specific 3',5'-cyclic
+  phosphodiesterase 7A</td>
+  <td class=xl7025522 width=67 style='width:50pt'>O08593</td>
+  <td class=xl7125522>S28</td>
+  <td class=xl7125522>P70453</td>
+  <td class=xl7125522>S58</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>ETERRGS*HPYIDF</td>
+  <td class=xl7325522>ETERRGS*HPYIDF</td>
+  <td class=xl8425522 style='border-image: initial'>cyclic AMP dependent
+  signaling</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Pdlim5</td>
+  <td class=xl6925522>PDZ and LIM domain protein 5 isoform ENH3a</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q62920</td>
+  <td class=xl7125522>S111</td>
+  <td class=xl7125522>Q8CI51</td>
+  <td class=xl7125522>S111</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>KPVPITS*PAVSKV</td>
+  <td class=xl7325522>KPVPITS*PAVSKV</td>
+  <td class=xl8425522 style='border-image: initial'>actin cytoskeleton</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Pi4kb</td>
+  <td class=xl6925522>phosphatidylinositol 4-kinase beta&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>O08561</td>
+  <td class=xl7125522>S511</td>
+  <td class=xl7125522>Q8BKC8</td>
+  <td class=xl7125522>S511</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>DIRRRLS*EQLAHT</td>
+  <td class=xl7325522>DIRRRLS*EQLAHT</td>
+  <td class=xl8425522 style='border-image: initial'>calcium signaling</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Prkar2a</td>
+  <td class=xl6925522>cAMP-dependent protein kinase type II-alpha regulatory
+  subunit</td>
+  <td class=xl7025522 width=67 style='width:50pt'>P12368</td>
+  <td class=xl7125522>S97</td>
+  <td class=xl7125522>P12367</td>
+  <td class=xl7125522>S96</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>KFTRRVS*VCAETF</td>
+  <td class=xl7325522>KFTRRVS*VCAETF</td>
+  <td class=xl8425522 style='border-image: initial'>cyclic AMP dependent
+  signaling</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Prrc2a</td>
+  <td class=xl6925522>protein PRRC2A</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q6MG48</td>
+  <td class=xl7125522>S455</td>
+  <td class=xl7125522>Q7TSC1</td>
+  <td class=xl7125522>S454</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>RQRRKQS*SSEISL</td>
+  <td class=xl7325522>RQRRKQS*SSEISL</td>
+  <td class=xl8425522 style='border-image: initial'>RNA processing</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Prrc2a</td>
+  <td class=xl6925522>protein PRRC2A</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q6MG48</td>
+  <td class=xl7125522>T783</td>
+  <td class=xl7125522>Q7TSC1</td>
+  <td class=xl7125522>T782</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>LLRERGT*PPVDPK</td>
+  <td class=xl7325522>LLRERGT*PPVDPK</td>
+  <td class=xl8425522 style='border-image: initial'>RNA processing</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Ralgapa2</td>
+  <td class=xl6925522>ral GTPase-activating protein subunit alpha-2</td>
+  <td class=xl7025522 width=67 style='width:50pt'>P86411</td>
+  <td class=xl7125522>S820</td>
+  <td class=xl7125522>A3KGS3</td>
+  <td class=xl7125522>S820</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>LVRRSSS*PAELDL</td>
+  <td class=xl7325522>LVRRSSS*PAELEL</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of GTPase
+  activity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Rmdn3</td>
+  <td class=xl6925522>regulator of microtubule dynamics protein 3</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q66H15</td>
+  <td class=xl7125522>S46</td>
+  <td class=xl7125522>Q3UJU9</td>
+  <td class=xl7125522>S46</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>RHGRSQS*LPNSLD</td>
+  <td class=xl7325522>RHGRSHS*LPNSLD</td>
+  <td class=xl8425522 style='border-image: initial'>microtubule cytoskeleton</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Sec22b</td>
+  <td class=xl6925522>vesicle-trafficking protein SEC22b</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q4KM74</td>
+  <td class=xl7125522>S137</td>
+  <td class=xl7125522>O08547</td>
+  <td class=xl8325522>S137</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>ARRNLGS*INTELQ</td>
+  <td class=xl7325522>ARRNLGS*INTELQ</td>
+  <td class=xl8425522 style='border-image: initial'>vesicle-mediated transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Sept9</td>
+  <td class=xl6925522>septin-9</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9QZR6</td>
+  <td class=xl7125522>T125</td>
+  <td class=xl7125522>Q80UG5</td>
+  <td class=xl7125522>T143</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>EVLGHKT*PEPVPR</td>
+  <td class=xl7325522>EVLGHKT*PEPVPR</td>
+  <td class=xl8425522 style='border-image: initial'>cell polarity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Slc9a3r1</td>
+  <td class=xl6925522>Na(+)/H(+) exchange regulatory cofactor NHE-RF1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9JJ19</td>
+  <td class=xl7125522>S277</td>
+  <td class=xl7125522>P70441</td>
+  <td class=xl7125522>S275</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>VEPASES*PRPALA</td>
+  <td class=xl7325522>VEPASES*PRPALA</td>
+  <td class=xl8425522 style='border-image: initial'>cell polarity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Specc1l</td>
+  <td class=xl6925522>cytospin-A&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q2KN99</td>
+  <td class=xl7125522>S385</td>
+  <td class=xl7125522>Q2KN98</td>
+  <td class=xl7125522>S385</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>ERSRKGS*SGNASE</td>
+  <td class=xl7325522>ERSRKGS*SGNASE</td>
+  <td class=xl8425522 style='border-image: initial'>actin cytoskeleton</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Specc1l</td>
+  <td class=xl6925522>cytospin-A</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q2KN99</td>
+  <td class=xl7125522>S833</td>
+  <td class=xl7125522>Q2KN98</td>
+  <td class=xl7125522>S833</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>GLSRRSS*TSSEPT</td>
+  <td class=xl7325522>GLSRRSS*TSSEPT</td>
+  <td class=xl8425522 style='border-image: initial'>actin cytoskeleton</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Src</td>
+  <td class=xl6925522>neuronal proto-oncogene tyrosine-protein kinase Src</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9WUD9</td>
+  <td class=xl7125522>S17</td>
+  <td class=xl7125522>P05480</td>
+  <td class=xl7125522>S17</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>ASQRRRS*LEPAEN</td>
+  <td class=xl7325522>ASQRRRS*LEPSEN</td>
+  <td class=xl8425522 style='border-image: initial'>protein phosphorylation</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Stim1</td>
+  <td class=xl6925522>stromal interaction molecule 1 isoform 2</td>
+  <td class=xl7025522 width=67 style='width:50pt'>P84903</td>
+  <td class=xl7125522>S575</td>
+  <td class=xl7125522>P70302</td>
+  <td class=xl7125522>S575</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>VEKLPDS*PALAKK</td>
+  <td class=xl7325522>VEKLPDS*PALAKK</td>
+  <td class=xl8425522 style='border-image: initial'>calcium signaling</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Stxbp5</td>
+  <td class=xl6925522>syntaxin-binding protein 5</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9WU70</td>
+  <td class=xl7125522>S760</td>
+  <td class=xl7125522>Q8K400</td>
+  <td class=xl7125522>S760</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>KMSRKLS*LPTDLK</td>
+  <td class=xl7325522>KMSRKLS*LPTDLK</td>
+  <td class=xl8425522 style='border-image: initial'>vesicle-mediated transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Tanc1</td>
+  <td class=xl6925522>protein TANC1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q6F6B3</td>
+  <td class=xl7125522>S1658</td>
+  <td class=xl7125522>Q0VGY8</td>
+  <td class=xl7125522>S1665</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>SSGSSGS*PSSSVK</td>
+  <td class=xl7325522>SSGSSGS*PSSSIK</td>
+  <td class=xl8425522 style='border-image: initial'>cell polarity</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Tsc22d4</td>
+  <td class=xl6925522>TSC22 domain family protein 4&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q3B8N7</td>
+  <td class=xl7125522>T223</td>
+  <td class=xl7125522>Q9EQN3</td>
+  <td class=xl7125522>T223</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>GGLAAGT*PPLSRR</td>
+  <td class=xl7325522>GGSAAAT*PPLSRR</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of transcription</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl6825522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Veph1</td>
+  <td class=xl6925522>ventricular zone-expressed PH domain-containing protein 1</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q5PQS3</td>
+  <td class=xl7125522>S430</td>
+  <td class=xl7125522>A1A535</td>
+  <td class=xl7125522>S430</td>
+  <td class=xl7225522>increased</td>
+  <td class=xl7325522>GSVRRYS*LDHVSK</td>
+  <td class=xl7325522>GSGRRYS*LDHISK</td>
+  <td class=xl8425522 style='border-image: initial'>regulation of transcription</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7425522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Wdr7</td>
+  <td class=xl6925522>WD repeat-containing protein 7&nbsp;</td>
+  <td class=xl7025522 width=67 style='width:50pt'>Q9ERH3</td>
+  <td class=xl7125522>S935</td>
+  <td class=xl7125522>Q920I9</td>
+  <td class=xl7125522>S935</td>
+  <td class=xl7525522>decreased</td>
+  <td class=xl7325522>LSKARDS*PPASSN</td>
+  <td class=xl7325522>LSKARDS*PPPSSN</td>
+  <td class=xl8425522 style='border-image: initial'>vesicle-mediated transport</td>
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 class=xl7625522 width=65 style='height:14.0pt;width:49pt;
+  border-image: initial'>Zfp36l1</td>
+  <td class=xl7725522 style='border-image: initial'>mRNA decay activator
+  protein ZFP36L1</td>
+  <td class=xl7825522 width=67 style='width:50pt;border-image: initial'>P17431</td>
+  <td class=xl7925522 style='border-image: initial'>S54</td>
+  <td class=xl7925522 style='border-image: initial'>P23950</td>
+  <td class=xl7925522 style='border-image: initial'>S54</td>
+  <td class=xl8025522 style='border-image: initial'>increased</td>
+  <td class=xl8125522 style='border-image: initial'>GFPRRHS*VTLPSS</td>
+  <td class=xl8125522 style='border-image: initial'>GFPRRHS*VTLPSS</td>
+  <td class=xl8525522 style='border-image: initial'>RNA processing</div>
+  </div>
+  <div style='font-variant-ligatures: normal;font-variant-caps: normal;
+  orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+  text-decoration-style: initial;text-decoration-color: initial'></div>
+  </td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=65 style='width:49pt'></td>
+  <td width=335 style='width:252pt'></td>
+  <td width=67 style='width:50pt'></td>
+  <td width=67 style='width:50pt'></td>
+  <td width=67 style='width:50pt'></td>
+  <td width=67 style='width:50pt'></td>
+  <td width=78 style='width:59pt'></td>
+  <td width=120 style='width:90pt'></td>
+  <td width=130 style='width:98pt'></td>
+  <td width=179 style='width:134pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+ 
+ 
+</div>			
+			
+			<div class="push"></div>
+        </div>
+		<div class="footer" align="center">
+            <hr>        
+            
+            <div>
+                <a href="http://helix.nih.gov/disclaimer.html" class="footlink" target="_blank">Disclaimer</a> |
+                <a href="http://helix.nih.gov/privacy.html" class="footlink" target="_blank">Privacy</a> |
+                <a href="http://www.nhlbi.nih.gov/nhlbi508form.htm" class="footlink" target="_blank">Accessibility</a> |
+            </div>
+            <div>
+                <a href="http://helix.nih.gov/" class="footlink" target="_blank">Helix Systems</a> |
+                <a href="http://cit.nih.gov/" class="footlink" target="_blank">CIT</a> |
+                <a href="http://www.nhlbi.nih.gov/" class="footlink" target="_blank">NHLBI</a> |
+                <a href="http://www.nih.gov/" class="footlink" target="_blank">NIH</a> |
+                <a href="http://www.dhhs.gov/" class="footlink" target="_blank">DHHS</a> |
+                <a href="http://www.firstgov.gov/" class="footlink" target="_blank">USA.gov</a>
+            </div>
+        </div>
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+</body>
+
+</html>
