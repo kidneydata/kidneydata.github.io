@@ -1,0 +1,101 @@
+body {
+	margin:0;
+	padding-top:0px;
+	padding-bottom:250px;
+	padding-right:40px;
+	padding-left:40px;
+	background:#376092;
+	font:"Times New Roman", serif;
+	color:#000000;
+	line-height:180%;
+}
+
+table.T1{
+	/*Main table, holds everything*/
+	padding:10px;
+	border:0px;
+	background:#D9E1F7;
+	border-collapse:collapse;
+	}
+	
+table.text{
+	/*Holds the description of the page*/
+	width:95%;
+	}
+	
+table.data{
+	/*Holds the actual database entries*/
+	width:95%;
+	border:1px solid white;
+	border-collapse:collapse;
+	}
+	
+th{
+	color:white;
+	background:#376092;
+	border:1px solid white;
+	text-align:center;
+	}
+
+td.toplogos {
+	/*NHLBI,NIH and HHS logos/links. Top bar of page*/
+	height:40px; 
+	text-align:center;
+}
+
+td.blueborder {
+	/*The blue bar across the page. Twice in header, twice in footer*/
+	border:0px; 
+	padding:0px;
+        border-collapse:collapse;
+        	
+}
+	
+td.rightheader{
+	/*Square that holds the search menu and download*/
+	width:20%;
+	text-align:center;
+	background:#C3D0F2;
+	padding:0px;
+}
+	
+td.pname {
+	width:50%;
+	}	
+	
+td.genesym {
+	width:14%;
+	}	
+	
+td.GInum {
+	width:12%;
+	}	
+	
+td.swissnum {
+	width:12%;
+	}	
+	
+td.tech {
+	width:12%;
+	font-size:12px;
+	}
+
+tr.row1 td{
+	/*Used to get alternating colors of rows*/
+	font:"Times New Roman", serif;
+	background: #EBEFF4;
+	border-bottom:1px solid #C3CFDE;
+}
+
+tr.row2 td{
+	font:"Times New Roman", serif;
+	background: white;
+	border-bottom:1px solid #C3CFDE;
+	
+}
+
+td.footerlinks{
+	/*Text links in the footer*/
+	text-align:center;
+	background:#C3D0F2;
+}
