@@ -1,0 +1,203 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>
+PKA Signaling - Apoptosis
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="Apoptosis_files/esbl.css" type="text/css">
+<script language="JavaScript" src="Apoptosis_files/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 300);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+
+<body>
+<a href="http://esbl.nhlbi.nih.gov/"><img alt="ESBL" src="Apoptosis_files/nhlbi_vsmall.gif" style="width:42px;height:42px;border:0;" align="middle" border="0">     <b>Epithelial Systems Biology Laboratory, NHLBI</b></a>
+
+<div align="center">
+<p style="font-size:20px; color:red; font-family: Arial Black" align="center">PKA Signaling - Apoptosis</p>
+
+<p style="font-size:15px; color:black; font-family: Arial Black" align="center"> 
+Source: Isobe K, Jung HJ, Yang CR, Claxton J, Sandoval P, Burg MB, Raghuram V, Knepper MA. Systems-level identification of PKA-dependent signaling in epithelial cells. Proc Natl Acad Sci U S A. 2017; 114: E8875-E8884. PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28973931" target="_blank">28973931</a>
+</p> 
+
+
+<p style="font-size:15px" align="center">(Place cursor over object to reveal documentation. References given as PMID numbers.)</p>
+<img src="Apoptosis_files/Apoptosis.png" name="pathwayimage" usemap="#mapdata" border="1">
+
+<map name="mapdata">
+<area shape="circle" coords="543,87,40" alt="PKA activation inhibits apoptosis" title="Direct phosphorylation by protein kinase A (PKA) is indicated by thick blue lines.  These phosphorylation targets are inferred from quantitative LC-MS/MS studies in which phosphorylation changes are measured in PKA double knockout mpkCCD cells versus control cells, inferred from the published literature, or inferred by both kinds of evidence. Both PKA genes were deleted via the CRISPR-Cas9 method. mpkCCD is a vasopressin-sensitive cell line from mouse renal collecting duct expressing the V2 vasopressin receptor (Avpr2) and the vasopressin-regulated water channel aquaporin-2 (Aqp2).  Possible downstream effects based on new data and literature indicated by black lines. Yellow rectangles indicate known physiological responses to vasopressin in collecting duct cells. P, phosphorylation; B, binding">
+<area shape="rect" coords="380,140,530,200" title="Ser155 of Bad is a classic PKA target (PhosphoSitePlus). [PMID: 10880354].">
+<area shape="circle" coords="380,270,25" title="In the PKA double KO cells, there was a marked decrease in phosphorylation at S155 [RELRRMS*DEFEGS]  (dKO/cont=0.12). Vasopressin increases phosphorylation of Bad at S155 in collecting duct cells [23136001]. Bad interacts with death repressor protein Bcl-X(L) in mitochondrial outer membrane reversing its death repressor activity. Therefore it is pro-apoptotic. Phosphorylation on Ser-155 by PKA, blocks its pro-apoptotic activity.">
+<area shape="rect" coords="350,315,420,435" title="PKA activation and the resulting Bad phosphorylation at Ser155 are predicted to inhibit apoptosis and promote survival.">
+<area shape="rect" coords="310,450,450,520" title="Vasopressin inhibits apoptosis in renal collecting duct cells through the V2 receptor and downstream cAMP-mediated pathways [23136001].">
+<area shape="circle" coords="700,490,25" title="Bim (Bcl2l11), which is pro-apoptotic, undergoes an increase in phosphorylation in the PKA dKO at S73 [GPFATRS*PLFIFV], a proline directed site (dKO/cont = 1.64).   Bim is expressed in various splicing variant forms and is subject to multisite phosphorylation at proline-directed sites by both ERK and JNK [15947788].  At least some of these phosphorylation events enhance apoptosis (e.g. at Ser65 of mouse) although the Ser73  site found lacks documentation. Ser65 phosphorylation was  only identified in one PKA dKO/control pair and the dKO/cont ratio was 1000.">
+<area shape="rect" coords="470,465,650,500" title="Decreased Bim phosphorylation by Jnk1 with PKA activation predicts a decrease in apoptotic rate. ">
+<area shape="circle" coords="693,206,25" title="Map3k5 is more commonly known as Apoptosis Signal Regulated Kinase 1 (ASK1).  Phosphorylation at  Ser973 [EYLRSIS*LPVPVL] was decreased in the PKA dKO (dKO/cont =  0.51).  This is a basophilic site consistent with PKA target creating a 14-3-3 protein binding site (RSxS*xP) and suppression of enzyme activity by PKA (Kinexus PhosphoNet).">
+<area shape="circle" coords="693,290,25" title="Map2k7 shows moderate increase at Ser293 (dKO/cont = 1.33) and Ser73 (dKO/cont = 1.76) in PKA double knockout cells.  Serine293 is a potential activating site in the activation loop (SKAKTRS*AGCAAY), although primary site is listed as Thr291.  Effect of Ser73 phosphorylation not documented in Kinexus PhosphoNet. Map2k7 is JNK kinase 2 and activates JNK and not p38.">
+<area shape="circle" coords="693,400,25" title="Mapk8 is JNK1. No JNK phosphopeptides were found in PKA dKO cells.  However, its canonical target, the transcription factor Jun, showed a marked increase in phosphorylation at Ser63 (dKO/cont = 3.44) in the PKA dKO cells. (This is adjacent to the site that is strongly downregulated in response to vasopressin, viz. Ser73, also a JNK site.)">
+<area shape="rect" coords="620,535,765,610" title="Large-scale quantitative phosphoprotoemics studies in mouse mpkCCD collecting duct cells [20139300] and native rat IMCD cells from kidney [20075062] have demonstrated that vasopressin, working through the V2 vasopressin receptor, results in a wide ranging decrease in phosphorylation of proteins at sites with proline in position +1 relative to the phosphorylated S or T.  The results imply that vasopressin signaling is associated with a decrease in activation of one or more proline-directed kinases, i.e. MAP kinases or cyclin-dependent kinases. This model points to ERK2 and JNK1 in that role.">
+<area shape="rect" coords="900,650,930,700" href="index.html" title="Return to index page.">
+
+
+
+</map>
+</div>
+
+<br>
+<a href="index.html"> <img alt="return to index page" src="Apoptosis_files/nhlbi_vsmall.gif" style="width:42px;height:42px;border:0;" align="middle" border="0">     <b>Click here to return to index page.</b></a>
+<div id="poplay" class="poplay"></div>
+</body></html>

@@ -1,0 +1,8 @@
+AVP, arginine vasopressin; dDAVP, desmopressin (a homolog of vasopressin);
+cAMP, cyclic adenosine monophosphate; snGFR, single nephron glomerular
+filtration rate; CCD, cortical collecting duct; IMCD, inner medullary 
+cortical duct; mpkCCD, cultured murine cortical collecting duct cell; 
+DOC, deoxycorticosterone; mTAL, medullary thick ascending limb; MDCK, 
+Madin-Darby canine kidney; cTAL, cortical thick ascending limb; LLC-PK, 
+porcine kidney; IBMX, 3-isobutyl-1-methylxanthine; UT-A2, mouse urea 
+transporter; µU/mL, micro units per milliliter; µM, micro molar; AA, arachidonic acid.

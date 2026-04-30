@@ -1,0 +1,189 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>
+PKA Signaling - Actin Polymerization
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="Ca_mobiliztion_files/esbl.css" type="text/css">
+<script language="JavaScript" src="Ca_mobiliztion_files/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 300);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+
+<body>
+<a href="http://esbl.nhlbi.nih.gov/"><img alt="Epithelial Systems Biology Laboratory" src="Actin_files/nhlbi_vsmall.gif" align="middle" border="0" style="width:42px;height:42px;border:0;">     <b>Epithelial Systems Biology Laboratory, NHLBI</b></a>
+
+<p align="center" style="font-size:20px; color:red; font-family: Arial Black">PKA Signaling - Actin Polymerization</p>
+<div align="center">
+<p align="center" style="font-size:10px">(Place cursor over object to reveal documentation. References given as PMID numbers.)</p>
+<img src="Actin_files/Actin_Polymerization.png" name="pathwayimage" usemap="#mapdata" border="1">
+
+<map name="mapdata">
+<area shape="circle" coords="530,87,50" title="Direct phosphorylation by protein kinase A (PKA) is indicated by thick blue lines.  These phosphorylation targets are inferred from quantitative LC-MS/MS studies in which phosphorylation changes are measured in PKA double knockout mpkCCD cells versus control cells, inferred from the published literature, or inferred by both kinds of evidence. Both PKA genes were deleted via the CRISPR-Cas9 method. mpkCCD is a vasopressin-sensitive cell line from mouse renal collecting duct expressing the V2 vasopressin receptor (Avpr2) and the vasopressin-regulated water channel aquaporin-2 (Aqp2).  Possible downstream effects based on new data and literature indicated by black lines. Yellow rectangles indicate known physiological responses to vasopressin in collecting duct cells.">
+
+<area shape="rect" coords="480,131,520,275" alt="PKA phosphorylates the IP3 receptor" title="Phosphorylation of Itpr3 at S934 and S1832 has been shown to be mediated by PKA [PMID: 16107208].">
+<area shape="circle" coords="500,304,25" alt="PKA phosphorylates the IP3 receptor"  title="Two basophilic sites in Itpr3 showed a profound decrease in phosphorylation in PKA dKO cells, viz.  S934 [VLSRKQS*VFGASS] and S1832 [TKGRVSS*FSMPSS].  The phospho-occupancy dKO/cont values were: S934, 0.005;  and S1832, 0.135.    Both sites are in the long N-terminal tail. PKA enhances InsP3-induced Ca2+ mobilization {PMID: 9488697].">
+<area shape="rect" coords="460,450,540,550" alt="vasopressin increases intracellular calcium"  title="Vasopressin increases intracellular calcium via the vasopressin V2 receptor in renal collecting duct cells [2838523, 8342613] The mobilization is via an increase in the frequency of aperiodic Ca spikes [17957381, 18667481]. ">
+<area shape="rect" coords="480,335,520,440" alt="vasopressin increases intracellular calcium" title="cAMP/PKA induces ITP receptor mediated Ca oscillations in a variety of cell types (14505457).  This hypothetically may be in part due to a phosphorylation-induced  increase in Ca sensitivity of Ca-induced Ca release mechanism, increasing the likelihood that random Ca fluctuations will result in calcium release from the endoplasmic reticulum.">
+
+
+</map>
+</div>
+<br>
+<a href="index.html"> <img alt="ESBL" src="index_files/nhlbi_vsmall.gif" alt="Protein kinase A regulates actin dynamics" align="middle" border="0" style="width:42px;height:42px;border:0;">     <b>Click here to return to index page.</b></a>
+<div id="poplay" class="poplay"></div>
+</body></html>

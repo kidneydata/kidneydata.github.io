@@ -1,0 +1,196 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>
+What PKA Does
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="index_files/esbl.css" type="text/css">
+<script language="JavaScript" src="index_files/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 300);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+
+<body>
+<a href="http://esbl.nhlbi.nih.gov/"><img alt="ESBL" src="index_files/nhlbi_vsmall.gif" style="width:42px;height:42px;border:0;" align="middle" border="0">     <b>Epithelial Systems Biology Laboratory, NHLBI</b></a>
+
+<div align="center">
+<p style="font-size:20px; color:red; font-family: Arial Black" align="center">Entry Page to PKA Network</p>
+
+<p style="font-size:15px; color:black; font-family: Arial Black" align="center"> 
+Source: Isobe K, Jung HJ, Yang CR, Claxton J, Sandoval P, Burg MB, Raghuram V, Knepper MA. Systems-level identification of PKA-dependent signaling in epithelial cells. Proc Natl Acad Sci U S A. 2017; 114: E8875-E8884. PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28973931" target="_blank">28973931</a>
+</p> 
+
+
+
+<p style="font-size:15px" align="center">(Network is divided up into multiple subnetworks based on physiological responses regulated. Click on individual <b>Physiological Responses</b> to reveal subnetworks with documentation.)</p>
+<img src="index_files/PKA_Targets.png" name="pathwayimage" usemap="#mapdata" border="1">
+
+<map name="mapdata">
+<area shape="rect" coords="690,127,880,178" href="Ca_mobiliztion.html" alt="Calcium mobilization" title="Calcium mobilization">
+<area shape="rect" coords="690,190,880,240" href="Actin.html" alt="Actin Dynamics" title="Actin Dynamics">
+<area shape="rect" coords="690,255,880,308" href="MAPK_pathways.html" alt="MAP Kinase Inhibition" title="MAP Kinase Inhibition">
+<area shape="rect" coords="690,320,880,370" href="Apoptosis.html" alt="Inhibition of apoptosis" title="Increased Cell Survival">
+<area shape="rect" coords="690,385,880,435" href="PKA Signaling - Phosphorylation of AQP2.html" alt="Altered aquaporin-2 phosphorylation" title="Altered Aquaporin-2 Phosphorylation">
+<area shape="rect" coords="690,450,880,500" href="Exocytosis.html" alt="PKA Increases Aquaporin-2 Exocytosis" title="Increased Aquaporin-2 Exocytosis">
+<area shape="rect" coords="690,505,880,560" href="Endocytosis.html" alt="PKA Decreases Aquaporin-2 Endocytosis and Degradation" title="Decreased Aquaporin-2 Endocytosis">
+<area shape="rect" coords="690,565,880,615" href="Endocytosis.html" alt="PKA Decreases Aquaporin-2 Endocytosis and Degradation" title="Increased Aquaporin-2 Half-Life">
+<area shape="rect" coords="690,635,880,690" href="Transcription.html" alt="PKA Increases Transcription of Aquaporin-2 Gene" title="Increased Aqp2 Gene Transcription">
+</map>
+</div>
+<p style="font-size:12px; color:red; font-family: Arial Black" align="left">*Basophilic phosphorylation sites with decreased phospho-occupancy in PKA double knockout cells (both PKA catalytic subunit genes deleted in mouse mpkCCD cells by CRISPR-Cas9)</p>
+<br>
+<a href="index.html"> <img alt="Back to index page" src="index_files/nhlbi_vsmall.gif" style="width:42px;height:42px;border:0;" align="middle" border="0">     <b>Click here to return to index page.</b></a>
+<div id="poplay" class="poplay"></div>
+</body></html>

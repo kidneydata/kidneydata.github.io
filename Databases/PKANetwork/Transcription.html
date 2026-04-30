@@ -1,0 +1,224 @@
+<html><!---
+ENTRY       hsa04810
+DEFINITION  Regulation of actin cytoskeleton - Homo sapiens (human)
+---><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>
+PKA Signaling - Transcription
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="Transcription_files/esbl.css" type="text/css">
+<script language="JavaScript" src="Transcription_files/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 300);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+
+<body>
+<a href="http://esbl.nhlbi.nih.gov/"><img alt="ESBL" src="index_files/nhlbi_vsmall.gif" align="middle" border="0" style="width:42px;height:42px;border:0;">     <b>Epithelial Systems Biology Laboratory, NHLBI</b></a>
+
+
+<div align="center">
+<p align="center" style="font-size:20px; color:red; font-family: Arial Black">PKA Signaling - Regulation of Transcription</p>
+
+<p style="font-size:15px; color:black; font-family: Arial Black" align="center"> 
+Source: Isobe K, Jung HJ, Yang CR, Claxton J, Sandoval P, Burg MB, Raghuram V, Knepper MA. Systems-level identification of PKA-dependent signaling in epithelial cells. Proc Natl Acad Sci U S A. 2017; 114: E8875-E8884. PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28973931" target="_blank">28973931</a>
+</p> 
+
+
+<p align="center" style="font-size:13px">(Place cursor over object to reveal documentation. Refences given as PMID numbers.)</p>
+
+<img src="Transcription_files/Transcription.png" name="pathwayimage" usemap="#mapdata" border="1">
+
+<map name="mapdata">
+<area shape="circle" coords="560,60,50" title="Direct phosphorylation by protein kinase A (PKA) is indicated by thick blue lines.  These phosphorylation targets are inferred from quantitative LC-MS/MS studies in which phosphorylation changes are measured in PKA double knockout mpkCCD cells versus control cells, inferred from the published literature, or inferred by both kinds of evidence. Both PKA genes were deleted via the CRISPR-Cas9 method. mpkCCD is a vasopressin-sensitive cell line from mouse renal collecting duct expressing the V2 vasopressin receptor (Avpr2) and the vasopressin-regulated water channel aquaporin-2 (Aqp2).  Possible downstream effects based on new data and literature indicated by black lines. Yellow rectangles indicate known physiological responses to vasopressin in collecting duct cells.">
+<area shape="rect" coords="495,572,615,675" title="Marked decrease in Aqp2 mRNA in PKA double KO mpkCCD cells(present study).  Vasopressin increases Aqp2 mRNA and increases RNA Pol-II occupancy throughout the Aqp2 gene body (27725713).">
+<!-- Sik2 Crebbp-->
+<area shape="circle" coords="560,200,25"  title="In Sik2, two sites showed decreased phosphorylation in PKA double KO:  Ser358 (dKO/cont = 0.043) and Ser587 (dKO/cont = 0.484).", "#ffffff")' onmouseout="hideMapTn()">
+<area shape="circle" coords="560,304,25"  title="The putative Sik2 site in CREBBP (Ser77 SELLRGGS*GSSINPG) was not identified in PKA dKO cells. The tryptic peptide would be 45 amino acids in length.", "#ffffff")' onmouseout="hideMapTn()">
+<area shape="rect" coords="535,111,575,158" title="PKA phosphorylates  S358  of Sik2 (22462548), reducing enzymatic activity (25472719) via 14-3-3 binding (Intro. to 25472719). cAMP decreases SIK2 activity via the PKA-mediated phosphorylation of SIK2 at S587 (14693422).">
+<area shape="rect" coords="535,232,575,268" title="SIK2 inhibits p300 HAT activity by direct phosphorylation on Ser89 (21084751). This is probably true for the equivalent site on CREBBP, also a histone acetyltransferase. CREBBP translocates into the nuclei of mpkCCD cells in response to vasopressin along with beta-catenin (Schenk, 22440904).">
+<area shape="rect" coords="520,400,620,450" title="CREBBP is  a histone acetyltransferase that acetylates Histone H3K27 [19700617]. In the present publication, we show that Histone H3K27 acetylation increases at the Aqp2 gene promotor and gene body.">
+
+<!-- Nfatc2-->
+<area shape="circle" coords="740,110,27" title="Phosphorylation of Itpr3 at S934 and S1832 has been shown to be mediated by PKA [PMID: 16107208]. Two basophilic sites in Itpr3 showed a profound decrease in phosphorylation in PKA dKO cells, viz.  S934 [VLSRKQS*VFGASS] and S1832 [TKGRVSS*FSMPSS].  The phospho-occupancy dKO/cont values were: S934, 0.005;  and S1832, 0.135.    Both sites are in the long N-terminal tail. PKA enhances InsP3-induced Ca2+ mobilization {PMID: 9488697].">
+<area shape="rect" coords="800,110,900,170" title="Vasopressin increases intracellular calcium via the vasopressin V2 receptor in renal collecting duct cells [2838523, 8342613] The mobilization is via an increase in the frequency of aperiodic Ca spikes [17957381, 18667481]. ">
+<area shape="rect" coords="770,110,779,160" title="cAMP/PKA induces ITP receptor mediated Ca oscillations in a variety of cell types (14505457).  This hypothetically may be in part due to a phosphorylation-induced  increase in Ca sensitivity of Ca-induced Ca release mechanism, increasing the likelihood that random Ca fluctuations will result in calcium release from the endoplasmic reticulum.">
+<area shape="circle" coords="850,270,27" title="Calmodulin (Calm1, Calm2, Calm3) and the regulatory subunit of calcineurin (Ppp3r1) bind calcium through their EF hand domains, allowing them to bind to and activate effector proteins including calcineurin catalytic subunit.">
+<area shape="circle" coords="850,390,27" title="When Ppp3r1 or calmodulin binds to the catalytic subunit of calcineurin (Ppp3ca or Ppp3cb), it relieves autoinhibition, increasing catalytic activity.">
+<area shape="circle" coords="850,515,27" title="Nfatc2 undergoes marked dephosphorylation at Ser237 [GAKRRHS*CAEALV] in PKA double KO (dKO/cont = 0.27). This site is a likely direct PKA site.  This site overlaps the nuclear localization sequence and may regulate this TF by affecting localization.  This may be opposed in part by activation of the phosphatase calcineurin (Ppp3ca (PP2-B)).  There are several phosphorylation sites in Nfatc2 that are targets of calcineurin in the 99-365 region [11030334]. Upon cell stimulation, all these sites except Ser-245 are dephosphorylated by calcineurin. These would be predicted to show an increase in phosphorylation in the PKA dKO. Indeed, some sites showed marked increases in PKA dKO:  Ser99 (dKO/cont = 251), Ser270 (dKO/cont = 27), Ser748 (dKO/cont = 105).  Others showed no change: Ser136, Ser150, Ser219, Ser223.  UniProt: Rapid nuclear exit of NFATC is thought to be one mechanism by which cells distinguish between sustained and transient calcium signals. Nfatc2 is a member of the multicomponent NFATC transcription complex that consists of  NFATC2,  NFATC1, AP1, MAF, GATA isoforms and Crebbp. ">
+<area shape="rect" coords="631,601,807,526" title="An NFAT binding motif is located 489 bp upstream of the AQP2 transcription start site influences hypertonicity-stimulated AQP2 transcriptional activity [16641150]. Nfatc regulates AQP2 gene expression and functional NFAT binding sites within the proximal AQP2 promoter are responsible for regulation of AQP2 by NFATc proteins [17166937].">
+<!-- Gli3-->
+<area shape="circle" coords="675,285,27" title="Gli3 undergoes an increase in abundance in the PKA dKO vs. control (dKO/cont = 1.70).  It is a Kruppel-like (zinc finger) transcriptional repressor that is a mediator of Hedgehog signaling and is also known to be regulated by PKA (16705181). UniProt:  Phosphorylated on multiple sites by protein kinase A (PKA). Undergoes phosphorylation dependent proteolytic processing requiring PKA-primed phosphorylation of Gli3 followed by BTRC-mediated ubiquitination of Gli3.  BTRC complex = SKP1-CUL1-F-box  E3 ubiquitin-protein ligase complex known to mediate phosphorylation dependent degradation of other proteins such as NF-kappa-B and Per1. Despite the increase in total Gli3 in the PKA dKO, a basophilic phosphorylation site, Ser849 [TLNRRDS*NTSTIS], appears to be markedly decreased in phospho-occupancy in the PKA dKO (single sample value), compatible with the phosphorylation dependent proteolysis model.">
+<area shape="rect" coords="611,540,670,417" title="Gli3 is a Kruppel-like (zinc finger) transcriptional repressor.  Aqp2 gene has potential Klf binding site in first intron at +2342 in rat mediating a presumed repressor role [19996160].  This model fits the model of repressive regulation of AQP2 gene transcription of Furono et al [8898015], such that Aqp2 gene expression requires regulated loss of a repressive factor.  However, they believed that repressive elements were in the promotor rather than the first intron.">
+<!-- Creb1 Junb-->
+<area shape="circle" coords="447,162,27" title="Creb1 is the classical mediator of transcriptional regulation by cAMP through phosphorylation at Ser133 by PKA and other kinases.  However, we did not see or quantify a pSer133 containing peptide in the PKA dKO cells (the tryptic peptide is too short). This residue lies in the pKID domain that mediates binding of CREB to the transcriptional coactivators (histone acetyltransferases) CREBBP and P300. However, in Creb1, we found another known site in the pKID domain, Ser142, which increased in the PKA dKO to dKO/cont = 24 (median 1.54).  This is not a basophilic site KILNDLS*SDAPGV,  Ser142 phosphorylation is inhibitory because it prevents dimerization and CREBBP binding [11013247].   Vasopressin-stimulated PKA activation would predict increased Creb1 mediated transactivation by decreasing Ser142 phosphorylation.">
+<area shape="circle" coords="445,332,27" title="Junb is a bZIP AP1 TF whose abundance was found to be markedly decreased in the PKA dKO cells (dKO/cont = 0.55).  The expression of this gene is regulated by Creb1 and a Creb1 binding site in the Junb promotor has been documented in the mouse ENCODE project and in Creb1 ChIP-seq studies in liver [23682854]. Junb protein has a half-life of 1.7 hrs in mouse mpkCCD cells in the absence of vasopressin (24029424). This very short half-life  fosters rapid changes in protein levels. dDAVP at a concentration of 0.1 nM for 1 hr increased abundance of Junb in nuclear extracts of mouse mpkCCD to 370% (22440904).">
+<area shape="rect" coords="443,370,510,450" title="An AP-1 site with enhancer function has been mapped to the promotor of the Aqp2 gene at bp -451 from the TSS [9140044, 8764152]. Junb can potentially also bind to the half CRE site at -222 [19996160].">
+<area shape="rect" coords="480,460,550,550" title="An AP-1 site with enhancer function has been mapped to the promotor of the Aqp2 gene at bp -451 from the TSS [9140044, 8764152]. Junb can potentially also bind to the half CRE site at -222 [19996160].">
+<!-- Ctnnb1-->
+<area shape="circle" coords="300,130,27" title="In Ctnn1b (beta catenin), Ser552 [DTQRRTS*MGGTQQ] phosphorylation was seen to decrease in the PKA dKO versus control (dKO/cont = 0.25).  This is a documented PKA site.  Beta-catenin is a multifunctional protein that can act as a transcriptional co-regulator when it translocates to the nucleus.  Vasopressin stimulates phosphorylation at Ser552 and also stimulates translocation into the nucleus [22440904].  Classically it interacts with Tcf/Lef  family transcription factors in the Wnt pathway.   However, there are no obvious binding sites for these TFs in the promotor of the Aqp2 gene.   Beta-catenin is transactivated by Crebbp, a histone acetyltransferase  [10769018, 10775268].">
+<area shape="rect" coords="470,245,536,314" title="The transcriptional coactivator Crebbp interacts with ß-catenin to activate gene expression [10769018]. Armadillo (Arm) repeat 10 to the COOH terminus of ß-catenin is involved in binding to Crebbp, whereas ß-catenin interacts directly with the CREB-binding domain of Crebbp. The p300/CBP acetyltransferases function are transcriptional coactivators of ß-catenin in vertebrates [10775268].">
+<area shape="circle" coords="261,500,27" title="Foxo1/Foxo3. Beta-Catenin binds directly to FOXO and enhances FOXO transcriptional activity in mammalian cells [15905404].">
+<area shape="circle" coords="330,500,27" title="Rara: Beta-catenin interactes directly with the RA receptor (Rara) in a retinoid-dependent manner, but not with the retinoid X receptor (Rxra), and Rara competed with TCF for beta-catenin binding [10607566]. Rara is a nuclear receptor that is activated by retinoic acid (vitamin A metabolite).">
+<area shape="rect" coords="310,535,520,625" title="Conserved forkhead binding motif is present at –467 of Aqp2 gene promotor in rat [19190182].  Conserved RXR binding motif is present at –342 of Aqp2 gene promotor in rat [19190182].">
+
+</map>
+</div>
+
+<br><br>
+
+<a href="index.html"> <img alt="ESBL" src="index_files/nhlbi_vsmall.gif" align="left" border="0" style="width:42px;height:42px;border:0;">     <b>    Click here to return to index page.</b></a>
+<div id="poplay" class="poplay"></div>
+</body></html>

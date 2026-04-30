@@ -1,0 +1,222 @@
+<html><!---
+ENTRY       hsa04810
+DEFINITION  Regulation of actin cytoskeleton - Homo sapiens (human)
+---><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>
+PKA Signaling - Endocytosis and Protein Degradation
+</title>
+<style type="text/css">
+h1{
+	font-size:180%;
+	font-weight:bold;
+	color: red;
+	text-align: center;
+}
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="Endocytosis_files/esbl.css" type="text/css">
+<script language="JavaScript" src="Endocytosis_files/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 300);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+
+<body>
+
+<a href="http://esbl.nhlbi.nih.gov/"><img alt="ESBL" src="Endocytosis_files/nhlbi_vsmall.gif" align="middle" border="0" style="width:42px;height:42px;border:0;">     <b>Epithelial Systems Biology Laboratory, NHLBI</b></a>
+
+
+<div align="center">
+<p align="center" style="font-size:20px; color:red; font-family: Arial Black">PKA Signaling - Endocytosis and Protein Degradation</p>
+
+<p style="font-size:15px; color:black; font-family: Arial Black" align="center"> 
+Source: Isobe K, Jung HJ, Yang CR, Claxton J, Sandoval P, Burg MB, Raghuram V, Knepper MA. Systems-level identification of PKA-dependent signaling in epithelial cells. Proc Natl Acad Sci U S A. 2017; 114: E8875-E8884. PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28973931" target="_blank">28973931</a>
+</p> 
+
+
+<p align="center" style="font-size:13px">(Place cursor over object to reveal documentation. References given as PMID numbers.)</p>
+<img src="Endocytosis_files/Endocytosis-Degradation.png" name="pathwayimage" usemap="#mapdata" border="1">
+
+<map name="mapdata">
+<area shape="circle" coords="475,85,40" title="Direct phosphorylation by protein kinase A (PKA) is indicated by thick blue lines.  These phosphorylation targets are inferred from quantitative LC-MS/MS studies in which phosphorylation changes are measured in PKA double knockout mpkCCD cells versus control cells, inferred from the published literature, or inferred by both kinds of evidence. Both PKA genes were deleted via the CRISPR-Cas9 method. mpkCCD is a vasopressin-sensitive cell line from mouse renal collecting duct expressing the V2 vasopressin receptor (Avpr2) and the vasopressin-regulated water channel aquaporin-2 (Aqp2).  Possible downstream effects based on new data and literature indicated by black lines. Yellow rectangles indicate known physiological responses to vasopressin in collecting duct cells.">
+<area shape="circle" coords="585,201,25" title="Two mTOR phosphorylation sites decreased in phospho-occupancy in PKA dKO: Ser2448 (SRTRTDS*YSAGQS), dKO/cont = 0.58; Ser2481 (not basophilic  VPESIHS*FIGDGL), dKO/con = 0.18.  Both phoshorylation events increase enzyme activity (Kinexus PhospoNet).">
+<area shape="circle" coords="589,314,25" title="mTOR/rictor phosphorylates Sgk1 at Ser422 (in the hydrophobic motif) and activates it [18925875].  This phosphorylation site was not identified or quantified in PKA dKO vs control.">
+<area shape="circle" coords="479,421,25"  title="In the PKA dKO experiments  S477 (RPRSLS*SPTVTLS) showed no change with dKO/cont = 0.93.  For S371, dKO/cont = 0.71. For S396, no quantification was obtained. Thus, PKA probably does not strongly regulate Nedd4-2 via direct phosphorylation in mpkCCD cells. PKA-mediated regulation via Mtor and Sgk1 remains a possibility.">
+<area shape="rect" coords="469,128,488,344" title="PKA directly phosphorylates Nedd4l protein. Three Nedd4-2 residues are phosphorylated by PKA and are required for cAMP to inhibit Nedd4-2 [Snyder 15328345],  The sites [translated to mouse numbering] are S477 (IRRPRSLS*SPTVTLS),  S371 (SSRLRSCS*VTDTVAE), and T396 (TRRARSST*VTGGEEP).">
+<area shape="circle" coords="374,415,25"  title="Hectd1 undergoes a marked decrease in phosphorylation (dKO/cont = 0.14) at a basophilic site S1389 [SSSRKGS*SSSVCS]. Site is in serine rich region between MIB and HECT domains. Effect on activity not known; model proposes inhibition.">
+<area shape="circle" coords="274,415,25"  title="Herc4 undergoes a marked decrease in PKA dKO(dKO/cont = 0.10) at a basophilic site, S830 [LLKRKPS*LDDLKE].  Probable PKA site between the catalytic cleft and the E2 binding site in the HECT; likely inhibitory.  Herc4 contains a putative RanGEF that may play a role in nuclear translocation events [26801221].">
+<area shape="circle" coords="780,140,27"  title="Wnk1 S382 phosphorylation [RASFAKS*VIGTPE] is decreased in PKA dKO (PKA dKO/cont =0.40).  This site is in the activation loop and is presumably stimulatory. This suggests that PKA activation likely results in Wnk1 activation.  The effect of PKA is likely indirect since this is not a basophilic site. May be an autocatalytic site [22032326].">
+<area shape="rect" coords="420,490,520,550" title="Short-chain ubiquitination at K270 mediates the regulated endocytosis of the aquaporin-2 water channel in collecting duct cells. Removal of vasopressin causes K63-linked ubiquitination of AQP2 [17101973].">
+<area shape="circle" coords="690,170,25" title="Intersectin-2 (Itsn2) undergoes a profound decrease in phosphorylation in the PKA dKO at a basophilic site, namely Ser491 [LSSRKKS*LHLELE] (dKO/cont = 0.002). Probable obligate PKA site. Site is between the second EH domain and the first SH3 domain. If the newly described PKA site Ser491 inhibits Itsn2 activity, it could help to explain inhibition of AQP2 endocytosis in response to vasopressin.">
+<area shape="rect" coords="700,250,600,600" title="Intersectins are adaptor proteins that interact with dynamin and clathrin adaptors to regulate endocytosis [10922467]. They also have CDC42-GEF activity. In collecting duct cells, intersectins regulate endocytosis of Kcnj1 potassium channels at apical plasma membrane [17380208] and hypothetically play similar roles to regulate AQP2 endocytosis.">
+<area shape="rect" coords="560,630,680,700" title="Vasopressin inhibits AQP2 endocytosis [12676734, 8396343].">
+<area shape="rect" coords="780,170,800,185" title="In collecting duct cells, Wnk1 binds to intersectin to regulate endocytosis [17380208].">
+<area shape="rect" coords="290,630,440,700" title="Vasopressin increases the half life of AQP2 protein molecules in collecting duct cells [20724536, 24029424].  Half life increases from 10 to 14 hours in mpkCCD cells [24029424].">
+<area shape="rect" coords="270,440,415,485" title="Herc4, Hectd1 and Nedd4l are E3 ubiquitin ligases that can ubiquitylate a variety of targets.">
+<area shape="rect" coords="380,440,500,480" title="Herc4, Hectd1 and Nedd4l are E3 ubiquitin ligases that can ubiquitylate a variety of targets.  Large-scale data integration using Bayes' Theorem points to Nedd4l (Nedd4-2) as most likely to interact with AQP2 in collecting duct cells [27199454].">
+<area shape="circle" coords="85,535,25" title="Ser269 phosphorylation in AQP2 has been seen to increase many fold in response to vasopressin in collecting duct cells [18606813,20089674].  Phosphorylation of this site was undectable in mpkCCD cells when both PKA catalytic subunit genes were deleted, indicating that Ser269 phosphorylation requires PKA, presumably because it is a direct substrate.">
+<area shape="rect" coords="150,515,383,555" title="S269 phosphorylation potentiates plasma membrane retention of AQP2, presumably by inhibiting endocytosis [18606813, 18843259]. Theoretically, this could occur if S269 phosphorylation interferes with K270 ubiqutylation. However, S269 phosphorylation and K270 ubiquitylation do not appear to be mutually exclsusive [24876223]. Although K63-linked polyubiquitylation marks AQP2 for endocytosis, site-specific phosphorylation can over-ride polyubiquitylation to determine the localization of the AQP2 water channel [24876223].">
+<area shape="circle" coords="880,90,25" title="The Fgd proteins are CDC42-specific GEFs called “FYVE, RhoGEF and PH domain-containing proteins”.  Via the FYVE domain, they selectively bind  phosphatidylinositol 3- phosphate [9697764], which localizes them to early endosomes and plasma membrane (Cf. EEA1). They are involved in coupling the actin cytoskeleton to the plasma membrane [18410521].   Fgd3 underwent a profound decrease in phosphoryation at Ser442 [ITGRKRS*LELQTR], a strong basophilic site and likely PKA direct target (dKO/cont = 0.02).   The site is amid the first PH domain, upstream from the FYVE domain.  No data on effect of phosphorylation.  It is proposed to inhibit binding to membrane and therefore to limit activity at apical plasma membrane. Also, Fgd1 underwent a marked increase in phosphorylation at Ser116 [ILVKSLS*LDPGQS], a canonical 14-3-3 target, which may sequester it. (dKO/cont = 3.17). This site is not depicted in model.">
+<area shape="rect" coords="850,125,900,280" title="CDC42-specific GEFs catalyze exchange of GTP for GDP, thereby activating CDC42.">
+<area shape="circle" coords="880,320,25" title="CDC42 is a small GTP-binding protein that is attached to lipid bilayers via a geranylgeranyl anchor at the C-terminus.  Classically,  CDC42, Rac, and Rho play different roles in different membrane domains.   In the context of cell migration, CDC42, Rac, and Rho regulate filopodia, lamellipodia, and stress fibers respectively [Hall, Science, 1998: 9438836].">
+<area shape="circle" coords="880,413,25" title="Effectors for CDC42 in nucleation of plasma membrane associated actin polymerization  are the Wiskott-Aldrich syndrome proteins, Was (WASP) and Wasl (N-WASP).  Wasl is the most abundant in mpkCCD cells, although Was could also play role. Neither were found to undergo phosphorylation changes in the PKA double KO. Was and Wasl have N-terminal CRIB domains that bind CDC42.">
+<area shape="circle" coords="780,513,25" title="Wasl and Was interact with the Arp2/3 complex to drive actin filament nucleation and branching.  The resulting actin polymerization can drive membrane movement, e.g. in lamellipodia. This process has been seen to drive membrane invagination in clathrin-mediated endocytosis [25143395]. Although phosphorylation sites were detected in some of the subunits of the Arp2/3 complex, none were altered in phospho-occupancy in the PKA dKO.">
+<area shape="circle" coords="880,513,25" title="Pacsins are F-Bar domain proteins that bend the lipid bilayer (e.g. membrane tubulation).  They regulate internalization of plasma membrane proteins such as GLUT1 and TRPV4 [UniProt].  They bind WASP via their Src homology 3 domains at COOH-terminus. PACSIN proteins are thought to bind dynamin [11082044]. Pacsin3 at Ser319 [KEKGGRS*PDEVTL] undergoes an increase in phosphorylation in the PKA dKO (dKO/cont = 1.68), a proline-directed site upstream from SH3 domain.">
+<area shape="rect" coords="680,553,840,670" title="As described in endocytic actin patches in fission yeast [25143395], actin polymerization may provide a motive force for membrane invagination, aided by one or more F-BAR proteins (Pacsins, Trip10) that bend the lipid bilayer and bind dynamin. The movement of endocytic vesicles, once pinched off, probably does not depend on actin polymerization [25143395].">
+</map>
+</div>
+<br>
+<a href="index.html"> <img alt="ESBL" src="index_files/nhlbi_vsmall.gif" align="middle" border="0" style="width:42px;height:42px;border:0;">     <b>Click here to return to index page.</b></a>
+<div id="poplay" class="poplay"></div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>mpkCCD dDAVP</title>
+<style type="text/css">
+
+body {
+        margin:0;
+        padding-right:40px;
+        padding-left:40px;
+        background:#FFF;
+        font:80% Arial, Helvetica, sans-serif;
+        color:#000000;
+}
+#topbg 
+    {
+        position: absolute; top: 0; left: 0; z-index: -1;
+        width: 100%; height: 113px;
+        background: #FFCB05;
+    }
+h1{
+        font-size:180%;
+        font-weight:bold;
+        color: red;
+        text-align: center;
+}
+h2{
+        clear:both;
+        font-size:160%;
+        font-weight:normal;
+        color:#000;
+        background-color:#DAE4F4;
+        margin:0;
+        padding:.5em 0;
+}
+a{
+        text-decoration:none;
+        color:#00F;	
+}
+p{
+        clear:both;
+        margin:0;
+        padding:.5em 0;
+}
+pre{
+        font:100% "Courier New", Courier, monospace;
+}
+img{
+        border:none;
+}
+ul,li{
+        margin:0;
+        padding:0;
+}
+li{
+        list-style:none;
+        float:left;
+        display:inline;
+        margin-right:10px;
+}
+table, td, th{
+        border:0px;
+}
+th{
+        text-align:left;
+}
+
+/*  */
+
+#preview{
+        position:absolute;
+        border:1px solid #ccc;
+        background:#333;
+        padding:5px;
+        display:none;
+        color:#fff;
+        }
+
+/*  */
+        </style>
+<style type="text/css">
+
+a{
+	text-decoration:none;
+	color:#00F;	
+}
+div#topdiv {
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+color:#FFFF00;
+background:#051486;
+padding-left:85px;
+}
+div#bottomdiv {
+position:fixed;
+bottom:0px;
+left:0px;
+width:100%;
+color:yellow;
+background:white;
+padding-left:0px;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
+h2 {
+    color: red;
+    text-align: center;
+	font-family:Calibri, sans-serif;
+}
+h4 {
+    margin-left: 50px;
+}
+</style>
+<style type="text/css">
+body2 {
+	margin:0;
+	padding-right:40px;
+	padding-left:40px;
+	background:#FFF;
+	font:80% Arial, Helvetica, sans-serif;
+	color:#000000;
+	line-height:180%;
+}
+#topbg2 
+    {
+        position: absolute; top: 0; left: 0; z-index: -1;
+        width: 100%; height: 143px;
+        background: #014172;
+    }
+h12{
+	font-size:180%;
+	font-weight:bold;
+	color: red;
+	text-align: left;
+}
+h22{
+	clear:both;
+	font-size:160%;
+	font-weight:normal;
+	color:#000;
+	background-color:#DAE4F4;
+	margin:0;
+	padding:.5em 0;
+}
+a2{
+	text-decoration:none;
+	color:#00F;	
+}
+p2{
+	clear:both;
+	margin:0;
+	padding:.5em 0;
+}
+pre2{
+	display:block;
+	font:100% "Courier New", Courier, monospace;
+	padding:10px;
+	border:1px solid #bae2f0;
+	background:#e3f4f9;	
+	margin:.5em 0;
+	overflow:auto;
+	width:800px;
+}
+img2{
+	border:none;
+}
+ul2,li2{
+	margin:0;
+	padding:0;
+}
+li2{
+	list-style:none;
+	float:left;
+	display:inline;
+	margin-right:10px;
+}
+table2, td2, th2{
+	border:0px;
+}
+th2{
+	font-weight:strong;
+}
+
+/*  */
+
+#preview{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:5px;
+	display:none;
+	color:#fff;
+	}
+
+/*  */
+</style>
+
+</head>
+
+<body>
+        <div class="wrapper">
+            <div id="topbg"></div>
+			
+			<!--
+            <h1 style="margin-top: 15px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="./index_files/LinearSignature_RGB.png" alt="National Heart, Lung, and Blood Institute" style="border-style: none"></a></h1>
+            -->
+			
+			<h1><a href="https://kidneydata.org/" target="_blank"><img src="./index_files/nav_title.png" alt="Epithelial Systems Biology Laboratory (ESBL)" style="border-style: none"></a></h1>
+            
+			
+			<br>
+            <h1>V2 Receptor-Specific Vasopressin Signaling in mpkCCD Cells</h1>
+         
+            <div>
+				<p>
+					<strong>Vasopressin Signaling Network:</strong> Undirected graph depicting the mapping of proteins containing altered phosphorylation sites to specific cellular functions or structures [blue nodes].  The green and red nodes indicate specific phosphorylation sites altered in response to 0.1 nM dDAVP administration (green, increased, red, decreased).  Network was constructed initially in <strong><i>STRING</i></strong> and manually extended to the full data set using <strong><i>Gene Ontology</i></strong> terms and Pubmed entries. <strong><i>Cytoscape</i></strong> was used for visualization.
+					</p>
+					<p>
+					Database was originally created by Karim Salhadar, Arnab Datta, and Mark Knepper in the <a href="http://esbl.nhlbi.nih.gov/" target="_blank">Epithelial Systems Biology Laboratory</a> (Mark Knepper, Chief) at the <strong>National Heart, Lung and Blood Institute</strong> as part of its <a href="https://hpcwebapps.cit.nih.gov/ESBL/Database/" target="_blank">Kidney Systems Biology Project</a>.  This site is a mirror of the site at <a href="https://esbl.nhlbi.nih.gov/Databases/Vasopressin-Network/" target="_blank">https://esbl.nhlbi.nih.gov/Databases/Vasopressin-Network/</a>.</p>
+					
+					<p>
+					<strong>For questions and concerns please contact:</strong> knepperm@nhlbi.nih.gov.
+					</p>
+					<p>
+					Click <a href="Network.pdf" target="_blank">here</a> to download PDF version of <strong>Vasopressin Signaling Network</strong>.
+					</p>
+			
+			</div>				
+            <div align="center">    
+				<p><strong>Press Ctrl and + to zoom in. Press Ctrl and</strong> - <strong>to zoom out. Press Ctrl and 0 to restore the original size.</strong></p>
+			</div>
+
+        </div>
+
+
+<div align="center">
+
+<!-- <img src="file:///L:\Lab-Knepper\Knepper_Lab\Depot - PKA intact phosphoproteomics\Summer_Network_Webpage\Network.svg"> -->
+
+<img src="Network.svg" alt = "Phosphoproteomic Network">
+
+</div>
+
+<div class="footer" align="center">
+
+            <hr> <br>
+			
+			
+			
+        </div>
+		
+		
+ <br><br><br>
+
+</div></body></html>
