@@ -1,0 +1,1086 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0071)https://hpcwebapps.cit.nih.gov/ESBL/Database/mpkCCD_Protein_Abundances/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Mouse GPCRs</title>
+	<script src="./mpkCCD Protein Abundances xx_files/analytics.js" async=""></script><script src="./mpkCCD Protein Abundances xx_files/analytics_002.js" async=""></script><script type="text/javascript">
+		function redirect(site) {
+                window.location = site;
+            }
+	</script>
+        <style type="text/css">
+body {
+        margin:0;
+        padding-right:40px;
+        padding-left:40px;
+        background:#FFF;
+        font:80% Arial, Helvetica, sans-serif;
+        color:#000000;
+        line-height:180%;
+}
+#topbg 
+    {
+        position: absolute; top: 0; left: 0; z-index: -1;
+        width: 100%; height: 143px;
+        background: #1F4E78;
+    }
+h1{
+        font-size:180%;
+        font-weight:bold;
+        color: red;
+        text-align: center;
+}
+h2{
+        clear:both;
+        font-size:160%;
+        font-weight:normal;
+        color:#000;
+        background-color:#DAE4F4;
+        margin:0;
+        padding:.5em 0;
+}
+a{
+        text-decoration:none;
+        color:#00F;	
+}
+p{
+        clear:both;
+        margin:0;
+        padding:.5em 0;
+}
+pre{
+        font:100% "Courier New", Courier, monospace;
+}
+img{
+        border:none;
+}
+ul,li{
+        margin:0;
+        padding:0;
+}
+li{
+        list-style:none;
+        float:left;
+        display:inline;
+        margin-right:10px;
+}
+table, td, th{
+        border:0px;
+}
+th{
+        text-align:left;
+}
+tr:hover {background-color:#d5dbdb ;}
+/*  */
+
+#preview{
+        position:absolute;
+        border:1px solid #ccc;
+        background:#333;
+        padding:5px;
+        display:none;
+        color:#fff;
+        }
+
+/*  */
+		<!---overflow: auto;--->				
+div.wrappy
+{
+overflow: auto;
+}
+
+div.scrollmenu {
+  background-color: #0000;
+
+  white-space: nowrap;
+
+  
+}
+div.Content
+{
+	background-color: #0000;
+
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+ 
+}
+div.scrollmenu #sticky {position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  }
+        </style>
+		
+		<style id="Sorted by GS _18160_Styles">
+
+<style id="Copy of Copy of 0716_GPCRs_LH_6524_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl1531394
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;
+	}
+.xl6531394
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;
+	}
+.xl6631394
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;
+	}
+.xl6731394
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;
+	}
+.xl6831394
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	background:#1F4E78;
+	mso-pattern:black none;
+	white-space:nowrap;
+	}
+.xl6931394
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;
+	}
+.xl7031394
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	background:#1F4E78;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl1529229
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6629229
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	background:#1F4E78;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6729229
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:general;
+	vertical-align:bottom;
+	background:#1F4E78;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6829229
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6929229
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7029229
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7129229
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7229229
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#0563C1;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+-->
+</style>
+
+
+
+		
+		<style type="text/css">
+
+a{
+	text-decoration:none;
+	color:#00F;	
+}
+div#topdiv {
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+color:#FFFF00;
+background:#051486;
+padding-left:85px;
+}
+div#bottomdiv {
+position:fixed;
+bottom:0px;
+left:0px;
+width:100%;
+color:yellow;
+background:white;
+padding-left:40px;
+opacity: 1.0;			 
+}
+h1 {
+    color: #660200;
+    text-align: center;
+}
+h2 {
+    color: red;
+    text-align: center;
+	font-family:Calibri, sans-serif;
+}
+h4 {
+    margin-left: 50px;
+
+</style>
+	
+
+
+	
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="topbg"></div>
+            <h1 style="margin-top: 15px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="LinearSignature_RGB.png" alt="National Heart, Lung, and Blood Institute" style="color:white;border-style: none"></a></h1>
+            <h1><a href="http://esbl.nhlbi.nih.gov/" target="_blank"><img src="ESBL.png" alt="Epithelial Systems Biology Laboratory (ESBL)" style="color:white;border-style: none"></a></h1>
+            <br>
+            <h1>GPCR Protein Levels in Rat</h1>
+         
+            <div>
+                
+                <p>	
+				
+				G-protein coupled receptors (GPCRs) are a diverse group of seven-transmembrane domain receptors that bind to molecular ligands that activate the associated G-protein, leading to downstream activation of cellular processes.
+				
+                </p>
+				<p>
+					Database published in:
+					<b>Poll BG, Chen L, Chou CL, Raghuram V, Knepper MA.</b> Landscape of GPCR expression along the mouse nephron. <i>Am J Physiol Renal Physiol</i>. 2021 Jul 1;321(1):F50-F68. doi: <a href="https://doi.org/10.1152/ajprenal.00077.2021" target="_blank">10.1152/ajprenal.00077.2021</a>. Epub 2021 May 24. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/34029142/" target="_blank">34029142</a> </p>
+				<p> Published by the <a href="http://esbl.nhlbi.nih.gov/" target="_blank">Epithelial Systems Biology Laboratory</a> (Mark Knepper, Chief) at the <strong>National Heart, Lung and Blood Institute</strong> as part of the Kidney Systems Biology Project.</p>
+ 					               
+					The database includes 27 Proteins. 
+				</p>
+				<p><strong>Methods:</strong> Each renal tubule segment was microdissected from male Sprague Dawley rats and analysed with Orbitrap Lumos mass spectrometry. Protein copy number per cell was estimate using 'Proteomic Ruler' approach. For each segment, average values from 3-4 biological replicates are reported. Transcriptome data of microdissected renal tubule from Lee et al. is also included here.(PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/25817355/" target="_blank">25817355</a>). Complete transcriptome can also be found <a href="https://esbl.nhlbi.nih.gov/KTEA/" target="_blank">here</a> <p>
+				<p> Nephron Terminology: PTS1, the initial segment of the proximal tubule; PTS2, proximal straight tubule in cortical medullary rays; PTS3, last segment of the proximal straight tubule in the outer stripe of outer medulla; DTL1, the short descending limb of the loop of Henle; DTL2, long descending limb of the loop of Henle in the outer medulla; DTL3, long descending limb of the loop of Henle in the inner medulla; ATL, thin ascending limb of the loop of Henle; MTAL, medullary thick ascending limb of the loop of Henle; CTAL, cortical thick ascending limb of the loop of Henle; DCT, distal convoluted tubule; CNT, connecting tubule; CCD, cortical collecting duct; OMCD, outer medullary collecting duct; IMCD, inner medullary collecting duct.</p>
+				<h1 style="color:black;font-family:Calibri;font-size:14.0pt;font-weight:800;
+font-style:normal">To search, use browser's Find command (Ctrl-F).</h1>
+<!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+<!--Thefollowing information was generated by Microsoft Excel's Publish as Web
+Page wizard.-->
+<!--If the same item is republished from Excel, all information between the DIV
+tags will be replaced.-->
+<!----------------------------->
+<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+<!----------------------------->
+<div id="GPCRs (all datasets)_29229" align=center x:publishsource="Excel">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1500 style='border-collapse:
+ collapse;table-layout:fixed;width:1126pt'>
+ <col width=121 style='mso-width-source:userset;mso-width-alt:4295;width:91pt'>
+ <col width=418 style='mso-width-source:userset;mso-width-alt:14876;width:314pt'>
+ <col width=65 style='mso-width-source:userset;mso-width-alt:2304;width:49pt'>
+ <col width=64 span=14 style='width:48pt'>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6629229 width=121 style='height:14.4pt;width:91pt'>Gene
+  Symbol (Rat)</td>
+  <td class=xl6629229 width=418 style='width:314pt'>Protein Name</td>
+  <td class=xl6629229 width=65 style='width:49pt'>Uniprot</td>
+  <td class=xl6729229 width=64 style='width:48pt'>PTS1</td>
+  <td class=xl6729229 width=64 style='width:48pt'>PTS2</td>
+  <td class=xl6729229 width=64 style='width:48pt'>PTS3</td>
+  <td class=xl6729229 width=64 style='width:48pt'>DTL1</td>
+  <td class=xl6729229 width=64 style='width:48pt'>DTL2</td>
+  <td class=xl6729229 width=64 style='width:48pt'>DTL3</td>
+  <td class=xl6729229 width=64 style='width:48pt'>ATL</td>
+  <td class=xl6729229 width=64 style='width:48pt'>mTAL</td>
+  <td class=xl6729229 width=64 style='width:48pt'>cTAL</td>
+  <td class=xl6729229 width=64 style='width:48pt'>DCT</td>
+  <td class=xl6729229 width=64 style='width:48pt'>CNT</td>
+  <td class=xl6729229 width=64 style='width:48pt'>CCD</td>
+  <td class=xl6729229 width=64 style='width:48pt'>OMCD</td>
+  <td class=xl6729229 width=64 style='width:48pt'>IMCD</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Ackr3</td>
+  <td class=xl1529229>Atypical chemokine receptor 3</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/O89039">O89039</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#FEFEFF;mso-pattern:black none'>23.9</td>
+  <td class=xl6929229 align=right style='background:#9AB3DF;mso-pattern:black none'>15260.6</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#E7EDF8;mso-pattern:black none'>321.3</td>
+  <td class=xl6929229 align=right style='background:#ABBFE4;mso-pattern:black none'>6318.6</td>
+  <td class=xl6929229 align=right style='background:#9BB3DF;mso-pattern:black none'>14795.2</td>
+  <td class=xl6929229 align=right style='background:#A5BBE3;mso-pattern:black none'>9379.3</td>
+  <td class=xl6929229 align=right style='background:#A3B9E2;mso-pattern:black none'>10610.5</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Adgrf5</td>
+  <td class=xl1529229>Adhesion G-protein coupled receptor 116</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q9WVT0">Q9WVT0</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#F8FAFD;mso-pattern:black none'>99.5</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#C6D4ED;mso-pattern:black none'>766.3</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#ACC0E5;mso-pattern:black none'>5855.4</td>
+  <td class=xl6929229 align=right style='background:#B1C4E6;mso-pattern:black none'>2917.1</td>
+  <td class=xl6929229 align=right style='background:#B4C6E7;mso-pattern:black none'>1468.0</td>
+  <td class=xl6929229 align=right style='background:#F6F8FC;mso-pattern:black none'>128.1</td>
+  <td class=xl6929229 align=right style='background:#F7F9FD;mso-pattern:black none'>116.4</td>
+  <td class=xl6929229 align=right style='background:#9AB3DF;mso-pattern:black none'>15256.0</td>
+  <td class=xl6929229 align=right style='background:#7B9BD5;mso-pattern:black none'>32436.3</td>
+  <td class=xl6929229 align=right style='background:#8EA9DB;mso-pattern:black none'>21927.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Adgrg1</td>
+  <td class=xl1529229>Adhesion G-protein coupled receptor 56</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q8K3V3">Q8K3V3</a></td>
+  <td class=xl6929229 align=right style='background:#90ABDC;mso-pattern:black none'>20955.7</td>
+  <td class=xl6929229 align=right style='background:#9DB4E0;mso-pattern:black none'>13985.0</td>
+  <td class=xl6929229 align=right style='background:#FEFFFF;mso-pattern:black none'>14.0</td>
+  <td class=xl6929229 align=right style='background:#B0C3E6;mso-pattern:black none'>3489.9</td>
+  <td class=xl6929229 align=right style='background:#AEC1E5;mso-pattern:black none'>4678.5</td>
+  <td class=xl6929229 align=right style='background:#ACC0E5;mso-pattern:black none'>5508.2</td>
+  <td class=xl6929229 align=right style='background:#A9BEE4;mso-pattern:black none'>7387.1</td>
+  <td class=xl6929229 align=right style='background:#AEC2E5;mso-pattern:black none'>4520.6</td>
+  <td class=xl6929229 align=right style='background:#DBE4F4;mso-pattern:black none'>489.9</td>
+  <td class=xl6929229 align=right style='background:#EFF3FA;mso-pattern:black none'>223.9</td>
+  <td class=xl6929229 align=right style='background:#B0C3E6;mso-pattern:black none'>3653.8</td>
+  <td class=xl6929229 align=right style='background:#A9BEE4;mso-pattern:black none'>7071.1</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#ABBFE4;mso-pattern:black none'>6136.5</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Adgrl2</td>
+  <td class=xl1529229>Latrophilin-2</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/O88923">O88923</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#F7F9FD;mso-pattern:black none'>109.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>8.4</td>
+  <td class=xl6929229 align=right style='background:#DCE4F4;mso-pattern:black none'>477.8</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#F2F5FB;mso-pattern:black none'>180.6</td>
+  <td class=xl6929229 align=right style='background:#D2DDF1;mso-pattern:black none'>610.4</td>
+  <td class=xl6929229 align=right style='background:#DBE4F4;mso-pattern:black none'>489.7</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Avpr2</td>
+  <td class=xl1529229>Vasopressin V2 receptor</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q00788">Q00788</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>12.4</td>
+  <td class=xl6929229 align=right style='background:#FEFEFF;mso-pattern:black none'>24.2</td>
+  <td class=xl6929229 align=right style='background:#819FD7;mso-pattern:black none'>29148.4</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Calcr</td>
+  <td class=xl1529229>Calcitonin receptor</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/P32214">P32214</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#CCD8EF;mso-pattern:black none'>686.6</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#E5ECF7;mso-pattern:black none'>347.9</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>5.7</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Calcrl</td>
+  <td class=xl1529229>Calcitonin gene-related peptide type 1 receptor</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q63118">Q63118</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#ECF1F9;mso-pattern:black none'>254.5</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#FEFFFF;mso-pattern:black none'>13.7</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>12.1</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Casr</td>
+  <td class=xl1529229>Extracellular calcium-sensing receptor</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/P48442">P48442</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#A7BDE3;mso-pattern:black none'>8180.4</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>249666.4</td>
+  <td class=xl6929229 align=right style='background:#8AA6DA;mso-pattern:black none'>24172.1</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>11.5</td>
+  <td class=xl6929229 align=right style='background:#B0C3E6;mso-pattern:black none'>3675.5</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Celsr1</td>
+  <td class=xl1529229>Cadherin EGF LAG seven-pass G-type receptor 1</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/F1MAS4">F1MAS4</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#FAFBFE;mso-pattern:black none'>73.5</td>
+  <td class=xl6929229 align=right style='background:#F9FAFD;mso-pattern:black none'>87.9</td>
+  <td class=xl6929229 align=right style='background:#F8FAFD;mso-pattern:black none'>101.7</td>
+  <td class=xl6929229 align=right style='background:#B4C6E7;mso-pattern:black none'>1145.5</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>6.0</td>
+  <td class=xl6929229 align=right style='background:#B4C6E7;mso-pattern:black none'>1461.2</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Celsr2</td>
+  <td class=xl1529229>Cadherin EGF LAG seven-pass G-type receptor 2</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q9QYP2">Q9QYP2</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#CEDAF0;mso-pattern:black none'>657.7</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#EAEFF9;mso-pattern:black none'>282.3</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#F2F6FB;mso-pattern:black none'>173.7</td>
+  <td class=xl6929229 align=right style='background:#B3C6E7;mso-pattern:black none'>1660.7</td>
+  <td class=xl6929229 align=right style='background:#B0C3E6;mso-pattern:black none'>3567.7</td>
+  <td class=xl6929229 align=right style='background:#B2C5E7;mso-pattern:black none'>2232.8</td>
+  <td class=xl6929229 align=right style='background:#B2C5E7;mso-pattern:black none'>2212.5</td>
+  <td class=xl6929229 align=right style='background:#ECF1F9;mso-pattern:black none'>259.1</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Fzd1</td>
+  <td class=xl1529229>Frizzled-1</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q08463">Q08463</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#F7F9FD;mso-pattern:black none'>113.9</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>5.8</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#CEDAF0;mso-pattern:black none'>655.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Fzd4</td>
+  <td class=xl1529229>Frizzled-4</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q9QZH0">Q9QZH0</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl7029229 align=right style='font-size:11.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;background:white;mso-pattern:black none'>8.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Gcgr</td>
+  <td class=xl1529229>Glucagon receptor</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/P30082">P30082</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#A5BBE2;mso-pattern:black none'>9463.9</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Gpr183</td>
+  <td class=xl1529229>G-protein coupled receptor 183</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/D4A7K7">D4A7K7</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#E0E8F6;mso-pattern:black none'>413.5</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Gpr39</td>
+  <td class=xl1529229>G-protein coupled receptor 39</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/A6QR73">A6QR73</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#F2F5FB;mso-pattern:black none'>181.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#AFC2E6;mso-pattern:black none'>4256.9</td>
+  <td class=xl6929229 align=right style='background:#E2E9F6;mso-pattern:black none'>388.2</td>
+  <td class=xl6929229 align=right style='background:#A4BAE2;mso-pattern:black none'>9902.0</td>
+  <td class=xl6929229 align=right style='background:#AEC1E5;mso-pattern:black none'>4623.8</td>
+  <td class=xl6929229 align=right style='background:#B3C5E7;mso-pattern:black none'>1991.7</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Gprc5a</td>
+  <td class=xl1529229>G-protein coupled receptor family C group 5 member A</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/A1A5R2">A1A5R2</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>139298.3</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>126850.3</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>140958.6</td>
+  <td class=xl6929229 align=right style='background:#ADC1E5;mso-pattern:black none'>4840.1</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#86A4D9;mso-pattern:black none'>26135.9</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Gprc5b</td>
+  <td class=xl1529229>G-protein coupled receptor family C group 5 member B</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/D4A3F5">D4A3F5</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#FEFEFF;mso-pattern:black none'>17.6</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#EAEFF9;mso-pattern:black none'>283.6</td>
+  <td class=xl6929229 align=right style='background:#99B1DF;mso-pattern:black none'>16175.9</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Gprc5c</td>
+  <td class=xl1529229>G-protein coupled receptor family C group 5 member C</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q3KRC4">Q3KRC4</a></td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>110022.4</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>485583.9</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>412248.6</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>76081.9</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>90029.8</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>165121.9</td>
+  <td class=xl6929229 align=right style='background:#7C9CD5;mso-pattern:black none'>31823.0</td>
+  <td class=xl6929229 align=right style='background:#9CB4E0;mso-pattern:black none'>14202.9</td>
+  <td class=xl6929229 align=right style='background:#82A1D7;mso-pattern:black none'>28266.3</td>
+  <td class=xl6929229 align=right style='background:#6B8FD0;mso-pattern:black none'>40863.6</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>57736.6</td>
+  <td class=xl6929229 align=right style='background:#5F86CC;mso-pattern:black none'>47529.1</td>
+  <td class=xl6929229 align=right style='background:#7D9DD6;mso-pattern:black none'>31001.1</td>
+  <td class=xl6929229 align=right style='background:#5A82CA;mso-pattern:black none'>92101.9</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Grm6</td>
+  <td class=xl7129229>Metabotropic glutamate receptor 6</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/P35349">P35349</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#F8FAFD;mso-pattern:black none'>100.9</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>4.8</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#ECF0F9;mso-pattern:black none'>264.1</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Lpar1</td>
+  <td class=xl1529229>Lysophosphatidic acid receptor 1</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/P61794">P61794</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl7029229 align=right style='font-size:11.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;background:white;mso-pattern:black none'>8.5</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Lpar3</td>
+  <td class=xl1529229>Lysophosphatidic acid receptor 3</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q8K5E0">Q8K5E0</a></td>
+  <td class=xl6929229 align=right style='background:#A8BDE3;mso-pattern:black none'>7874.2</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Lpar5</td>
+  <td class=xl1529229>Lysophosphatidic acid receptor 5</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/D4ADR1">D4ADR1</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl7029229 align=right style='font-size:11.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;background:white;mso-pattern:black none'>12.5</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Npr3</td>
+  <td class=xl1529229>Atrial natriuretic peptide receptor 3</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/P41740">P41740</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#B4C6E7;mso-pattern:black none'>1535.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Ogfr</td>
+  <td class=xl7129229>Opioid growth factor receptor</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/Q9QXY4">Q9QXY4</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#7D9CD6;mso-pattern:black none'>31349.8</td>
+  <td class=xl6929229 align=right style='background:#84A2D8;mso-pattern:black none'>27519.1</td>
+  <td class=xl6929229 align=right style='background:#AABFE4;mso-pattern:black none'>6624.4</td>
+  <td class=xl6929229 align=right style='background:#FEFFFF;mso-pattern:black none'>15.9</td>
+  <td class=xl6929229 align=right style='background:#ADC1E5;mso-pattern:black none'>5059.3</td>
+  <td class=xl6929229 align=right style='background:#EDF2FA;mso-pattern:black none'>242.1</td>
+  <td class=xl6929229 align=right style='background:#AEC2E5;mso-pattern:black none'>4453.3</td>
+  <td class=xl6929229 align=right style='background:#B4C6E7;mso-pattern:black none'>1074.4</td>
+  <td class=xl6929229 align=right style='background:#A8BDE3;mso-pattern:black none'>7998.6</td>
+  <td class=xl6929229 align=right style='background:#9DB5E0;mso-pattern:black none'>13555.2</td>
+  <td class=xl6929229 align=right style='background:#84A2D8;mso-pattern:black none'>27358.0</td>
+  <td class=xl6929229 align=right style='background:#97B0DE;mso-pattern:black none'>16891.5</td>
+  <td class=xl6929229 align=right style='background:#9CB4E0;mso-pattern:black none'>14504.6</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Oxtr</td>
+  <td class=xl7129229>Oxytocin receptor</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/P70536">P70536</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#F0F3FA;mso-pattern:black none'>213.3</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Ptger3</td>
+  <td class=xl1529229>Prostaglandin E2 receptor EP3 subtype</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/P34980">P34980</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#8DA8DB;mso-pattern:black none'>22719.2</td>
+  <td class=xl6929229 align=right style='background:#9EB5E0;mso-pattern:black none'>13315.6</td>
+  <td class=xl6929229 align=right style='background:#EBF0F9;mso-pattern:black none'>267.3</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl6829229 style='height:14.4pt'>Pth1r</td>
+  <td class=xl1529229>Parathyroid hormone/parathyroid hormone-related peptide
+  receptor</td>
+  <td class=xl7229229><a href="https://www.uniprot.org/uniprot/P25961">P25961</a></td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#AABEE4;mso-pattern:black none'>6903.7</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:#EBF0F9;mso-pattern:black none'>268.4</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+  <td class=xl6929229 align=right style='background:white;mso-pattern:black none'>0.0</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=121 style='width:91pt'></td>
+  <td width=418 style='width:314pt'></td>
+  <td width=65 style='width:49pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+</div>
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+</body>
+
+</html>
+ -->
+ </tbody></table>
+
+</div>
+		
+        <div class="footer" align="center">
+            <hr>        
+            <p>This website is hosted and supported by: <a href="https://hpc.nih.gov/" target="_blank"><img src="Biowulf.png" alt="Biowulf at the NIH" style="border-style: none" target="_blank" height="58"></a></p>
+            <div>
+                <a href="https://hpc.nih.gov/docs/disclaimer.html" class="footlink" target="_blank">Disclaimer</a> |
+                <a href="https://hpc.nih.gov/docs/privacy.html" class="footlink" target="_blank">Privacy</a> |
+                <a href="http://www.nhlbi.nih.gov/nhlbi508form.htm" class="footlink" target="_blank">Accessibility</a> |
+            </div>
+            <div>
+                <a href="https://hpc.nih.gov/" class="footlink" target="_blank">Helix Systems</a> |
+                <a href="http://cit.nih.gov/" class="footlink" target="_blank">CIT</a> |
+                <a href="http://www.nhlbi.nih.gov/" class="footlink" target="_blank">NHLBI</a> |
+                <a href="http://www.nih.gov/" class="footlink" target="_blank">NIH</a> |
+                <a href="http://www.dhhs.gov/" class="footlink" target="_blank">DHHS</a> |
+                <a href="http://www.firstgov.gov/" class="footlink" target="_blank">USA.gov</a>
+            </div>
+        </div>
+    
+
+</div></body></html>

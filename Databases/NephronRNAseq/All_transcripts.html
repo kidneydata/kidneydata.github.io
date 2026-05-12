@@ -1,0 +1,200 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="This website presents RNA-seq transcriptomic data of rat renal tubule segments.">
+		<meta name="author" content="Jae Wook Lee and Mark A. Knepper">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+				
+		<title>RNA-seq Analysis of Microdissected Rat Kidney Tubule Segments</title>
+		<style type="text/css">
+			@import "DataTables-1.10.0/media/css/jquery.dataTables.css";
+			@import "DataTables-1.10.0/extensions/Scroller/css/dataTables.scroller.css";
+		</style>
+		
+		<style>
+		img {
+			vertical-align: middle;
+			margin-right: 20px;
+		}
+
+		p {font-size: 90%; font-family:"Arial", Sans-serif; }
+		h1 {font-size: 130%; font-family:"Arial", Sans-serif; text-align: center;}
+			
+		</style>
+		<!--<script type="text/javascript">
+
+  			var _gaq = _gaq || [];
+  			_gaq.push(['_setAccount', 'UA-28923713-1']);
+  			_gaq.push(['_trackPageview']);
+
+  			(function() {
+    			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  			})();
+
+		</script>-->
+		
+		<script type="text/javascript" language="javascript" src="DataTables-1.10.0/media/js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.10.0/media/js/jquery.dataTables.js"></script>
+		<script type="text/javascript" language="javascript" src="DataTables-1.10.0/extensions/Scroller/js/dataTables.scroller.js"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#RPKMtable').dataTable( {
+					//"serverSide": true,
+					//"processing": true,
+					"scrollY": 0.5*window.innerHeight,
+					"columnDefs":[
+						{
+							"render": function (data) {
+								return '<a href="http://www.ncbi.nlm.nih.gov/gene/?term='+data+'" target="_blank">'+data+'</a>';
+								}, 
+								"targets": [1] },
+						{
+							"render": function (data) { return '<b>'+data+'</b>'; },
+							"targets": [0]
+							},
+						{"sortable": false, "targets":[ 1 ]},
+						{"asSorting": [ "asc" ], "targets": [ 0 ]},
+						{"asSorting": [ "desc" ], "targets": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]}
+					],
+					
+					//"ajax": "DataTables-1.10.0/examples/server_side/scripts/server_processing.php",
+					/*"ajax": {
+							"url": "DataTables-1.10.1/examples/server_side/scripts/jsonp.php",
+							"dataType":"jsonp",*/
+					"ajax": 'nephronrnaseq_rpkmtable.txt',
+					"dom":"frtiS",
+					"deferRender":true,
+					"oLanguage": {
+						"sSearch": "<b>Search:</b>"
+					} 
+					//"paging": true,
+					/*"oScroller": {
+						"loadingIndicator": false
+					}*/
+				} );
+			} );
+		</script>
+		<!--<script type="text/javascript" charset="utf-8" src="pace-0.4.17/pace.js"></script>-->
+		<!--<link rel="stylesheet" href="pace-0.4.17/themes/pace-theme-loading-bar.css">-->
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61756326-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+	</head>
+	<body>
+		<header>
+        	<h1 style="margin-top: 20px; margin-bottom: 20px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="img/nhlbilogostandard-new.jpg" alt="National Heart, Lung, and Blood Institute" height="40"></a>
+        	<a href="http://helixweb.nih.gov/ESBL/" target="_blank"><img src="img/ESBL_2.png", alt="Epithelial Systems Biology Laboratory" height="33"></a></h1>
+        	
+			<h1><font color="#800000">RNA-seq Analysis of Microdissected Rat Kidney Tubule Segments</font></h1>
+		</header>
+		<section>
+			<p>
+				This database provides median RPKM values for the transcriptome of 14 separate renal tubule segments in untreated male Sprague-Dawley rats (200-250 g BW). The number of replicates is shown in parentheses. 
+			</p>
+			<p>
+				<b>Brief Method: </b> Rat renal tubule segments manually dissected under microscope were lysed in cell lysis buffer containing reverse transcriptase and oligo-dT primers. After reverse transcription of poly(A)-tailed mRNA transcripts, cDNAs were amplified and sequenced using Illumina HiSeq 2000 sequencer. FASTQ sequences were mapped to rat reference genome (rn5). 
+			</p>
+			<p>
+				<b>How to search the database: </b>Please use <b><font color="#800000">the Search Box</font></b> at the right upper corner of the table.
+			</p>
+			<p>
+				<b>Terminology for nephron segments</b>: S1, first segment of the proximal tubule; S2, second segment of the proximal tubule; S3, third segment of the proximal tubule; SDL, short descending limb of the loop of Henle; LDLOM, long descending limb of the loop of Henle in the outer medulla; LDLIM, long descending limb of the loop of Henle in the inner medulla; tAL, thin ascending limb of the loop of Henle; mTAL, medullary thick ascending limb of the loop of Henle; cTAL, cortical thick ascending limb of the loop of Henle; DCT, distal convoluted tubule; CNT, connecting tubule; CCD, cortical collecting duct; OMCD, outer medullary collecting duct; IMCD, inner medullary collecting duct
+			</p>
+			<p>
+				<b>Reference</b>: Lee JW, Chou CL, and Knepper MA. Deep Sequencing in Microdissected Renal Tubules Identifies Nephron Segment-Specific Transcriptomes. J Am Soc Nephrol 2015 Mar 27. pii: ASN.2014111067 PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25817355%5Bpmid%5D" target="_blank">25817355</p>
+			<!--<p>
+				<strong>References: </strong> 
+			</p>
+			<p>
+				1. Wright PA, Burg MB, Knepper MA. Microdissection of kidney tubule segments. Methods Enzymol. 1990;191:226-31
+			</p>
+			<p>
+				2. Tang F, Barbacioru C, Nordman E et al. RNA-seq analysis to capture the transcriptome landscape of a single cell. Nature Protoc. 2010 Mar;5(3):516-35
+			</p>
+			
+			<p>
+				<strong>Database updated:</strong> April 25, 2014 (<a href="http://helixweb.nih.gov/ESBL/Database/iPY/SupplementalTableS1.xlsx">download data</a>)
+			</p>
+			-->
+			<br>
+			<p><a href="Supplemental_Data_1.xlsx", target="_blank">Download data</a></p>
+			<table cellpadding="0" cellspacing="0" border="0" class="display" id="RPKMtable">
+				<thead>
+					<tr>
+						<th width="6%">Gene</th>
+						<th width="6%">RefSeq ID</th>
+						<th title="S1 proximal tubule" width="5%">S1 (7)</th>
+						<th title="S2 proximal tubule" width="5%">S2 (7)</th>
+						<th title="S3 proximal tubule" width="5%">S3 (7)</th>
+						<th title="Short Descending Limb" width="7%">SDL (10)</th>
+						<th title="Long Descending Limb, Outer Medulla" width="7%">LDLOM (9)</th>
+						<th title="Long Descending Limb, Inner Medulla" width="7%">LDLIM (4)</th>
+						<th title="Thin Ascending Limb" width="5%">tAL (7)</th>
+						<th title="Medullary Thick Ascending Limb" width="5%">mTAL (7)</th>
+						<th title="Cortical Thick Ascending Limb" width="5%">cTAL (7)</th>
+						<th title="Distal Convoluted Tubule" width="5%">DCT (9)</th>
+						<th title="Connecting Tubule" width="5%">CNT (6)</th>
+						<th title="Cortical Collecting Duct" width="7%">CCD (11)</th>
+						<th title="Outer Medullary Collecting Duct" width="7%">OMCD (7)</th>
+						<th title="Inner Medullary Collecting Duct" width="7%">IMCD (8)</th>
+					</tr>
+				</thead>
+				<!--<tfoot>
+						<th width="7.5%">Gene</th>
+						<th width="7.5%">RefSeq ID</th>
+						<th width="5%">S1 (7)</th>
+						<th width="5%">S2 (7)</th>
+						<th width="5%">S3 (7)</th>
+						<th width="5%">SDL (10)</th>
+						<th width="5%">LDLOM (9)</th>
+						<th width="5%">LDLIM (4)</th>
+						<th width="5%">tAL (7)</th>
+						<th width="5%">mTAL (7)</th>
+						<th width="5%">cTAL (7)</th>
+						<th width="5%">DCT (9)</th>
+						<th width="5%">CNT (6)</th>
+						<th width="5%">CCD (11)</th>
+						<th width="5%">OMCD (7)</th>
+						<th width="5%">IMCD (8)</th>
+				</tfoot>-->
+			</table>
+				
+			
+		</section>
+		
+		<footer>
+			<br>
+			<br>
+			<hr>
+			<p style="text-align: center;">
+				This website was created by Jae Wook Lee, Fahad Saeed and Mark Knepper. Contact us with questions or comments: <a href="mailto:knep@helix.nih.gov">knep@helix.nih.gov</a>.
+			This website is hosted and supported by :<a href="http://biowulf.nih.gov/" target="_blank"><img src="img/Biowulf.png" alt="Biowulf at the NIH" border="0" height="30"></a></p>
+			<p style="text-align: center;">
+			<a href="http://helix.nih.gov/disclaimer.html" class="footlink" target="_blank">Disclaimer</a> |
+			<a href="http://helix.nih.gov/privacy.html" class="footlink" target="_blank">Privacy</a> |
+			<a href="http://helix.nih.gov/accessibility.html" class="footlink" target="_blank">Accessibility</a> |
+    		<a href="http://helix.nih.gov/" class="footlink" target="_blank">Helix Systems</a> |
+        	<a href="http://cit.nih.gov/" class="footlink" target="_blank">CIT</a> |
+        	<a href="http://www.nhlbi.nih.gov/" class="footlink" target="_blank">NHLBI</a> |
+        	<a href="http://www.nih.gov/" class="footlink" target="_blank">NIH</a> |
+        	<a href="http://www.dhhs.gov/" class="footlink" target="_blank">DHHS</a> |
+        	<a href="http://www.firstgov.gov/" class="footlink" target="_blank">USA.gov</a>
+    		</p>
+		</footer>
+	</body>
+</html>

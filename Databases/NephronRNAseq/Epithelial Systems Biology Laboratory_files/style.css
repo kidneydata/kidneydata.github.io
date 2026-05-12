@@ -1,0 +1,234 @@
+/* 
+    Document   : style
+    Created on : Aug 8, 2011, 3:30:27 PM
+    Author     : pisitkut
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body
+{
+    margin: 0; padding: 0;
+    color: #333;
+    font: 12px/1.5 verdana, sans-serif;
+}
+#topbg {
+    position: absolute; top: 0; left: 0; z-index: -1;
+    width: 100%; height: 143px;
+    background: #014172;
+}
+h1
+{
+    color: black;
+    text-align: center;
+}
+h2
+{
+    color: red;
+    text-align: center;
+}
+h4
+{
+    margin-left: 50px;
+}
+ul
+{
+    margin-left: 50px;
+}
+p
+{
+    margin-left: 50px;
+}
+img 
+{
+    vertical-align: middle;
+}
+html, body 
+{
+    height: 100%;
+}
+.wrapper 
+{
+    min-height: 66%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -150px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push 
+{
+    text-align: center;
+    height: 150px; /* .push must be the same height as .footer */
+}
+
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+.style17
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:"Normal 2";}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl106
+	{mso-style-parent:style17;
+	font-size:10.0pt;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;}
+.xl107
+	{mso-style-parent:style17;
+	font-size:10.0pt;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	white-space:normal;}
+.xl108
+	{mso-style-parent:style17;
+	font-size:10.0pt;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;}
+.xl109
+	{mso-style-parent:style17;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	color:yellow;}
+.xl110
+	{mso-style-parent:style17;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	color:yellow;}
+.xl111
+	{mso-style-parent:style17;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;}
+.xl112
+	{mso-style-parent:style17;
+	font-size:10.0pt;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	white-space:normal;}
+.xl113
+	{mso-style-parent:style0;
+	font-size:10.0pt;
+	text-align:left;
+	vertical-align:middle;}
+.xl114
+	{mso-style-parent:style0;
+	font-size:10.0pt;
+	text-align:left;
+	vertical-align:middle;
+	white-space:normal;}
+.xl115
+	{mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:0;}
+.xl116
+	{mso-style-parent:style0;
+	font-size:10.0pt;
+	font-weight:700;
+	mso-number-format:0;}
+.xl117
+	{mso-style-parent:style17;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	white-space:normal;}
+.xl118
+	{mso-style-parent:style17;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#FFFFCC;
+	mso-pattern:black none;}
+
