@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://esbl.nhlbi.nih.gov/Databases/Aldo-Targets/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Wnt Targets</title>
+	<style type="text/css">
+body {
+        margin:0;
+        padding-right:40px;
+        padding-left:40px;
+        background:#FFF;
+        font:80% Arial, Helvetica, sans-serif;
+        color:#000000;
+        line-height:180%;
+}
+#topbg 
+    {
+        position: absolute; top: 0; left: 0; z-index: -1;
+        width: 100%; height: 143px;
+        background: #00004d;
+    }
+h1{
+        font-size:180%;
+        font-weight:bold;
+        color: red;
+        text-align: center;
+}
+h2{
+        clear:both;
+        font-size:160%;
+        font-weight:normal;
+        color:#000;
+        background-color:#DAE4F4;
+        margin:0;
+        padding:.5em 0;
+}
+a{
+        text-decoration:none;
+        color:#00F;	
+}
+p{
+        clear:both;
+        margin:0;
+        padding:.5em 0;
+}
+pre{
+        font:100% "Courier New", Courier, monospace;
+}
+img{
+        border:none;
+}
+ul,li{
+        margin:0;
+        padding:0;
+}
+li{
+        list-style:none;
+        float:left;
+        display:inline;
+        margin-right:10px;
+}
+table, td, th{
+        border:0px;
+}
+th{
+        text-align:left;
+}
+
+/*  */
+
+#preview{
+        position:absolute;
+        border:1px solid #ccc;
+        background:#333;
+        padding:5px;
+        display:none;
+        color:#fff;
+        }
+
+/*  */
+<style id="UUO and Li RNA-seq normalized GOBP 6-19-22_8157_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl158157
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl678157
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl688157
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl698157
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#B4C6E7;
+	mso-pattern:black none;
+	white-space:nowrap;}
+-->
+</style>
+<style id="Aldo targets_21848_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl6521848
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6621848
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6721848
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6821848
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl6921848
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFF99;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7021848
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFF99;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7121848
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7221848
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7321848
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+-->
+</style>
+		
+		<style type="text/css">
+
+a{
+	text-decoration:none;
+	color:#00F;	
+}
+div#topdiv {
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+color:#FFFF00;
+background:#051486;
+padding-left:85px;
+}
+div#bottomdiv {
+position:fixed;
+bottom:0px;
+left:0px;
+width:100%;
+color:yellow;
+background:white;
+padding-left:0px;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
+h2 {
+    color: red;
+    text-align: center;
+	font-family:Calibri, sans-serif;
+}
+h4 {
+    margin-left: 50px;
+
+</style>
+	
+
+
+	
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="topbg"></div>
+            <h1 style="margin-top: 15px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="./Aldo Targets_files/LinearSignature_RGB.png" alt="National Heart, Lung, and Blood Institute" style="border-style: none"></a></h1>
+            <h1><a href="http://esbl.nhlbi.nih.gov/" target="_blank"><img src="./Aldo Targets_files/ESBL1.png" alt="Epithelial Systems Biology Laboratory (ESBL)" style="border-style: none"></a></h1>
+            <br>
+            <h1>Wnt/Frizzled Target Genes (Mammalian)</h1>
+         
+            <div>
+                
+                <p>					
+					Gene list is based on an investigator-curated <a href="https://web.stanford.edu/group/nusselab/cgi-bin/wnt/target_genes" target="_blank">website</a>, Nusse Laboratory at Stanford, listing target genes of Wnt/beta-catenin signaling in multiple species.  All proteins have been indexed to mouse gene symbols. </a>  
+                </p>
+				<p>
+					Database was created by Angela Mak and Mark Knepper in the <a href="http://esbl.nhlbi.nih.gov/" target="_blank">Epithelial Systems Biology Laboratory</a> (Mark Knepper, Chief) at the <strong>National Heart, Lung and Blood Institute</strong> as part of its <a href="https://hpcwebapps.cit.nih.gov/ESBL/Database/" target="_blank">Kidney Systems Biology Project</a>. </p>
+ 					                 <p>
+					
+					<!--Click to <a href="https://esbl.nhlbi.nih.gov/Databases/KSBP2/Targets/Lists/Phosphatases/PhosphataseCatalyticSubunitWebsiteData.xlsx" target="_blank">download</a> processed data as spreadsheet. -->
+				
+				</p>
+				<h1 style="color:black;font-family:Calibri;font-size:14.0pt;font-weight:800;
+font-style:normal">To search, use browser's Find command (Ctrl-F)</h1>
+<!--
+			    <p align="center">
+                    <strong>Sort database by:</strong>
+                    <select onchange="redirect(this.value)">
+                        <option value="index.htm" selected="selected">Gene Symbol</option>
+                        <option value="Podocyte - Sort by Rank.htm">Abundance Rank</option>
+                      
+                    </select>
+                </p>
+  -->             
+                
+            </div>
+            <div class="push"></div>
+        </div>
+<div id="Aldo targets_21848" align="center" x:publishsource="Excel">
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=897 style='border-collapse:
+ collapse;table-layout:fixed;width:673pt'>
+ <col width=146 style='mso-width-source:userset;mso-width-alt:3737;width:110pt'>
+ <col width=663 style='mso-width-source:userset;mso-width-alt:16972;width:497pt'>
+ <col width=88 style='width:66pt'>
+ <tr height=45 style='mso-height-source:userset;height:33.75pt'>
+  <td height=45 class=xl698157 width=146 style='height:33.75pt;width:110pt'>Gene
+  symbol</td>
+  <td class=xl698157 width=663 style='border-left:none;width:497pt'>Annotation</td>
+  <td class=xl698157 width=88 style='border-left:none;width:66pt'>UniProt No.</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Abcb1b</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>ATP-binding
+  cassette, sub-family B (MDR/TAP), member 1B</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P06795.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Atoh1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>atonal bHLH
+  transcription factor 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P48985.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Axin2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>axin-2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O88566.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Bglap2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>bone
+  gamma-carboxyglutamate protein 2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P86547.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Birc5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>baculoviral IAP
+  repeat-containing 5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O70201.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Bmp4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>bone
+  morphogenetic protein 4 preproprotein</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P21275.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Btrc</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>F-box/WD
+  repeat-containing protein 1A isoform X4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q3ULA2.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Cacna1g</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>voltage-dependent
+  T-type calcium channel subunit alpha-1G</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O43497.3</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ccna2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>cyclin A2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P51943.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ccnd1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>G1/S-specific
+  cyclin-D1 isoform X2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P25322.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Cd44</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>CD44 antigen
+  isoform f precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P15379.3</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Cdh1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>cadherin-1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P09803.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Cdkn2a</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>cyclin-dependent
+  kinase inhibitor 2A</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P51480.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Cdx1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>homeobox protein
+  CDX-1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P18111.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Cdx4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>homeobox protein
+  CDX-4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q07424.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Cldn1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>claudin-1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O88551.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Cox2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>cytochrome c
+  oxidase subunit II (mitochondrion)</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P00405.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ctla4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>cytotoxic
+  T-lymphocyte protein 4 isoform X2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P09793.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Cyr61</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>protein CYR61
+  precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P18406.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Dkk1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>dickkopf WNT
+  signaling pathway inhibitor 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O54908.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Dll1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>delta-like
+  protein 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q61483.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Dspp</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>dentin
+  sialophosphoprotein</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P97399.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Eda</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>ectodysplasin-A
+  isoform 8</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O54693.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Edn1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>endothelin 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P22387.3</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Egfr</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>epidermal growth
+  factor receptor isoform 1 precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q01279.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>En1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>engrailed 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P09065.3</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>En2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>engrailed 2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P09066.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Enpp2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>ectonucleotide
+  pyrophosphatase/phosphodiesterase family member 2 isoform 4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9R1E6.3</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ephb1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>ephrin type-B
+  receptor 1 isoform 2 precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q8CBF3.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Fgf18</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>fibroblast growth
+  factor 18</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O89101.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Fgf20</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>fibroblast growth
+  factor 20</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9ESL9.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Fgf4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>fibroblast growth
+  factor 4 precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P11403.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Fgf9</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>fibroblast growth
+  factor 9 precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P54130.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Fn1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>fibronectin 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P11276.4</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Fosl1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>fos-related
+  antigen 1 isoform X6</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P48755.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Foxn1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>forkhead box
+  protein N1 isoform X3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q61575.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Fst</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>follistatin</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P47931.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Fzd2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>frizzled-2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9JIP6.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Fzd7</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>frizzled-7</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q61090.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Gast</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>gastrin</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P48757.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Gbx2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>homeobox protein
+  GBX-2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P48031.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Gcg</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>glucagon</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P55095.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Gja1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>gap junction
+  alpha-1 protein</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P23242.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl688157 style='height:24.95pt;border-top:none'>Gjb6</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>gap junction
+  beta-6 protein</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P70689.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Grem1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>gremlin-1 isoform
+  X3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O70326.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Hnf1a</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>hepatocyte
+  nuclear factor 1-alpha</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P22361.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Id2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>DNA-binding
+  protein inhibitor ID-2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P41136.3</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Igf1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>insulin-like
+  growth factor 1<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P05017.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Igf2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>insulin-like
+  growth factor 2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P09535.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ikbkg</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>inhibitor of
+  kappaB kinase gamma</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O88522.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Il6</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>interleukin 6</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P08505.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Il8</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>interleukin 8</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9WVL7.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Irx3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>iroquois-class
+  homeodomain protein IRX-3 isoform 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P81067.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Isl1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>ISL1
+  transcription factor, LIM/homeodomain</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P61372.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Jag1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>jagged 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9QXX0.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Jag1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>protein jagged-1
+  precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9QXX0.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Jun</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>transcription
+  factor AP-1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P05627.3</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Klf5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Kruppel-like
+  factor 5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9Z0Z7.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>L1cam</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>neural cell
+  adhesion molecule L1 isoform X4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P11627.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Lbh</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>protein LBH</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9CX60.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Lef1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>lymphoid
+  enhancer-binding factor 1 isoform X6</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P27782.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Lgr5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>leucine-rich
+  repeat-containing G-protein coupled receptor 5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9Z1P4.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Maea</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>macrophage
+  erythroblast attacher</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q4VC33.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Met</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>hepatocyte growth
+  factor receptor isoform X2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P16056.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Mitf</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>microphthalmia-associated
+  transcription factor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q08874.4</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Mmp2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>72 kDa type IV
+  collagenase</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P33434.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Mmp26</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>matrix
+  metalloproteinase-26</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9NRE1.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Mmp3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>matrix
+  metallopeptidase 3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P28862.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Mmp7</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>matrilysin
+  isoform X2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q10738.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Mmp9</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>matrix
+  metalloproteinase-9 isoform X2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P41245.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Msl1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>male-specific
+  lethal 1 homolog isoform X3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q6PDM1.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Myc</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>myc
+  proto-oncogene protein isoform b</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P01108.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl688157 style='height:24.95pt;border-top:none'>Mycbp</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>C-Myc-binding
+  protein</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9EQS3.5</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Mycn</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>v-myc avian
+  myelocytomatosis viral related oncogene, neuroblastoma derived</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P03966.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Myf5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>myogenic factor 5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P24699.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Myf6</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>myogenic factor 6</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P15375.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Myod1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>myogenic
+  differentiation 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P10085.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Myog</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>myogenin</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P12979.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Nanog</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>homeobox protein
+  NANOG</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q5TM83.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Neurod1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>neurogenic
+  differentiation factor 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q60867.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Neurog1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>neurogenin-1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P70660.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Nkx2-2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>NK2 homeobox 2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P42586.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Nos2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>nitric oxide
+  synthase</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P29477.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Nrcam</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>neuronal cell
+  adhesion molecule</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q810U4.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ovol1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>ovo like zinc
+  finger 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9WTJ2.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Pitx2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>paired-like
+  homeodomain transcription factor 2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P97474.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Plaur</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>plasminogen
+  activator, urokinase receptor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P35456.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Postn</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>periostin,
+  osteoblast specific factor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q62009.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Pou5f1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>POU domain</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P20263.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ppard</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>peroxisome
+  proliferator activator receptor delta</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P35396.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Prl2c3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>prolactin family
+  2, subfamily c, member 3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P04768.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ptgs2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>prostaglandin G/H
+  synthase 2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q05769.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Pttg1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>securin isoform
+  X2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9CQJ7.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Rarg</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>retinoic acid
+  receptor gamma</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P18911.3</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Rasgrf1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>ras-specific
+  guanine nucleotide-releasing factor 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P27671.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ret</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>proto-oncogene
+  tyrosine-protein kinase receptor Ret</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P35546.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Rhou</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>rho-related
+  GTP-binding protein RhoU</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9EQT3.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Runx2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>runt-related
+  transcription factor 2 isoform X5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q08775.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Sall4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>sal-like protein
+  4 isoform X5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q8BX22.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Sfrp2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>secreted frizzled
+  related protein 2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P97299.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Six3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>homeobox protein
+  SIX3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q62233.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Snai1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>snail family zinc
+  finger 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q02085.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Sox17</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>transcription
+  factor SOX-17 isoform X2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q61473.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Sox2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>transcription
+  factor SOX-2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P48432.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Sox9</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>transcription
+  factor SOX-9</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q04887.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Sp5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>transcription
+  factor Sp5</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9JHX2.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Stra6</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>stimulated by
+  retinoic acid gene 6 protein</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O70491.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Tbx1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>T-box
+  transcription factor TBX1 isoform X3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P70323.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Tbx3</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>T-box
+  transcription factor TBX3 isoform X2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P70324.3</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Tcf4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>transcription
+  factor 4</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q60722.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Tert</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>telomerase
+  reverse transcriptase</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O70372.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Tiam1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>T-lymphoma
+  invasion and metastasis-inducing protein 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q60610.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Tnfrsf11a</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>tumor necrosis
+  factor receptor superfamily member 11A</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O35305.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Tnfrsf11b</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>tumor necrosis
+  factor receptor superfamily, member 11b (osteoprotegerin)</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O08712.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Tnfrsf19</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>tumor necrosis
+  factor receptor superfamily member 19 precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q9JLL3.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Tnfrsf9</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>tumor necrosis
+  factor receptor superfamily member 9 isoform X2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P20334.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Twist1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>wist basic
+  helix-loop-helix transcription factor 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P26687.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Ubxn1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>UBX domain
+  protein 1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q922Y1.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Vcan</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>versican</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q62059.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Vegfa</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>vascular
+  endothelial growth factor A</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>Q00731.2</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Vegfc</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>vascular
+  endothelial growth factor C</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P97953.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Wisp1</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>WNT1-inducible-signaling
+  pathway protein 1 precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O54775.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Wisp2</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>WNT1-inducible-signaling
+  pathway protein 2 precursor</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>O76076.1</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td height=33 class=xl678157 style='height:24.95pt;border-top:none'>Wnt3a</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>protein Wnt-3a</td>
+  <td class=xl678157 style='border-top:none;border-left:none'>P27467.1</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=146 style='width:110pt'></td>
+  <td width=663 style='width:497pt'></td>
+  <td width=88 style='width:66pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</div>		
+		
+<div id="Sorted by GS _18160" x:publishsource="Excel" align="center">
+
+<h1 style="color:black;font-family:Calibri;font-size:14.0pt;font-weight:800;
+font-style:normal">To search, use browser's <strong>Find</strong> command (Cntrl F)</h1>
+
+
+<div id="bottomdiv">
+
+
+ 
+<table border=0 cellpadding=0 cellspacing=0 width=897 style='border-collapse:
+ collapse;table-layout:fixed;width:673pt'>
+ <col width=146 style='mso-width-source:userset;mso-width-alt:3737;width:110pt'>
+ <col width=663 style='mso-width-source:userset;mso-width-alt:16972;width:497pt'>
+ <col width=88 style='width:66pt'>
+ <tr height=45 style='mso-height-source:userset;height:33.75pt'>
+  <td height=45 class=xl698157 width=146 style='height:33.75pt;width:110pt'>Gene
+  symbol</td>
+  <td class=xl698157 width=663 style='border-left:none;width:497pt'>Annotation</td>
+  <td class=xl698157 width=88 style='border-left:none;width:66pt'>UniProt No.</td>
+ </tr>
+ <!--
+ <colgroup>
+ <col class="xl6927814" style="mso-width-source:userset;mso-width-alt:
+ 365;width:8pt" width="10">
+ <col class="xl7527814" style="mso-width-source:userset;mso-width-alt:
+ 5302;width:109pt" width="145">
+ <col class="xl7427814" style="mso-width-source:userset;mso-width-alt:
+ 4973;width:102pt" width="136">
+ <col class="xl8127814" style="mso-width-source:userset;mso-width-alt:
+ 17481;width:359pt" width="478">
+ <col class="xl7827814" style="width:65pt" width="87">
+ <col class="xl7927814" style="width:65pt" span="2" width="87">
+ </colgroup>
+ 
+ <tbody>
+ 
+ <tr class="xl6627814" style="mso-height-source:userset;height:50.1pt" height="66">
+  <td class="xl6727814" style="height:50.1pt;width:8pt" height="66" width="10">&nbsp;</td>
+  <td class="xl6727814" style="width:109pt" width="145">GI Number</td>
+  <td class="xl6727814" style="width:102pt" width="136">Gene Symbol</td>
+  <td class="xl6727814" style="width:359pt" width="478">Annotation</td>
+  <td class="xl6827814" style="width:65pt" width="87">Log<font class="font627814"><sub>10</sub></font><font class="font527814"> Abundance</font></td>
+  <td class="xl6727814" style="width:65pt" width="87">Rank (of 6750)</td>
+  <td class="xl6727814" style="width:65pt" width="87">Percentile</td>
+ </tr>
+ 
+ 
+ </tbody> 
+ -->
+ </tbody>
+ </table>
+
+
+</div>
+		
+        <div class="footer" align="center">
+            <hr>        
+            <p>This website is hosted and supported by: <a href="http://biowulf.nih.gov/" target="_blank"><img src="./Aldo Targets_files/Biowulf.png" alt="Biowulf at the NIH" style="border-style: none" target="_blank" height="58"></a></p>
+            <div>
+                <a href="http://helix.nih.gov/disclaimer.html" class="footlink" target="_blank">Disclaimer</a> |
+                <a href="http://helix.nih.gov/privacy.html" class="footlink" target="_blank">Privacy</a> |
+                <a href="http://www.nhlbi.nih.gov/nhlbi508form.htm" class="footlink" target="_blank">Accessibility</a> |
+            </div>
+            <div>
+                <a href="http://helix.nih.gov/" class="footlink" target="_blank">Helix Systems</a> |
+                <a href="http://cit.nih.gov/" class="footlink" target="_blank">CIT</a> |
+                <a href="http://www.nhlbi.nih.gov/" class="footlink" target="_blank">NHLBI</a> |
+                <a href="http://www.nih.gov/" class="footlink" target="_blank">NIH</a> |
+                <a href="http://www.dhhs.gov/" class="footlink" target="_blank">DHHS</a> |
+                <a href="http://www.firstgov.gov/" class="footlink" target="_blank">USA.gov</a>
+            </div>
+        </div>
+    
+
+</div></body></html>

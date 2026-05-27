@@ -1,0 +1,2950 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://esbl.nhlbi.nih.gov/Databases/KSBP2/Targets/Lists/Phosphatases/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>S/T Phosphatases</title>
+	<script src="./index_files/analytics.js.download" async=""></script><script src="./index_files/analytics_002.js.download" async=""></script><script type="text/javascript">
+		function redirect(site) {
+                window.location = site;
+            }
+	</script>
+        <style type="text/css">
+body {
+        margin:0;
+        padding-right:40px;
+        padding-left:40px;
+        background:#FFF;
+        font:80% Arial, Helvetica, sans-serif;
+        color:#000000;
+        line-height:180%;
+}
+#topbg 
+    {
+        position: absolute; top: 0; left: 0; z-index: -1;
+        width: 100%; height: 143px;
+        background: #DEA900;
+    }
+h1{
+        font-size:180%;
+        font-weight:bold;
+        color: red;
+        text-align: center;
+}
+h2{
+        clear:both;
+        font-size:160%;
+        font-weight:normal;
+        color:#000;
+        background-color:#DAE4F4;
+        margin:0;
+        padding:.5em 0;
+}
+a{
+        text-decoration:none;
+        color:#00F;	
+}
+p{
+        clear:both;
+        margin:0;
+        padding:.5em 0;
+}
+pre{
+        font:100% "Courier New", Courier, monospace;
+}
+img{
+        border:none;
+}
+ul,li{
+        margin:0;
+        padding:0;
+}
+li{
+        list-style:none;
+        float:left;
+        display:inline;
+        margin-right:10px;
+}
+table, td, th{
+        border:0px;
+}
+th{
+        text-align:left;
+}
+
+/*  */
+
+#preview{
+        position:absolute;
+        border:1px solid #ccc;
+        background:#333;
+        padding:5px;
+        display:none;
+        color:#fff;
+        }
+
+/*  */
+        </style>
+
+
+
+
+<style id="NFKBWeb 6-20-22_17949_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl1517949
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6517949
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6617949
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	background:#BF8F00;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6717949
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	background:#BF8F00;
+	mso-pattern:black none;
+	white-space:nowrap;}
+-->
+
+
+
+</style>
+
+
+	
+<style id="ESBL_Podocyte_Transcriptome_042415_25240_Styles"><!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.font525240
+	{color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.font625240
+	{color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.font725240
+	{color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl1525240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6525240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6625240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6725240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6825240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6925240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7025240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:top;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7125240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7225240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7325240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #95B3D7;
+	border-left:none;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7425240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:top;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7525240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7625240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:blue;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:.5pt solid #95B3D7;
+	border-right:.5pt solid #95B3D7;
+	border-bottom:.5pt solid #95B3D7;
+	border-left:none;
+	background:#FFFF99;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7725240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFF99;
+	mso-pattern:#DCE6F1 none;
+	white-space:nowrap;}
+.xl7825240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFF99;
+	mso-pattern:#DCE6F1 none;
+	white-space:normal;}
+.xl7925240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFF99;
+	mso-pattern:#DCE6F1 none;
+	white-space:nowrap;}
+.xl8025240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFF99;
+	mso-pattern:#DCE6F1 none;
+	white-space:nowrap;}
+.xl8125240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#FFFF66;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFF99;
+	mso-pattern:#DCE6F1 none;
+	white-space:nowrap;}
+.xl8225240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:top;
+	border-top:.5pt solid #95B3D7;
+	border-right:none;
+	border-bottom:.5pt solid #95B3D7;
+	border-left:.5pt solid #95B3D7;
+	background:#FFFF99;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8325240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:blue;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:.5pt solid #95B3D7;
+	border-right:.5pt solid #95B3D7;
+	border-bottom:.5pt solid #95B3D7;
+	border-left:none;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8425240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8525240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8625240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8725240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8825240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#FFFFCC;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8925240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:top;
+	border-top:.5pt solid #95B3D7;
+	border-right:none;
+	border-bottom:.5pt solid #95B3D7;
+	border-left:.5pt solid #95B3D7;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl9025240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:blue;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:.5pt solid #95B3D7;
+	border-right:.5pt solid #95B3D7;
+	border-bottom:.5pt solid #95B3D7;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9125240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl9225240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl9325240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9425240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9525240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#FFFFCC;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:top;
+	border:.5pt solid #95B3D7;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9625240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:top;
+	border-top:.5pt solid #95B3D7;
+	border-right:none;
+	border-bottom:.5pt solid #95B3D7;
+	border-left:.5pt solid #95B3D7;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl9725240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:20.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	background:#16365C;
+	mso-pattern:black none;
+	mso-protection:unlocked visible;
+	white-space:nowrap;}
+.xl9825240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:bottom;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl9925240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:top;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl10025240
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+	<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.font52861
+	{color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.font62861
+	{color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.xl652861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl662861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl672861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl682861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl692861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:blue;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl702861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl712861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, monospace;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl722861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:blue;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl732861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl742861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl752861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl762861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl772861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl782861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl792861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl802861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl812861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#C00000;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl822861
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	background:#C00000;
+	mso-pattern:black none;
+	white-space:normal;}
+	.font527814
+	{color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.font627814
+	{color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.xl6527814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6627814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl6727814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#6600FF;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6827814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	background:#6600FF;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6927814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7027814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7127814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:blue;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7227814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7327814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, monospace;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7427814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7527814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7627814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7727814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7827814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7927814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8027814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl8127814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl8227814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:yellow;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8327814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFF66;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8427814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFF99;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8527814
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:nowrap;}
+	
+	.xl6428784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6528784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6628784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6728784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:blue;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl6828784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6928784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Courier, monospace;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7028784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7128784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7228784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7328784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7428784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7528784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.000";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7628784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7728784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7828784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#215CB8;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7928784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#DEA900;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8028784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	background:#DEA900;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8128784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8228784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8328784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFF99;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8428784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFF66;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8528784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFFCC;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8628784
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:yellow;
+	mso-pattern:black none;
+	white-space:nowrap;}
+	
+	.xl1530922
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6630922
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Calibri Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl6730922
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Calibri Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#002060;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6318250
+	{padding:0px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#DEA900;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6418250
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl6518250
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6618250
+	{padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}-->
+	
+--></style>
+		
+		<style type="text/css">
+
+a{
+	text-decoration:none;
+	color:#00F;	
+}
+div#topdiv {
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+color:#FFFF00;
+background:#051486;
+padding-left:85px;
+}
+div#bottomdiv {
+position:fixed;
+bottom:0px;
+left:0px;
+width:100%;
+color:yellow;
+background:white;
+padding-left:0px;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
+h2 {
+    color: red;
+    text-align: center;
+	font-family:Calibri, sans-serif;
+}
+h4 {
+    margin-left: 50px;
+
+</style>
+	
+
+
+	
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="topbg"></div>
+            <h1 style="margin-top: 15px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="./index_files/LinearSignature_RGB.png" alt="National Heart, Lung, and Blood Institute" style="border-style: none"></a></h1>
+            <h1><a href="http://esbl.nhlbi.nih.gov/" target="_blank"><img src="./index_files/ESBL.png" alt="Epithelial Systems Biology Laboratory (ESBL)" style="border-style: none"></a></h1>
+            <br>
+            <h1>NF-κB Target Genes</h1>
+         
+            <div>
+                
+                <p>					
+					This database lists consensus NF-κB target genes from two curated  lists at <a href="https://www.bu.edu/nf-kb/gene-resources/target-genes/" target="_blank">https://www.bu.edu/nf-kb/gene-resources/target-genes/</a> and <a href="http://bioinfo.lifl.fr/NF-KB/" target="_blank">http://bioinfo.lifl.fr/NF-KB/</a>. 
+
+                </p>
+				<p>
+					Database was created by Angela and Mark Knepper in the <a href="http://esbl.nhlbi.nih.gov/" target="_blank">Epithelial Systems Biology Laboratory</a> (Mark Knepper, Chief) at the <strong>National Heart, Lung and Blood Institute</strong> as part of its Kidney Systems Biology Project. 
+             
+				<h1 style="color:black;font-family:Calibri;font-size:14.0pt;font-weight:800;
+font-style:normal">To search, use browser's Find command (Ctrl-F)</h1>
+<!--
+			    <p align="center">
+                    <strong>Sort database by:</strong>
+                    <select onchange="redirect(this.value)">
+                        <option value="index.htm" selected="selected">Gene Symbol</option>
+                        <option value="Podocyte - Sort by Rank.htm">Abundance Rank</option>
+                      
+                    </select>
+                </p>
+  -->             
+                
+            </div>
+            <div class="push"></div>
+        </div>
+<div id="PhosphataseCatalyticSubunitWebsiteData_18250" align="center" x:publishsource="Excel">
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=688 style='border-collapse:
+ collapse;table-layout:fixed;width:517pt'>
+ <col width=129 style='mso-width-source:userset;mso-width-alt:3529;width:97pt'>
+ <col width=426 style='mso-width-source:userset;mso-width-alt:11684;width:320pt'>
+ <col width=133 style='mso-width-source:userset;mso-width-alt:3638;width:100pt'>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6617949 width=129 style='height:14.5pt;width:97pt'>Gene
+  Symbol</td>
+  <td class=xl6717949 width=426 style='width:320pt'>Annotation</td>
+  <td class=xl6617949 width=133 style='width:100pt'>UniProt Mouse</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ager</td>
+  <td class=xl6517949>advanced glycosylation end product-specific receptor<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q62151.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Alox12b</td>
+  <td class=xl6517949>arachidonate 12-lipoxygenase, 12R-type</td>
+  <td class=xl6517949>O70582.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Apoc3</td>
+  <td class=xl6517949>apolipoprotein C-III<span
+  style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>P33622.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>B2m</td>
+  <td class=xl6517949>beta-2-microglobulin<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P01887.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Bcl2</td>
+  <td class=xl6517949>apoptosis regulator Bcl-2<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P10417.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Bcl2a1</td>
+  <td class=xl6517949>bcl-2-related protein A1</td>
+  <td class=xl6517949>Q07440.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Bcl2l1</td>
+  <td class=xl6517949>bcl-2-like protein 1<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q64373.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Bcl3</td>
+  <td class=xl6517949>B-cell lymphoma 3 protein homolog</td>
+  <td class=xl6517949>Q9Z2F6.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Bdkrb1</td>
+  <td class=xl6517949>B1 bradykinin receptor</td>
+  <td class=xl6517949>Q61125.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ccl11</td>
+  <td class=xl6517949>eotaxin<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P48298.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ccl15</td>
+  <td class=xl6517949>C-C motif chemokine 15 preproprotein</td>
+  <td class=xl6517949>Q16663.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ccl2</td>
+  <td class=xl6517949>C-C motif chemokine 2<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P10148.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ccl5</td>
+  <td class=xl6517949>C-C motif chemokine 5<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P30882.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ccnd1</td>
+  <td class=xl6517949>G1/S-specific cyclin-D1<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P25322.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ccr5</td>
+  <td class=xl6517949>C-C chemokine receptor type 5</td>
+  <td class=xl6517949>P51682.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ccr7</td>
+  <td class=xl6517949>C-C chemokine receptor type 7<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P47774.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd209</td>
+  <td class=xl6517949>CD209 antigen isoform 8</td>
+  <td class=xl6517949>Q9NNX6.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd3g</td>
+  <td class=xl6517949>T-cell surface glycoprotein CD3 gamma chain<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P11942.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd40</td>
+  <td class=xl6517949>tumor necrosis factor receptor superfamily member 5<span
+  style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>P27512.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd40lg</td>
+  <td class=xl6517949>CD40 ligand</td>
+  <td class=xl6517949>P27548.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd44</td>
+  <td class=xl6517949>CD44 antigen<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P15379.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd48</td>
+  <td class=xl6517949>CD48 antigen<span style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>P18181.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd69</td>
+  <td class=xl6517949>early activation antigen CD69</td>
+  <td class=xl6517949>P37217.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd74</td>
+  <td class=xl6517949>H-2 class II histocompatibility antigen gamma chain<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P04441.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd80</td>
+  <td class=xl6517949>T-lymphocyte activation antigen CD80<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q00609.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cd83</td>
+  <td class=xl6517949>CD83 antigen<span style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>O88324.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cr2</td>
+  <td class=xl6517949>complement receptor type 2<span
+  style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>P19070.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Crp</td>
+  <td class=xl6517949>C-reactive protein<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P14847.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Csf1</td>
+  <td class=xl6517949>macrophage colony-stimulating factor 1<span
+  style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>P07141.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Csf2</td>
+  <td class=xl6517949>granulocyte-macrophage colony-stimulating factor<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P01587.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Csf3</td>
+  <td class=xl6517949>granulocyte colony-stimulating factor<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P09920.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cxcl5</td>
+  <td class=xl6517949>C-X-C motif chemokine 5<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P50228.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cxcl8</td>
+  <td class=xl6517949>interleukin-8<span style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>P10145.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Cxcr5</td>
+  <td class=xl6517949>C-X-C chemokine receptor type 5<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q04683.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Defb4</td>
+  <td class=xl6517949>beta-defensin 4<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P82019.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Elf3</td>
+  <td class=xl6517949>ETS-related transcription factor Elf-3<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q3UPW2.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Eng</td>
+  <td class=xl6517949>endoglin<span style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>Q63961.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>F3</td>
+  <td class=xl6517949>tissue factor<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P20352.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Fas</td>
+  <td class=xl6517949>tumor necrosis factor receptor superfamily member 6<span
+  style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>P25446.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Faslg</td>
+  <td class=xl6517949>tumor necrosis factor ligand superfamily member 6<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P41047.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Gstp1</td>
+  <td class=xl6517949>glutathione S-transferase P 1</td>
+  <td class=xl6517949>P19157.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Hmox1</td>
+  <td class=xl6517949>heme oxygenase 1</td>
+  <td class=xl6517949>P14901.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Icam1</td>
+  <td class=xl6517949>intercellular adhesion molecule 1<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P13597.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ier3</td>
+  <td class=xl6517949>radiation-inducible immediate-early gene IEX-1</td>
+  <td class=xl6517949>P46694.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ifnb1</td>
+  <td class=xl6517949>interferon beta<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P01575.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ighg3</td>
+  <td class=xl6517949>Immunoglobulin heavy constant gamma 3</td>
+  <td class=xl6517949>P01860.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ighg4</td>
+  <td class=xl6517949>Immunoglobulin heavy constant gamma 4</td>
+  <td class=xl6517949>P01861.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il11</td>
+  <td class=xl6517949>interleukin-11<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P47873.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il13</td>
+  <td class=xl6517949>interleukin-13<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P20109.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il15</td>
+  <td class=xl6517949>interleukin-15 preproprotein</td>
+  <td class=xl6517949>P48346.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il15ra</td>
+  <td class=xl6517949>interleukin-15 receptor subunit alpha<span
+  style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>Q60819.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il1a</td>
+  <td class=xl6517949>interleukin-1 alpha</td>
+  <td class=xl6517949>P01582.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il1b</td>
+  <td class=xl6517949>interleukin-1 beta</td>
+  <td class=xl6517949>P10749.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il1rn</td>
+  <td class=xl6517949>interleukin-1 receptor antagonist protein<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P25085.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il2</td>
+  <td class=xl6517949>interleukin-2<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q08867.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il2ra</td>
+  <td class=xl6517949>interleukin-2 receptor subunit alpha<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P01590.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il6</td>
+  <td class=xl6517949>interleukin-6<span style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>P08505.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Il9</td>
+  <td class=xl6517949>interleukin-9<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P15247.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Irf1</td>
+  <td class=xl6517949>interferon regulatory factor 1<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P15314.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Irf2</td>
+  <td class=xl6517949>interferon regulatory factor 2</td>
+  <td class=xl6517949>P23906.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Irf4</td>
+  <td class=xl6517949>interferon regulatory factor 4<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q64287.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Irf7</td>
+  <td class=xl6517949>interferon regulatory factor 7<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P70434.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Klk3</td>
+  <td class=xl6517949>prostate-specific antigen<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P07288.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Lta</td>
+  <td class=xl6517949>lymphotoxin-alpha<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P09225.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ltb</td>
+  <td class=xl6517949>lymphotoxin-beta</td>
+  <td class=xl6517949>P41155.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Mmp9</td>
+  <td class=xl6517949>matrix metalloproteinase-9 preproprotein</td>
+  <td class=xl6517949>P41245.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Myc</td>
+  <td class=xl6517949>myc proto-oncogene protein<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P01108.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Nfkb1</td>
+  <td class=xl6517949>nuclear factor NF-kappa-B p105 subunit</td>
+  <td class=xl6517949>P25799.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Nfkb2</td>
+  <td class=xl6517949>nuclear factor NF-kappa-B p100 subunit<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q9WTK5.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Nfkbia</td>
+  <td class=xl6517949>NF-kappa-B inhibitor alpha</td>
+  <td class=xl6517949>Q9Z1E3.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Nod2</td>
+  <td class=xl6517949>nucleotide-binding oligomerization domain-containing
+  protein 2<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q8K3Z0.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Nos2</td>
+  <td class=xl6517949>nitric oxide synthase, inducible</td>
+  <td class=xl6517949>P29477.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Nqo1</td>
+  <td class=xl6517949>NAD(P)H dehydrogenase [quinone] 1</td>
+  <td class=xl6517949>Q64669.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Nr4a2</td>
+  <td class=xl6517949>nuclear receptor subfamily 4 group A member 2</td>
+  <td class=xl6517949>Q06219.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Oprm1</td>
+  <td class=xl6517949>mu-type opioid receptor isoform MOR-1B2</td>
+  <td class=xl6517949>P42866.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Pdgfb</td>
+  <td class=xl6517949>platelet-derived growth factor subunit B<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P31240.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Plau</td>
+  <td class=xl6517949>urokinase-type plasminogen activator<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P06869.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Plcd1</td>
+  <td class=xl6517949>1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase
+  delta-1<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q8R3B1.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Psma2</td>
+  <td class=xl6517949>proteasome subunit alpha type-2</td>
+  <td class=xl6517949>P49722.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Psmb9</td>
+  <td class=xl6517949>proteasome subunit beta type-9<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>O35524.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ptafr</td>
+  <td class=xl6517949>platelet-activating factor receptor</td>
+  <td class=xl6517949>Q62035.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ptgs2</td>
+  <td class=xl6517949>prostaglandin G/H synthase 2<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q05769.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Ptx3</td>
+  <td class=xl6517949>pentraxin-related protein PTX3<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P48759.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Relb</td>
+  <td class=xl6517949>transcription factor RelB<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q04863.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>S100a6</td>
+  <td class=xl6517949>protein S100-A6</td>
+  <td class=xl6517949>P14069.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Scnn1a</td>
+  <td class=xl6517949>amiloride-sensitive sodium channel subunit alpha<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q61180.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Sele</td>
+  <td class=xl6517949>E-selectin<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q00690.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Selp</td>
+  <td class=xl6517949>P-selectin<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q01102.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Slc2a5</td>
+  <td class=xl6517949>solute carrier family 2, facilitated glucose transporter
+  member 5</td>
+  <td class=xl6517949>Q9WV38.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Sod2</td>
+  <td class=xl6517949>superoxide dismutase [Mn], mitochondrial<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P09671.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Stat5a</td>
+  <td class=xl6517949>signal transducer and activator of transcription 5A<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P42230.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tacr1</td>
+  <td class=xl6517949>substance-P receptor</td>
+  <td class=xl6517949>P30548.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tap1</td>
+  <td class=xl6517949>antigen peptide transporter 1<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P21958.3</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tfpi2</td>
+  <td class=xl6517949>tissue factor pathway inhibitor 2<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>O35536.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tgm2</td>
+  <td class=xl6517949>protein-glutamine gamma-glutamyltransferase 2</td>
+  <td class=xl6517949>P21981.4</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tnc</td>
+  <td class=xl6517949>tenascin<span style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>Q80YX1.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tnf</td>
+  <td class=xl6517949>tumor necrosis factor<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P06804.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tnfaip3</td>
+  <td class=xl6517949>tumor necrosis factor alpha-induced protein 3<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>Q60769.2</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tnfrsf9</td>
+  <td class=xl6517949>tumor necrosis factor receptor superfamily member 9<span
+  style='mso-spacerun:yes'>  </span></td>
+  <td class=xl6517949>P20334.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tp53</td>
+  <td class=xl6517949>cellular tumor antigen p53</td>
+  <td class=xl6517949>P02340.4</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Tpmt</td>
+  <td class=xl6517949>thiopurine S-methyltransferase</td>
+  <td class=xl6517949>Q9QX22.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Vcam1</td>
+  <td class=xl6517949>vascular cell adhesion protein 1<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6517949>P29533.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Vegfc</td>
+  <td class=xl6517949>vascular endothelial growth factor C</td>
+  <td class=xl6517949>P97953.1</td>
+ </tr>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6517949 style='height:14.5pt'>Vim</td>
+  <td class=xl6517949>vimentin</td>
+  <td class=xl6517949>P20152.3</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=129 style='width:97pt'></td>
+  <td width=426 style='width:320pt'></td>
+  <td width=133 style='width:100pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+
+</div>
+		
+		
+<div id="Sorted by GS _18160" x:publishsource="Excel" align="center">
+
+<h1 style="color:black;font-family:Calibri;font-size:14.0pt;font-weight:800;
+font-style:normal">To search, use browser's <strong>Find</strong> command (Cntrl F)</h1>
+
+
+<div id="bottomdiv">
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=688 style='border-collapse:
+ collapse;table-layout:fixed;width:517pt'>
+ <col width=129 style='mso-width-source:userset;mso-width-alt:3529;width:97pt'>
+ <col width=426 style='mso-width-source:userset;mso-width-alt:11684;width:320pt'>
+ <col width=133 style='mso-width-source:userset;mso-width-alt:3638;width:100pt'>
+ <tr height=19 style='height:14.5pt'>
+  <td height=19 class=xl6617949 width=129 style='height:14.5pt;width:97pt'>Gene
+  Symbol</td>
+  <td class=xl6717949 width=426 style='width:320pt'>Annotation</td>
+  <td class=xl6617949 width=133 style='width:100pt'>UniProt Mouse</td>
+ </tr>
+ 
+ </table>
+
+
+</div>
+		
+        <div class="footer" align="center">
+            <hr>        
+            <p>This website is hosted and supported by: <a href="http://biowulf.nih.gov/" target="_blank"><img src="./index_files/Biowulf.png" alt="Biowulf at the NIH" style="border-style: none" target="_blank" height="58"></a></p>
+            <div>
+                <a href="http://helix.nih.gov/disclaimer.html" class="footlink" target="_blank">Disclaimer</a> |
+                <a href="http://helix.nih.gov/privacy.html" class="footlink" target="_blank">Privacy</a> |
+                <a href="http://www.nhlbi.nih.gov/nhlbi508form.htm" class="footlink" target="_blank">Accessibility</a> |
+            </div>
+            <div>
+                <a href="http://helix.nih.gov/" class="footlink" target="_blank">Helix Systems</a> |
+                <a href="http://cit.nih.gov/" class="footlink" target="_blank">CIT</a> |
+                <a href="http://www.nhlbi.nih.gov/" class="footlink" target="_blank">NHLBI</a> |
+                <a href="http://www.nih.gov/" class="footlink" target="_blank">NIH</a> |
+                <a href="http://www.dhhs.gov/" class="footlink" target="_blank">DHHS</a> |
+                <a href="http://www.firstgov.gov/" class="footlink" target="_blank">USA.gov</a>
+            </div>
+        </div>
+    
+
+</div></body></html>
